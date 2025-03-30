@@ -493,31 +493,55 @@ body.dark .welcome-video,
 body.dark .about-anne,
 body.dark .contact,
 body.dark .search-section,
+body.dark .why-this-matters,
+body.dark .testimonial,
+body.dark .study-timeline,
+body.dark .testimonials,
 body.dark footer {
   background: #2c2c3e;
-  color: #f0f0f0;
+  color: #ffffff;
   box-shadow: none;
+}
+
+body.dark .hero-title,
+body.dark .hero-sub,
+body.dark .hero-text,
+body.dark .follow-text,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p,
+body.dark li,
+body.dark label,
+body.dark .quiz-option,
+body.dark .view-deck {
+  color: #ffffff;
 }
 
 body.dark .card {
   background: #3b3b50;
-  color: white;
+  color: #ffffff;
   border-color: #6a1b9a;
 }
 
 body.dark .card a {
   background-color: #8e24aa;
+  color: white;
 }
 
 body.dark .card a:hover {
   background-color: #b39ddb;
 }
 
-body.dark button {
+body.dark button,
+body.dark .flashcard-buttons button {
   background: #7e57c2;
+  color: white;
 }
 
-body.dark button:hover {
+body.dark button:hover,
+body.dark .flashcard-buttons button:hover {
   background: #5e35b1;
 }
 
@@ -533,6 +557,32 @@ body.dark a {
   color: #bb86fc;
 }
 
+/* === DARK MODE TOGGLE BUTTON === */
+#dark-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #6a1b9a;
+  transition: transform 0.2s ease;
+}
+
+#dark-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* === SHAKE ANIMATION FOR QUIZ BUTTONS === */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.shake {
+  animation: shake 0.4s ease;
+}
 
 /* === MEDIA QUERIES === */
 @media (max-width: 768px) {
