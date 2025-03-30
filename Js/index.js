@@ -1,13 +1,29 @@
-// index.js — Handles all interactive homepage functionality for Anne's Ultimate PTCB Guide
+// index.js � Handles all interactive homepage functionality for Anne's Ultimate PTCB Guide
 
 document.addEventListener("DOMContentLoaded", () => {
   initFlashcards();
   initQuiz();
   initTips();
   initSmoothScroll();
+  initDarkModeToggle();
+  initGlobalClickSound();
 });
 
-// 💊 Flashcard Preview
+// ?? Sound effects
+const clickSound = new Audio('Assets/sounds/click.mp3');
+const correctSound = new Audio('Assets/sounds/correct.mp3');
+const wrongSound = new Audio('Assets/sounds/wrong.mp3');
+
+function initGlobalClickSound() {
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+}
+
+// ?? Flashcard Preview
 const flashcards = [
   { front: "Zestril", back: "Lisinopril" },
   { front: "Synthroid", back: "Levothyroxine" },
@@ -42,7 +58,7 @@ function initFlashcards() {
   });
 }
 
-// 🧠 Quiz of the Day
+// ?? Quiz of the Day
 const quizQuestions = [
   {
     question: "What is the generic name for Norvasc?",
@@ -67,23 +83,29 @@ function initQuiz() {
   q.answers.forEach(ans => {
     const btn = document.createElement("button");
     btn.textContent = ans;
-    btn.style.margin = "10px";
+    btn.classList.add("quiz-option");
     btn.onclick = () => {
       if (ans === q.correct) {
         btn.style.background = "#4CAF50";
+        correctSound.currentTime = 0;
+        correctSound.play();
       } else {
         btn.style.background = "#f44336";
+        btn.classList.add("shake");
+        wrongSound.currentTime = 0;
+        wrongSound.play();
+        setTimeout(() => btn.classList.remove("shake"), 400);
       }
     };
     quizBox.appendChild(btn);
   });
 }
 
-// 💡 Tips Carousel
+// ?? Tips Carousel
 const tips = [
   "Use flashcards daily to build long-term memory.",
   "Practice tests simulate real exam pressure.",
-  "Take breaks — 25 mins on, 5 mins off.",
+  "Take breaks � 25 mins on, 5 mins off.",
   "Review drug classifications regularly.",
   "Write your own summaries after reading."
 ];
@@ -103,7 +125,7 @@ function initTips() {
   }, 6000);
 }
 
-// ✨ Smooth Scroll
+// ? Smooth Scroll for CTA buttons
 function initSmoothScroll() {
   const buttons = document.querySelectorAll(".cta-buttons button");
   const target = document.getElementById("resources");
@@ -112,5 +134,15 @@ function initSmoothScroll() {
     btn.addEventListener("click", () => {
       target.scrollIntoView({ behavior: "smooth" });
     });
+  });
+}
+
+// ?? Dark Mode Toggle
+function initDarkModeToggle() {
+  const toggleBtn = document.getElementById("dark-toggle");
+  if (!toggleBtn) return; // Only run if button exists
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
   });
 }

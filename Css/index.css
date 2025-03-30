@@ -184,11 +184,30 @@ button:hover {
   100% { transform: translateY(0); }
 }
 
-/* === RESOURCE HUB – Clean, Straight-Across Style === */
+/* === RESOURCE HUB – Enhanced with Icons & Background === */
 .resource-hub {
   background: linear-gradient(135deg, #f9eaff, #f5e1ff);
   padding: 4rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional soft background pill/book image */
+.resource-hub::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background-image: url("Assets/Images/pill-light.png"); /* Replace with your soft image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  z-index: 0;
 }
 
 .resource-hub h3 {
@@ -196,34 +215,48 @@ button:hover {
   margin-bottom: 2.5rem;
   color: #6a1b9a;
   font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 1;
 }
 
-/* Symmetrical layout with no floating look */
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-/* Flat, clean card appearance */
+/* Card Styling */
 .card {
   background: #fdfaff;
-  padding: 1.5rem;
+  padding: 2rem 1.2rem;
   border-radius: 16px;
   border: 2px solid #ebd9ff;
-  transition: border 0.2s ease;
+  transition: border 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card:hover {
   border-color: #d0aaff;
+  transform: translateY(-4px);
+}
+
+/* Emoji Icon */
+.card::before {
+  content: attr(data-icon);
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
 }
 
 .card h4 {
   font-size: 1.1rem;
   color: #6a1b9a;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .card p {
@@ -231,9 +264,10 @@ button:hover {
   color: #444;
   margin-bottom: 1rem;
   min-height: 48px;
+  line-height: 1.4;
 }
 
-/* Simple button style */
+/* Button */
 .card a {
   display: inline-block;
   padding: 8px 16px;
@@ -249,6 +283,7 @@ button:hover {
   background-color: #9c27b0;
   transform: scale(1.05);
 }
+
 
 
 
@@ -441,6 +476,63 @@ footer {
   color: #7b2cbf;
   font-size: 1.1rem;
 }
+
+/* === DARK MODE === */
+body.dark {
+  background: #1e1e2f;
+  color: #eee;
+}
+
+body.dark .site-header,
+body.dark .hero,
+body.dark .resource-hub,
+body.dark .flashcard-preview,
+body.dark .quiz-of-the-day,
+body.dark .tips-carousel,
+body.dark .welcome-video,
+body.dark .about-anne,
+body.dark .contact,
+body.dark .search-section,
+body.dark footer {
+  background: #2c2c3e;
+  color: #f0f0f0;
+  box-shadow: none;
+}
+
+body.dark .card {
+  background: #3b3b50;
+  color: white;
+  border-color: #6a1b9a;
+}
+
+body.dark .card a {
+  background-color: #8e24aa;
+}
+
+body.dark .card a:hover {
+  background-color: #b39ddb;
+}
+
+body.dark button {
+  background: #7e57c2;
+}
+
+body.dark button:hover {
+  background: #5e35b1;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background: #444;
+  color: #f0f0f0;
+  border-color: #777;
+}
+
+body.dark a {
+  color: #bb86fc;
+}
+
 
 /* === MEDIA QUERIES === */
 @media (max-width: 768px) {
