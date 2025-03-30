@@ -419,18 +419,60 @@ body.dark .card a:hover {
 }
 
 /* === TESTIMONIALS === */
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+.testimonials {
+  background: linear-gradient(135deg, #f4e8ff, #e0c4ff);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.2);
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 1000px;
 }
 
-.testimonial {
-  background-color: #f3e5f5;
-  padding: 1rem 1.5rem;
-  border-radius: 16px;
-  font-style: italic;
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #5a3d66;
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+.testimonials-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(100, 0, 120, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(100, 0, 120, 0.25);
+}
+
+.testimonial-quote {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  color: #4a2c5a;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial-author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #803d99;
+  text-align: right;
+  font-weight: bold;
+}
+
 
 /* === CONTACT FORM === */
 .contact form {
