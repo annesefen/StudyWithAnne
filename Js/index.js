@@ -74,6 +74,8 @@ const quizQuestions = [
 
 function initQuiz() {
   const quizBox = document.getElementById("quiz-box");
+  quizBox.innerHTML = ""; // clear Loading...
+
   const q = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
 
   const question = document.createElement("h4");
@@ -84,6 +86,7 @@ function initQuiz() {
     const btn = document.createElement("button");
     btn.textContent = ans;
     btn.classList.add("quiz-option");
+
     btn.onclick = () => {
       if (ans === q.correct) {
         btn.style.background = "#4CAF50";
@@ -97,9 +100,11 @@ function initQuiz() {
         setTimeout(() => btn.classList.remove("shake"), 400);
       }
     };
+
     quizBox.appendChild(btn);
   });
 }
+
 
 // ?? Tips Carousel
 const tips = [
