@@ -932,7 +932,260 @@ document.addEventListener('DOMContentLoaded', () => {
   "tags": ["#all", "#medications", "#top200"]
 }
 ,
-			
+			{
+  "question": "Desyrel",
+  "answer": "<strong>Description:</strong> Treats depression and can aid with insomnia.<br><strong>Mechanism:</strong> Inhibits serotonin reuptake and blocks certain serotonin receptors.<br><strong>Active Ingredient(s):</strong> Trazodone<br><strong>Drug Class:</strong> Antidepressant<br><strong>Use:</strong> Depression, insomnia<br><strong>Side Effects:</strong> Drowsiness, dry mouth, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actos",
+  "answer": "<strong>Description:</strong> Controls blood sugar levels in type 2 diabetes.<br><strong>Mechanism:</strong> Increases insulin sensitivity via PPAR-gamma activation.<br><strong>Active Ingredient(s):</strong> Pioglitazone<br><strong>Drug Class:</strong> Thiazolidinedione<br><strong>Use:</strong> Type 2 diabetes<br><strong>Side Effects:</strong> Weight gain, edema, risk of heart failure<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Proscar",
+  "answer": "<strong>Description:</strong> Treats symptoms of benign prostatic hyperplasia (BPH).<br><strong>Mechanism:</strong> Inhibits 5-alpha reductase, reducing dihydrotestosterone (DHT) levels.<br><strong>Active Ingredient(s):</strong> Finasteride<br><strong>Drug Class:</strong> 5-alpha reductase inhibitor<br><strong>Use:</strong> BPH, male pattern baldness<br><strong>Side Effects:</strong> Decreased libido, erectile dysfunction<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Inbrija / Dopar / Larodopa",
+  "answer": "<strong>Description:</strong> Helps control movement problems in Parkinson’s disease.<br><strong>Mechanism:</strong> Converts to dopamine in the brain.<br><strong>Active Ingredient(s):</strong> Levodopa<br><strong>Drug Class:</strong> Antiparkinsonian drug<br><strong>Use:</strong> Parkinson’s disease<br><strong>Side Effects:</strong> Nausea, dizziness, dyskinesia<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, Inhalation",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actonel",
+  "answer": "<strong>Description:</strong> Prevents and treats osteoporosis.<br><strong>Mechanism:</strong> Inhibits osteoclast-mediated bone resorption.<br><strong>Active Ingredient(s):</strong> Risedronate<br><strong>Drug Class:</strong> Bisphosphonate<br><strong>Use:</strong> Osteoporosis, Paget’s disease<br><strong>Side Effects:</strong> Bone/joint pain, GI upset<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "ProAir / Ventolin / Proventil",
+  "answer": "<strong>Description:</strong> Quickly relieves asthma symptoms and bronchospasm.<br><strong>Mechanism:</strong> Stimulates beta-2 receptors to relax bronchial smooth muscle.<br><strong>Active Ingredient(s):</strong> Albuterol<br><strong>Drug Class:</strong> Beta-2 agonist<br><strong>Use:</strong> Asthma, COPD<br><strong>Side Effects:</strong> Tremors, nervousness, increased heart rate<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Inhalation",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Ultram",
+  "answer": "<strong>Description:</strong> Manages moderate pain.<br><strong>Mechanism:</strong> Binds to opioid receptors and inhibits serotonin/norepinephrine reuptake.<br><strong>Active Ingredient(s):</strong> Tramadol<br><strong>Drug Class:</strong> Opiate narcotic<br><strong>Use:</strong> Pain relief<br><strong>Side Effects:</strong> Dizziness, constipation, drowsiness<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Sonata",
+  "answer": "<strong>Description:</strong> Helps with falling asleep.<br><strong>Mechanism:</strong> Modulates GABA-A receptors in the brain to induce sleep.<br><strong>Active Ingredient(s):</strong> Zaleplon<br><strong>Drug Class:</strong> Z-drug / hypnotic<br><strong>Use:</strong> Insomnia<br><strong>Side Effects:</strong> Dizziness, headache, rebound insomnia<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zebeta",
+  "answer": "<strong>Description:</strong> Treats high blood pressure and heart-related chest pain.<br><strong>Mechanism:</strong> Selectively blocks beta-1 receptors to reduce heart rate and blood pressure.<br><strong>Active Ingredient(s):</strong> Bisoprolol<br><strong>Drug Class:</strong> Beta-blocker<br><strong>Use:</strong> Hypertension, angina<br><strong>Side Effects:</strong> Fatigue, bradycardia, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zovirax",
+  "answer": "<strong>Description:</strong> Treats herpes virus infections like cold sores and shingles.<br><strong>Mechanism:</strong> Inhibits viral DNA polymerase to prevent viral replication.<br><strong>Active Ingredient(s):</strong> Acyclovir<br><strong>Drug Class:</strong> Antiviral drug<br><strong>Use:</strong> Herpes simplex, shingles<br><strong>Side Effects:</strong> Nausea, headache, kidney toxicity (rare)<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, topical, IV",
+  "tags": ["#all", "#medications", "#top200"]
+}
+,
+			{
+  "question": "Coumadin",
+  "answer": "<strong>Description:</strong> Prevents blood clots and reduces risk of stroke.<br><strong>Mechanism:</strong> Inhibits vitamin K epoxide reductase, decreasing clotting factor synthesis.<br><strong>Active Ingredient(s):</strong> Warfarin<br><strong>Drug Class:</strong> Anticoagulant drug<br><strong>Use:</strong> Atrial fibrillation, DVT, PE, stroke prevention<br><strong>Side Effects:</strong> Bleeding, bruising, GI upset<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Luvox",
+  "answer": "<strong>Description:</strong> Treats obsessive-compulsive disorder (OCD).<br><strong>Mechanism:</strong> Inhibits serotonin reuptake to increase serotonin levels in the brain.<br><strong>Active Ingredient(s):</strong> Fluvoxamine<br><strong>Drug Class:</strong> SSRI<br><strong>Use:</strong> OCD, depression, anxiety disorders<br><strong>Side Effects:</strong> Nausea, insomnia, sexual dysfunction<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Plavix",
+  "answer": "<strong>Description:</strong> Prevents blood clots in people with heart disease.<br><strong>Mechanism:</strong> Inhibits ADP receptor on platelets, preventing aggregation.<br><strong>Active Ingredient(s):</strong> Clopidogrel<br><strong>Drug Class:</strong> Antiplatelet drug<br><strong>Use:</strong> MI prevention, stroke, coronary artery disease<br><strong>Side Effects:</strong> Bleeding, rash, GI upset<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Vibramycin / Adoxa",
+  "answer": "<strong>Description:</strong> Broad-spectrum antibiotic used to treat many infections.<br><strong>Mechanism:</strong> Inhibits bacterial protein synthesis by binding 30S ribosomal subunit.<br><strong>Active Ingredient(s):</strong> Doxycycline<br><strong>Drug Class:</strong> Tetracycline antibiotic<br><strong>Use:</strong> Acne, respiratory infections, STIs<br><strong>Side Effects:</strong> Photosensitivity, nausea, tooth discoloration<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, IV",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Hyzaar",
+  "answer": "<strong>Description:</strong> Treats high blood pressure and reduces stroke risk.<br><strong>Mechanism:</strong> Blocks angiotensin II receptors and promotes diuresis via thiazide.<br><strong>Active Ingredient(s):</strong> Losartan, Hydrochlorothiazide<br><strong>Drug Class:</strong> Angiotensin II blocker, Thiazide diuretic<br><strong>Use:</strong> Hypertension<br><strong>Side Effects:</strong> Dizziness, fatigue, hypokalemia<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Kytril / Sancuso",
+  "answer": "<strong>Description:</strong> Prevents nausea and vomiting from chemotherapy or surgery.<br><strong>Mechanism:</strong> Blocks serotonin (5-HT3) receptors in the brain and gut.<br><strong>Active Ingredient(s):</strong> Granisetron<br><strong>Drug Class:</strong> Antiemetic drug<br><strong>Use:</strong> Nausea, vomiting prevention<br><strong>Side Effects:</strong> Headache, constipation, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, transdermal, IV",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Restoril",
+  "answer": "<strong>Description:</strong> Short-term treatment of insomnia.<br><strong>Mechanism:</strong> Enhances GABA activity at GABA-A receptors to induce sleep.<br><strong>Active Ingredient(s):</strong> Temazepam<br><strong>Drug Class:</strong> Benzodiazepine<br><strong>Use:</strong> Insomnia<br><strong>Side Effects:</strong> Drowsiness, dizziness, dependence<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Prevacid",
+  "answer": "<strong>Description:</strong> Reduces stomach acid and treats GERD and ulcers.<br><strong>Mechanism:</strong> Inhibits proton pumps in gastric parietal cells.<br><strong>Active Ingredient(s):</strong> Lansoprazole<br><strong>Drug Class:</strong> Proton-pump inhibitor<br><strong>Use:</strong> GERD, ulcers, heartburn<br><strong>Side Effects:</strong> Headache, diarrhea, abdominal pain<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Augmentin",
+  "answer": "<strong>Description:</strong> Treats bacterial infections with beta-lactam resistance.<br><strong>Mechanism:</strong> Amoxicillin inhibits bacterial cell wall synthesis; clavulanic acid inhibits beta-lactamase.<br><strong>Active Ingredient(s):</strong> Amoxicillin, Clavulanic acid<br><strong>Drug Class:</strong> Penicillin antibiotic + Beta-lactamase inhibitor<br><strong>Use:</strong> Respiratory infections, UTIs, skin infections<br><strong>Side Effects:</strong> Diarrhea, rash, nausea<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Mevacor / Altoprev",
+  "answer": "<strong>Description:</strong> Lowers LDL cholesterol and triglycerides.<br><strong>Mechanism:</strong> Inhibits HMG-CoA reductase to decrease cholesterol production.<br><strong>Active Ingredient(s):</strong> Lovastatin<br><strong>Drug Class:</strong> Statin<br><strong>Use:</strong> Hyperlipidemia, cardiovascular risk reduction<br><strong>Side Effects:</strong> Muscle pain, liver enzyme changes<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+}
+,
+			{
+  "question": "Desyrel",
+  "answer": "<strong>Description:</strong> Treats depression and insomnia.<br><strong>Mechanism:</strong> Inhibits serotonin reuptake and blocks histamine and alpha-adrenergic receptors.<br><strong>Active Ingredient(s):</strong> Trazodone<br><strong>Drug Class:</strong> Antidepressant<br><strong>Use:</strong> Depression, insomnia<br><strong>Side Effects:</strong> Drowsiness, dizziness, dry mouth, priapism (rare)<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actos",
+  "answer": "<strong>Description:</strong> Improves insulin sensitivity in type 2 diabetes.<br><strong>Mechanism:</strong> Activates PPAR-gamma receptors to regulate glucose and lipid metabolism.<br><strong>Active Ingredient(s):</strong> Pioglitazone<br><strong>Drug Class:</strong> Thiazolidinedione<br><strong>Use:</strong> Type 2 diabetes<br><strong>Side Effects:</strong> Weight gain, edema, heart failure risk<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Proscar",
+  "answer": "<strong>Description:</strong> Treats benign prostatic hyperplasia (BPH).<br><strong>Mechanism:</strong> Inhibits type II 5-alpha-reductase to reduce DHT levels.<br><strong>Active Ingredient(s):</strong> Finasteride<br><strong>Drug Class:</strong> 5-alpha reductase inhibitor<br><strong>Use:</strong> BPH, male pattern baldness (at lower doses)<br><strong>Side Effects:</strong> Decreased libido, erectile dysfunction<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Inbrija / Dopar / Larodopa",
+  "answer": "<strong>Description:</strong> Replenishes dopamine levels in Parkinson's disease.<br><strong>Mechanism:</strong> Converts to dopamine in the brain to improve motor function.<br><strong>Active Ingredient(s):</strong> Levodopa<br><strong>Drug Class:</strong> Antiparkinsonian drug<br><strong>Use:</strong> Parkinson’s disease<br><strong>Side Effects:</strong> Dyskinesia, nausea, hallucinations<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, inhalation",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actonel",
+  "answer": "<strong>Description:</strong> Treats or prevents osteoporosis.<br><strong>Mechanism:</strong> Inhibits osteoclast-mediated bone resorption.<br><strong>Active Ingredient(s):</strong> Risedronate<br><strong>Drug Class:</strong> Bisphosphonate<br><strong>Use:</strong> Osteoporosis, Paget's disease<br><strong>Side Effects:</strong> GI upset, jaw osteonecrosis (rare)<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "ProAir / Ventolin / Proventil",
+  "answer": "<strong>Description:</strong> Rapid relief of asthma or COPD symptoms.<br><strong>Mechanism:</strong> Stimulates beta-2 receptors causing bronchial smooth muscle relaxation.<br><strong>Active Ingredient(s):</strong> Albuterol<br><strong>Drug Class:</strong> Beta-2 agonist<br><strong>Use:</strong> Asthma, bronchospasm<br><strong>Side Effects:</strong> Tremor, tachycardia, nervousness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Inhalation",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Ultram",
+  "answer": "<strong>Description:</strong> Relieves moderate to moderately severe pain.<br><strong>Mechanism:</strong> Binds to mu-opioid receptors and inhibits norepinephrine/serotonin reuptake.<br><strong>Active Ingredient(s):</strong> Tramadol<br><strong>Drug Class:</strong> Opiate narcotic<br><strong>Use:</strong> Pain relief<br><strong>Side Effects:</strong> Drowsiness, nausea, dependence<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Sonata",
+  "answer": "<strong>Description:</strong> Short-term treatment of insomnia.<br><strong>Mechanism:</strong> Binds to GABA-A receptors, enhancing inhibitory neurotransmission.<br><strong>Active Ingredient(s):</strong> Zaleplon<br><strong>Drug Class:</strong> Z-drug / hypnotic<br><strong>Use:</strong> Insomnia<br><strong>Side Effects:</strong> Drowsiness, dizziness, headache<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zebeta",
+  "answer": "<strong>Description:</strong> Treats high blood pressure and improves heart function.<br><strong>Mechanism:</strong> Selectively blocks beta-1 receptors to reduce cardiac output.<br><strong>Active Ingredient(s):</strong> Bisoprolol<br><strong>Drug Class:</strong> Beta-blocker<br><strong>Use:</strong> Hypertension, heart failure<br><strong>Side Effects:</strong> Bradycardia, fatigue, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zovirax",
+  "answer": "<strong>Description:</strong> Treats herpes infections, including cold sores and shingles.<br><strong>Mechanism:</strong> Inhibits viral DNA polymerase, preventing replication.<br><strong>Active Ingredient(s):</strong> Acyclovir<br><strong>Drug Class:</strong> Antiviral drug<br><strong>Use:</strong> Herpes simplex, varicella-zoster<br><strong>Side Effects:</strong> Nausea, headache, renal toxicity (IV)<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, topical, IV",
+  "tags": ["#all", "#medications", "#top200"]
+}
+,
+			{
+  "question": "Coumadin",
+  "answer": "<strong>Description:</strong> Prevents blood clots and reduces stroke risk.<br><strong>Mechanism:</strong> Inhibits vitamin K epoxide reductase, reducing synthesis of clotting factors II, VII, IX, and X.<br><strong>Active Ingredient(s):</strong> Warfarin<br><strong>Drug Class:</strong> Anticoagulant<br><strong>Use:</strong> Thrombosis prevention, atrial fibrillation<br><strong>Side Effects:</strong> Bleeding, bruising, drug-food interactions<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Luvox",
+  "answer": "<strong>Description:</strong> Treats obsessive-compulsive disorder (OCD).<br><strong>Mechanism:</strong> Inhibits serotonin reuptake to increase serotonin levels in the brain.<br><strong>Active Ingredient(s):</strong> Fluvoxamine<br><strong>Drug Class:</strong> SSRI<br><strong>Use:</strong> OCD, depression<br><strong>Side Effects:</strong> Nausea, drowsiness, sexual dysfunction<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Plavix",
+  "answer": "<strong>Description:</strong> Prevents clot formation after heart attack or stroke.<br><strong>Mechanism:</strong> Inhibits platelet aggregation by blocking ADP receptors on platelets.<br><strong>Active Ingredient(s):</strong> Clopidogrel<br><strong>Drug Class:</strong> Antiplatelet drug<br><strong>Use:</strong> Heart attack, stroke, stent thrombosis prevention<br><strong>Side Effects:</strong> Bleeding, rash, GI upset<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Vibramycin / Adoxa",
+  "answer": "<strong>Description:</strong> Broad-spectrum antibiotic for various infections.<br><strong>Mechanism:</strong> Inhibits bacterial protein synthesis by binding to 30S ribosomal subunit.<br><strong>Active Ingredient(s):</strong> Doxycycline<br><strong>Drug Class:</strong> Tetracycline antibiotic<br><strong>Use:</strong> Respiratory infections, acne, STIs, Lyme disease<br><strong>Side Effects:</strong> GI upset, photosensitivity, tooth discoloration<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Hyzaar",
+  "answer": "<strong>Description:</strong> Lowers blood pressure and reduces stroke risk.<br><strong>Mechanism:</strong> Hydrochlorothiazide increases sodium excretion; losartan blocks angiotensin II receptors.<br><strong>Active Ingredient(s):</strong> Hydrochlorothiazide, Losartan<br><strong>Drug Class:</strong> Thiazide diuretic, Angiotensin II blocker<br><strong>Use:</strong> Hypertension<br><strong>Side Effects:</strong> Dizziness, fatigue, electrolyte imbalance<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Kytril / Sancuso",
+  "answer": "<strong>Description:</strong> Prevents nausea and vomiting from chemotherapy or surgery.<br><strong>Mechanism:</strong> Blocks 5-HT3 receptors in the brain and gut.<br><strong>Active Ingredient(s):</strong> Granisetron<br><strong>Drug Class:</strong> Antiemetic drug<br><strong>Use:</strong> Nausea and vomiting prevention<br><strong>Side Effects:</strong> Headache, constipation<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, transdermal, IV",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Restoril",
+  "answer": "<strong>Description:</strong> Short-term treatment of insomnia.<br><strong>Mechanism:</strong> Enhances GABA activity by binding to benzodiazepine receptors.<br><strong>Active Ingredient(s):</strong> Temazepam<br><strong>Drug Class:</strong> Benzodiazepine<br><strong>Use:</strong> Insomnia<br><strong>Side Effects:</strong> Drowsiness, dizziness, dependence<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Prevacid",
+  "answer": "<strong>Description:</strong> Treats GERD, ulcers, and acid-related disorders.<br><strong>Mechanism:</strong> Inhibits H+/K+ ATPase enzyme in gastric parietal cells.<br><strong>Active Ingredient(s):</strong> Lansoprazole<br><strong>Drug Class:</strong> Proton-pump inhibitor<br><strong>Use:</strong> GERD, ulcers<br><strong>Side Effects:</strong> Headache, abdominal pain, diarrhea<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Augmentin",
+  "answer": "<strong>Description:</strong> Broad-spectrum antibiotic for bacterial infections.<br><strong>Mechanism:</strong> Amoxicillin inhibits bacterial cell wall synthesis; clavulanic acid inhibits beta-lactamase enzymes.<br><strong>Active Ingredient(s):</strong> Amoxicillin, Clavulanic acid<br><strong>Drug Class:</strong> Penicillin antibiotic, Beta-lactamase inhibitor<br><strong>Use:</strong> Respiratory, urinary, and skin infections<br><strong>Side Effects:</strong> Diarrhea, rash, allergic reactions<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Mevacor / Altoprev",
+  "answer": "<strong>Description:</strong> Lowers LDL cholesterol and prevents heart disease.<br><strong>Mechanism:</strong> Inhibits HMG-CoA reductase to reduce cholesterol synthesis.<br><strong>Active Ingredient(s):</strong> Lovastatin<br><strong>Drug Class:</strong> Statin<br><strong>Use:</strong> Hyperlipidemia, cardiovascular prevention<br><strong>Side Effects:</strong> Muscle pain, liver enzyme elevation<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+}
+,
+			{
+  "question": "ProAir / Ventolin / Proventil",
+  "answer": "<strong>Description:</strong> Provides quick relief from asthma and COPD symptoms.<br><strong>Mechanism:</strong> Stimulates beta-2 adrenergic receptors, relaxing bronchial smooth muscle.<br><strong>Active Ingredient(s):</strong> Albuterol<br><strong>Drug Class:</strong> Beta-2 agonist<br><strong>Use:</strong> Asthma, bronchospasm, COPD<br><strong>Side Effects:</strong> Tremors, nervousness, rapid heartbeat<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Inhalation",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Ultram",
+  "answer": "<strong>Description:</strong> Relieves moderate to moderately severe pain.<br><strong>Mechanism:</strong> Binds to mu-opioid receptors and inhibits norepinephrine and serotonin reuptake.<br><strong>Active Ingredient(s):</strong> Tramadol<br><strong>Drug Class:</strong> Opiate narcotic<br><strong>Use:</strong> Pain management<br><strong>Side Effects:</strong> Dizziness, nausea, constipation<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Sonata",
+  "answer": "<strong>Description:</strong> Short-term treatment for insomnia.<br><strong>Mechanism:</strong> Binds to benzodiazepine receptors, enhancing GABA activity.<br><strong>Active Ingredient(s):</strong> Zaleplon<br><strong>Drug Class:</strong> Z-drug / hypnotic<br><strong>Use:</strong> Insomnia<br><strong>Side Effects:</strong> Dizziness, headache, drowsiness<br><strong>Controlled Substance:</strong> Yes (CIV)<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zebeta",
+  "answer": "<strong>Description:</strong> Reduces high blood pressure and improves heart function.<br><strong>Mechanism:</strong> Blocks beta-1 adrenergic receptors, reducing heart rate and cardiac output.<br><strong>Active Ingredient(s):</strong> Bisoprolol<br><strong>Drug Class:</strong> Beta-blocker<br><strong>Use:</strong> Hypertension, heart failure<br><strong>Side Effects:</strong> Fatigue, bradycardia, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Zovirax",
+  "answer": "<strong>Description:</strong> Treats herpes virus infections including shingles and cold sores.<br><strong>Mechanism:</strong> Inhibits viral DNA polymerase, preventing viral replication.<br><strong>Active Ingredient(s):</strong> Acyclovir<br><strong>Drug Class:</strong> Antiviral drug<br><strong>Use:</strong> Herpes simplex, shingles, chickenpox<br><strong>Side Effects:</strong> Nausea, diarrhea, headache<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral, topical, IV",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Aceon",
+  "answer": "<strong>Description:</strong> Treats high blood pressure and heart failure.<br><strong>Mechanism:</strong> Inhibits the angiotensin-converting enzyme (ACE), reducing blood pressure.<br><strong>Active Ingredient(s):</strong> Perindopril<br><strong>Drug Class:</strong> ACE inhibitor<br><strong>Use:</strong> Hypertension, heart failure<br><strong>Side Effects:</strong> Cough, dizziness, hyperkalemia<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Desyrel",
+  "answer": "<strong>Description:</strong> Used for major depressive disorder and insomnia.<br><strong>Mechanism:</strong> Inhibits serotonin reuptake and blocks histamine and alpha-1 receptors.<br><strong>Active Ingredient(s):</strong> Trazodone<br><strong>Drug Class:</strong> Antidepressant<br><strong>Use:</strong> Depression, insomnia<br><strong>Side Effects:</strong> Drowsiness, dry mouth, dizziness<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actos",
+  "answer": "<strong>Description:</strong> Helps control blood sugar levels in type 2 diabetes.<br><strong>Mechanism:</strong> Improves insulin sensitivity by activating PPAR-gamma receptors.<br><strong>Active Ingredient(s):</strong> Pioglitazone<br><strong>Drug Class:</strong> Thiazolidinedione<br><strong>Use:</strong> Type 2 diabetes<br><strong>Side Effects:</strong> Edema, weight gain, risk of heart failure<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Proscar",
+  "answer": "<strong>Description:</strong> Treats enlarged prostate (BPH).<br><strong>Mechanism:</strong> Inhibits 5-alpha reductase, reducing conversion of testosterone to DHT.<br><strong>Active Ingredient(s):</strong> Finasteride<br><strong>Drug Class:</strong> 5-alpha reductase inhibitor<br><strong>Use:</strong> Benign prostatic hyperplasia (BPH)<br><strong>Side Effects:</strong> Decreased libido, erectile dysfunction<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+},
+{
+  "question": "Actonel",
+  "answer": "<strong>Description:</strong> Treats and prevents osteoporosis.<br><strong>Mechanism:</strong> Inhibits osteoclast-mediated bone resorption.<br><strong>Active Ingredient(s):</strong> Risedronate<br><strong>Drug Class:</strong> Bisphosphonate<br><strong>Use:</strong> Osteoporosis, Paget's disease<br><strong>Side Effects:</strong> GI upset, bone pain, jaw problems (rare)<br><strong>Controlled Substance:</strong> No<br><strong>Route:</strong> Oral",
+  "tags": ["#all", "#medications", "#top200"]
+}
 			
 			
 
