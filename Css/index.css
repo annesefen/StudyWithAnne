@@ -5,6 +5,7 @@ body {
   background: linear-gradient(135deg, #e6d0ff, #fdf6ff);
   color: #333;
   line-height: 1.6;
+	
 }
 
 #wrap {
@@ -1183,3 +1184,52 @@ body.dark .timeline-steps li {
     font-size: 1rem;
   }
 }
+/* QUICK FIX TO MATCH IDEAL SCREENSHOT */
+
+#wrap {
+  max-width: 900px; /* makes main content narrower */
+  padding: 1.5rem;
+  margin: 20px auto;
+}
+
+.site-title {
+  font-size: 1.6rem; /* smaller title in header */
+}
+
+.navbar .nav-links li a {
+  font-size: 0.9rem; /* smaller navbar links */
+}
+
+.hero-wrapper {
+  max-width: 900px;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.hero-title {
+  font-size: 1.8rem; /* smaller hero title */
+}
+
+.hero-sub {
+  font-size: 1rem; /* smaller hero subtitle */
+}
+
+.cta-buttons button {
+  padding: 0.5rem 1rem; /* smaller buttons */
+  font-size: 0.85rem;
+}
+
+.character-illustration {
+  max-width: 250px; /* smaller illustration */
+}
+
+button, .coming-soon-btn {
+  padding: 8px 16px; /* consistent smaller button sizes */
+  font-size: 0.9rem;
+}
+
+/* Reduce font sizes globally */
+h1, h2, h3, h4 {
+  font-size: 90%; /* slightly smaller headers globally */
+}
+
