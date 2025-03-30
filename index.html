@@ -5,141 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anne’s Ultimate PTCB Guide</title>
   <link rel="stylesheet" href="Css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <script defer src="Js/index.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1 class="site-title">Anne’s Ultimate PTCB Guide</h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="Resources/Before You Get Started/before-you-get-started.html">Before You Get Started</a></li>
-        <li><a href="Resources/Video Vault/video-vault.html">Video Vault</a></li>
-        <li><a href="Resources/Practice Tests/practice-tests.html">Practice Tests</a></li>
-        <li><a href="Resources/Flashcards/flashcards.html">Flashcards</a></li>
-        <li><a href="Resources/Study Guides/study-guides.html">Study Guides</a></li>
-        <li><a href="Resources/Tips/tips.html">Tips</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- 🔝 Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-and-title">
+        <img src="Assets/Images/logo.png" alt="Anne's Logo" class="site-logo" />
+        <h1 class="site-title">Anne’s Ultimate PTCB Guide</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#flashcard-preview">Flashcards</a></li>
+          <li><a href="#tips-carousel">Tips</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Start Your Pharmacy Tech Journey – Free Resources, Anytime.</h2>
-    <p>No login, no cookies, no data — everything is available free at your fingertips.</p>
-    <p class="subtitle">Created by Anne, a certified pharmacy technician, for future techs like you.</p>
-    <div class="cta-buttons">
-      <button onclick="scrollToResources()">Explore Resources</button>
-      <button onclick="scrollToResources()">Start Learning</button>
-    </div>
-    <p class="follow-text">Free information compiled so you can pass your PTCB exam on the first try.<br>
-    Follow me on <a href="https://www.tiktok.com/@annesefnn" target="_blank">@annesefnn on TikTok</a> and <a href="https://www.instagram.com/annesefen" target="_blank">@annesefen on Instagram</a>.</p>
-  </section>
+  <main>
+    <!-- 💫 Hero Section -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-text animate__animated animate__fadeInLeft">
+          <h2 class="hero-title">Start Your Pharmacy Tech Journey – Free Resources, Anytime.</h2>
+          <p class="hero-sub">No login, no cookies, no data — everything is available free at your fingertips.</p>
+          <div class="cta-buttons">
+            <button onclick="scrollToResources()">Explore Resources</button>
+            <button onclick="scrollToResources()">Start Learning</button>
+          </div>
+		<p class="follow-text">
+		  Follow <a href="https://www.tiktok.com/@annesfnn" target="_blank">@annesfnn</a> and
+		  <a href="https://www.instagram.com/annesefen" target="_blank">@annesefen</a> for study tips &amp; motivation.
+		</p>
 
-  <!-- Resource Hub -->
-<!-- Resource Hub -->
-	<section id="resources" class="resource-hub">
-	  <h3>Explore by Category</h3>
-	  <div class="resource-grid">
-		<div class="card" id="videos"><h4>Video Vault</h4><p>Watch key concepts explained fast.</p><a href="Resources/Video Vault/video-vault.html">Go</a></div>
-		<div class="card" id="tests"><h4>Practice Tests</h4><p>Simulate the real exam.</p><a href="Resources/Practice Tests/practice-tests.html">Go</a></div>
-		<div class="card" id="flashcards"><h4>Flashcards</h4><p>Memorize drug names, sig codes, and more.</p><a href="Resources/Flashcards/flashcards.html">Go</a></div>
-		<div class="card" id="guides"><h4>Study Guides</h4><p>Detailed breakdowns of exam topics.</p><a href="Resources/Study Guides/study-guides.html">Go</a></div>
-		<div class="card" id="tips"><h4>Tips</h4><p>Study smarter, not harder.</p><a href="Resources/Tips/tips.html">Go</a></div>
-		<div class="card" id="start"><h4>Before You Get Started</h4><p>Everything you need to know to begin.</p><a href="Resources/Before You Get Started/before-you-get-started.html">Go</a></div>
-	  </div>
+        </div>
+        <div class="hero-art animate__animated animate__fadeInRight">
+          <img src="Assets/Images/filler.png" alt="Pharmacy Tech Illustration" class="character-illustration" />
+          <img src="Assets/Images/filler.png" class="floating-pill pill1" alt="Floating Pill" />
+          <img src="Assets/Images/filler.png" class="floating-pill pill2" alt="Floating Book" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌟 Why This Matters -->
+	<section class="why-this-matters">
+	  <h3>Why This Guide Exists</h3>
+	  <p>Too many future pharmacy techs are overwhelmed, under-supported, or overcharged. Anne’s Ultimate PTCB Guide is here to change that — one free resource at a time.</p>
+	  <ul class="values-list">
+		<li>🎓 Built by a certified pharmacy technician</li>
+		<li>💡 100% free – no logins or paywalls</li>
+		<li>📱 Perfect for mobile studying on the go</li>
+	  </ul>
 	</section>
 
 
-  <!-- Quiz of the Day -->
-  <section id="quiz" class="quiz-of-the-day">
-    <h3>Quiz of the Day</h3>
-    <div id="quiz-box"></div>
-  </section>
 
-  <!-- Flashcard Preview -->
-	<section id="flashcard-preview" class="flashcard-preview">
-	  <h3>Flashcard Preview</h3>
-	  <div class="flashcard-container">
-		<div class="flashcard" id="flashcard"></div>
-		<div class="flashcard-buttons">
-		  <button id="next-flashcard">Next</button>
-		  <a href="Resources/Flashcards/flashcards.html" class="view-deck">View Full Deck</a>
-		</div>
-	  </div>
-	</section>
+    <!-- 🌊 SVG Divider -->
+    <div class="wave-divider"></div>
 
+    <!-- 📚 Resource Hub -->
+    <section id="resources" class="resource-hub">
+      <h3 class="animate__animated animate__fadeInDown">Explore by Category</h3>
+      <div class="resource-grid">
+        <div class="card bounce"><h4>Video Vault</h4><p>Watch key concepts explained fast.</p><a href="Resources/Video Vault/video-vault.html">Go</a></div>
+        <div class="card bounce"><h4>Practice Tests</h4><p>Simulate the real exam.</p><a href="Resources/Practice Tests/practice-tests.html">Go</a></div>
+        <div class="card bounce"><h4>Flashcards</h4><p>Memorize drug names, sig codes, and more.</p><a href="Resources/Flashcards/flashcards.html">Go</a></div>
+        <div class="card bounce"><h4>Study Guides</h4><p>Detailed breakdowns of exam topics.</p><a href="Resources/Study Guides/study-guides.html">Go</a></div>
+        <div class="card bounce"><h4>Tips</h4><p>Study smarter, not harder.</p><a href="Resources/Tips/tips.html">Go</a></div>
+        <div class="card bounce"><h4>Before You Get Started</h4><p>Everything you need to know to begin.</p><a href="Resources/Before You Get Started/before-you-get-started.html">Go</a></div>
+      </div>
+    </section>
 
-  <!-- Tips Carousel -->
-  <section id="tips-carousel" class="tips-carousel">
-    <h3>Quick Tips</h3>
-    <div id="carousel"></div>
-  </section>
+    <!-- 🧠 Quiz of the Day -->
+    <section id="quiz" class="quiz-of-the-day">
+      <h3>Quiz of the Day</h3>
+      <div id="quiz-box">Loading...</div>
+    </section>
 
-  <!-- Embedded Video -->
-  <section id="welcome-video" class="welcome-video">
-    <h3>Welcome from Anne</h3>
-    <iframe src="https://youtu.be/yPoE79AzeYQ?si=s81wm5QDJ2NP-wWc" title="Welcome Video" allowfullscreen></iframe>
-    <p>Hi! I’m Anne — here’s how this site can help you pass.</p>
-  </section>
+    <!-- 💊 Flashcard Preview -->
+    <section id="flashcard-preview" class="flashcard-preview">
+      <h3>Flashcard Preview</h3>
+      <div class="flashcard-container">
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard-inner">
+            <div class="flashcard-front"></div>
+            <div class="flashcard-back"></div>
+          </div>
+        </div>
+        <div class="flashcard-buttons">
+          <button id="next-flashcard">Next</button>
+          <a href="Resources/Flashcards/flashcards.html" class="view-deck">View Full Deck</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- About Anne -->
-  <section id="about" class="about-anne">
-    <h3>About Anne</h3>
-    <p>Hi, I’m Anne! I’m passionate about healthcare, service, and making learning accessible to everyone.</p>
-    <ul>
-      <li>Certified pharmacy technician &amp; volunteer at a free health clinic</li>
-      <li>EMT with the fire department and ER technician</li>
-      <li>Interned at NASA and the FDA in public health roles</li>
-      <li>Mission: Free, equitable resources for all aspiring pharmacy techs</li>
-    </ul>
-  </section>
+    <!-- 💡 Tips Carousel -->
+    <section id="tips-carousel" class="tips-carousel">
+      <h3>Quick Tips</h3>
+      <div id="carousel">Loading tips...</div>
+    </section>
 
-  <!-- Contact Form -->
-  <section id="contact" class="contact">
-    <h3>Contact Me</h3>
-		<form action="https://formspree.io/f/xzzevaaa" method="POST">
-		  <label>
-			Your name:
-			<input type="text" name="name" required>
-		  </label>
-		  <label>
-			Your email:
-			<input type="email" name="email" required>
-		  </label>
-		  <label>
-			Reason for contact:
-			<select name="reason">
-			  <option>Feedback</option>
-			  <option>Help</option>
-			  <option>Collaborate</option>
-			  <option>Other</option>
-			</select>
-		  </label>
-		  <label>
-			Your message:
-			<textarea name="message" required></textarea>
-		  </label>
-		  <button type="submit">Send</button>
-		</form>
+    <!-- ⏱ Study Timeline -->
+    <section id="timeline" class="study-timeline">
+      <h3>Your Study Roadmap</h3>
+      <ol class="timeline-steps">
+        <li>📘 Step 1: Review Before You Get Started</li>
+        <li>📺 Step 2: Watch Videos in the Vault</li>
+        <li>📝 Step 3: Practice with Flashcards</li>
+        <li>📚 Step 4: Study with Detailed Guides</li>
+        <li>✅ Step 5: Test Yourself with Practice Exams</li>
+        <li>💡 Step 6: Use Tips for Strategy &amp; Focus</li>
+      </ol>
+    </section>
 
-  </section>
+    <!-- 🎥 Welcome Video -->
+    <section id="welcome-video" class="welcome-video">
+      <h3>Welcome from Anne</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/yPoE79AzeYQ" title="Welcome Video" allowfullscreen></iframe>
+        <p>Hi! I’m Anne — here’s how this site can help you pass.</p>
+      </div>
+    </section>
 
-  <!-- Search Bar -->
-  <section class="search-section">
-    <input type="text" id="search" placeholder="Search flashcards, guides, or practice tests...">
-  </section>
+    <!-- 👩‍⚕️ About Anne -->
+    <section id="about" class="about-anne">
+      <h3>About Anne</h3>
+      <p>Hi, I’m Anne! I’m passionate about healthcare, service, and making learning accessible to everyone.</p>
+      <ul>
+        <li>Certified pharmacy technician &amp; volunteer at a free health clinic</li>
+        <li>EMT with the fire department and ER technician</li>
+        <li>Interned at NASA and the FDA in public health roles</li>
+        <li>Mission: Free, equitable resources for all aspiring pharmacy techs</li>
+      </ul>
+    </section>
 
-  <!-- Footer -->
+    <!-- 💬 Testimonials -->
+    <section class="testimonials">
+      <h3>What Students Are Saying</h3>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>“This site helped me pass the PTCB exam on my first try. Thank you, Anne!”</p>
+          <span>– Jordan, CA</span>
+        </div>
+        <div class="testimonial">
+          <p>“Love the flashcards and video vault. I felt so prepared.”</p>
+          <span>– Maya, TX</span>
+        </div>
+        <div class="testimonial">
+          <p>“Free AND effective? This is the real deal.”</p>
+          <span>– Sam, FL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📬 Contact Form -->
+    <section id="contact" class="contact">
+      <h3>Contact Me</h3>
+      <form action="https://formspree.io/f/xzzevaaa" method="POST">
+        <label>Your name: <input type="text" name="name" required></label>
+        <label>Your email: <input type="email" name="email" required></label>
+        <label>Reason for contact:
+          <select name="reason">
+            <option>Feedback</option>
+            <option>Help</option>
+            <option>Collaborate</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Your message: <textarea name="message" required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- 🔍 Search -->
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Search flashcards, guides, or practice tests...">
+    </section>
+  </main>
+
+  <!-- 👣 Footer -->
   <footer>
-    <ul>
+    <ul class="footer-links">
       <li><a href="#">Home</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://www.instagram.com/annesefen" target="_blank">Instagram</a></li>
       <li><a href="https://www.tiktok.com/@annesfnn" target="_blank">TikTok</a></li>
+      <li><a href="https://venmo.com/anne-sefen" target="_blank">Donate</a></li>
     </ul>
-    <p>&copy; 2025 Anne’s Ultimate PTCB Guide | Site by Anne</p>
+    <p>&copy; 2025 Anne’s Ultimate PTCB Guide | Site programmed and developed by Anne Victoria Sefen</p>
   </footer>
 </body>
 </html>

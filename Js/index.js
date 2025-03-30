@@ -1,139 +1,116 @@
-// Smooth scroll to Resource Section with confetti
-function scrollToResources() {
-  const section = document.getElementById("resources");
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-    triggerConfetti();
-  }
-}
+// index.js — Handles all interactive homepage functionality for Anne's Ultimate PTCB Guide
 
-// Confetti burst animation (simple visual effect)
-function triggerConfetti() {
-  const confetti = document.createElement("div");
-  confetti.className = "confetti";
-  confetti.style.position = "fixed";
-  confetti.style.top = "0";
-  confetti.style.left = "0";
-  confetti.style.width = "100%";
-  confetti.style.height = "100%";
-  confetti.style.pointerEvents = "none";
-  confetti.style.zIndex = "9999";
-  confetti.innerHTML = "<canvas id='confetti-canvas'></canvas>";
-  document.body.appendChild(confetti);
+document.addEventListener("DOMContentLoaded", () => {
+  initFlashcards();
+  initQuiz();
+  initTips();
+  initSmoothScroll();
+});
 
-  setTimeout(() => {
-    document.body.removeChild(confetti);
-  }, 1500);
-}
-
-// Flashcard Preview Functionality
+// 💊 Flashcard Preview
 const flashcards = [
-  { front: "What is the brand name for lisinopril?", back: "Zestril" },
-  { front: "What does q.d. mean?", back: "Once daily" },
-  { front: "What is DEA Schedule II?", back: "High abuse, accepted medical use (e.g., morphine)" },
+  { front: "Zestril", back: "Lisinopril" },
+  { front: "Synthroid", back: "Levothyroxine" },
+  { front: "Glucophage", back: "Metformin" },
+  { front: "Norvasc", back: "Amlodipine" },
+  { front: "Lipitor", back: "Atorvastatin" }
 ];
 
-let currentCard = 0;
+let currentFlashcard = 0;
 
-function renderFlashcard() {
-  const flashcardBox = document.getElementById("flashcard");
-  if (!flashcardBox) return;
+function initFlashcards() {
+  const flashcard = document.getElementById("flashcard");
+  const front = flashcard.querySelector(".flashcard-front");
+  const back = flashcard.querySelector(".flashcard-back");
+  const nextBtn = document.getElementById("next-flashcard");
 
-	flashcardBox.innerHTML = `
-	  <div class="card-face" id="flash-inner">
-		${flashcards[currentCard].front}
-	  </div>
-	`;
+  function updateFlashcard(index) {
+    front.textContent = flashcards[index].front;
+    back.textContent = flashcards[index].back;
+  }
 
+  updateFlashcard(currentFlashcard);
 
-  const flashInner = document.getElementById("flash-inner");
-  flashInner.addEventListener("click", () => {
-    flashInner.textContent = flashInner.textContent === flashcards[currentCard].front
-      ? flashcards[currentCard].back
-      : flashcards[currentCard].front;
+  flashcard.addEventListener("click", () => {
+    flashcard.classList.toggle("flipped");
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentFlashcard = (currentFlashcard + 1) % flashcards.length;
+    updateFlashcard(currentFlashcard);
+    flashcard.classList.remove("flipped");
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const nextFlashcardBtn = document.getElementById("next-flashcard");
-  if (nextFlashcardBtn) {
-    nextFlashcardBtn.addEventListener("click", () => {
-      currentCard = (currentCard + 1) % flashcards.length;
-      renderFlashcard();
-    });
+// 🧠 Quiz of the Day
+const quizQuestions = [
+  {
+    question: "What is the generic name for Norvasc?",
+    answers: ["Lisinopril", "Metformin", "Amlodipine", "Atorvastatin"],
+    correct: "Amlodipine"
+  },
+  {
+    question: "Which drug is used to treat hypothyroidism?",
+    answers: ["Levothyroxine", "Amlodipine", "Metformin", "Simvastatin"],
+    correct: "Levothyroxine"
   }
-  renderFlashcard();
+];
 
-  // Quiz of the Day
+function initQuiz() {
   const quizBox = document.getElementById("quiz-box");
-  if (quizBox) {
-    const quiz = {
-      question: "Which of the following is a Schedule II drug?",
-      options: ["Amoxicillin", "Morphine", "Ibuprofen", "Diphenhydramine"],
-      answer: "Morphine",
-      explanation: "Schedule II drugs have a high potential for abuse but accepted medical use."
-    };
+  const q = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
 
-    quizBox.innerHTML = `
-      <p><strong>${quiz.question}</strong></p>
-      <ul>
-        ${quiz.options.map(opt => `<li><button class="quiz-option">${opt}</button></li>`).join('')}
-      </ul>
-      <p id="quiz-result"></p>
-    `;
+  const question = document.createElement("h4");
+  question.textContent = q.question;
+  quizBox.appendChild(question);
 
-    const buttons = quizBox.querySelectorAll(".quiz-option");
-    const result = document.getElementById("quiz-result");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const selected = btn.textContent;
-        if (selected === quiz.answer) {
-          result.textContent = `✅ Correct! ${quiz.explanation}`;
-          result.style.color = "green";
-        } else {
-          result.textContent = `❌ Incorrect. ${quiz.explanation}`;
-          result.style.color = "red";
-        }
-      });
-    });
-  }
-
-  // Contact Form Handling
-  const form = document.querySelector("form");
-  if (form) {
-    const submitButton = form.querySelector("button[type='submit']");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const endpoint = form.action;
-
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
-
-      try {
-        const response = await fetch(endpoint, {
-          method: "POST",
-          body: formData,
-          headers: { Accept: "application/json" }
-        });
-
-        if (response.ok) {
-          form.reset();
-          submitButton.textContent = "Sent! ✅";
-          setTimeout(() => {
-            submitButton.disabled = false;
-            submitButton.textContent = "Send";
-          }, 3000);
-        } else {
-          submitButton.textContent = "Try Again ❌";
-          submitButton.disabled = false;
-        }
-      } catch (err) {
-        console.error("Error sending form:", err);
-        submitButton.textContent = "Error ❌";
-        submitButton.disabled = false;
+  q.answers.forEach(ans => {
+    const btn = document.createElement("button");
+    btn.textContent = ans;
+    btn.style.margin = "10px";
+    btn.onclick = () => {
+      if (ans === q.correct) {
+        btn.style.background = "#4CAF50";
+      } else {
+        btn.style.background = "#f44336";
       }
-    });
+    };
+    quizBox.appendChild(btn);
+  });
+}
+
+// 💡 Tips Carousel
+const tips = [
+  "Use flashcards daily to build long-term memory.",
+  "Practice tests simulate real exam pressure.",
+  "Take breaks — 25 mins on, 5 mins off.",
+  "Review drug classifications regularly.",
+  "Write your own summaries after reading."
+];
+
+function initTips() {
+  const carousel = document.getElementById("carousel");
+  let i = 0;
+
+  function showTip(index) {
+    carousel.textContent = tips[index];
   }
-});
+
+  showTip(i);
+  setInterval(() => {
+    i = (i + 1) % tips.length;
+    showTip(i);
+  }, 6000);
+}
+
+// ✨ Smooth Scroll
+function initSmoothScroll() {
+  const buttons = document.querySelectorAll(".cta-buttons button");
+  const target = document.getElementById("resources");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      target.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}

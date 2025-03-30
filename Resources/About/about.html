@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"/>
+    <title>About the Guide | Anne's PTCB Prep</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Learn about Anne Sefen and the mission behind the Ultimate PTCB Guide."/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        #wrap {
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #D1C4E9, #B39DDB);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInDown 1s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-in-out;
+            margin-bottom: 0;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        header a:hover {
+            color: #f3e5f5;
+            border-color: #f3e5f5;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 60%);
+            transform: rotate(-45deg);
+            z-index: 1;
+            animation: spin 20s linear infinite;
+        }
+
+        section {
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .officer-profile {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out;
+            flex-wrap: wrap;
+        }
+
+        .officer-profile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .slideshow-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 15s infinite;
+        }
+
+        .slideshow-container img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slideshow-container img:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .slideshow-container img:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            33.33% { opacity: 1; }
+            66.66% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .officer-profile h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #9575CD;
+        }
+
+        .officer-profile p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #D1C4E9, #B39DDB);
+            color: white;
+            border-radius: 0 0 15px 15px;
+            font-size: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav ul {
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1000;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: #9575CD;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            z-index: 1001;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #B39DDB;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(-45deg);
+            }
+            100% {
+                transform: rotate(315deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body id="top">
+<div id="wrap">
+    <header class="clearfix">
+        <nav role="navigation" aria-label="main menu">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <h1>About the Guide</h1>
+        <p><strong>Anne's Ultimate PTCB Guide<br>
+        Helping future pharmacy techs succeed one question at a time.</strong></p><br>
+		<p> Official Site still in Progress.</p>
+    </header>
+
+<section>
+    <div class="officer-profile clearfix">
+        <div class="slideshow-container">
+            <img src="images-officer/anne1.png" alt="Image of Anne Sefen">
+            <img src="images-officer/anne2.png" alt="Image of Anne Sefen">
+            <img src="images-officer/aboutusheader.png" alt="Image of Anne Sefen">
+        </div>
+        <div>
+            <h2>Anne Sefen - Founder</h2>
+            <p>
+                My name is Anne, and I built this site because I believe something simple and powerful: <strong>access to healthcare careers should never be locked behind a paywall.</strong><br><br>
+                I’m a certified pharmacy technician, a patient care tech in the emergency room, and a volunteer EMT with my local fire department. I’ve also interned at NASA and the FDA in public health and environmental safety — but my journey started just like yours: overwhelmed, broke, and dreaming of a future in healthcare.<br><br>
+                StudyWithAnne.com is my way of giving back. Every study guide, flashcard, and practice test here is 100% free — because you deserve the chance to succeed, no matter your background or budget.<br><br>
+                If this site helps you even a little, all I ask is this: support me by following on TikTok or sending a small donation on Venmo. Your support helps me keep this going — and helps more future healthcare heroes like you.<br><br>
+                Let’s pass this exam, together. And then go change some lives. 💜
+            </p>
+
+            <!-- Buttons -->
+            <div style="margin-top: 20px;">
+                <a href="https://www.tiktok.com/@annesefnn" target="_blank" style="text-decoration: none;">
+                    <button style="
+                        background-color: #B39DDB;
+                        border: none;
+                        color: white;
+                        padding: 12px 24px;
+                        text-align: center;
+                        font-size: 1rem;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                        transition: all 0.3s ease;
+                        margin-right: 10px;
+                    " onmouseover="this.style.backgroundColor='#9575CD'" onmouseout="this.style.backgroundColor='#B39DDB'">
+                        Follow me on TikTok 💫
+                    </button>
+                </a>
+
+                <a href="https://venmo.com/anne-sefen" target="_blank" style="text-decoration: none;">
+                    <button style="
+                        background-color: #CE93D8;
+                        border: none;
+                        color: white;
+                        padding: 12px 24px;
+                        text-align: center;
+                        font-size: 1rem;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.backgroundColor='#AB47BC'" onmouseout="this.style.backgroundColor='#CE93D8'">
+                        Donate via Venmo 💜
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .cta-button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-right: 15px;
+        background-color: #9575CD;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .cta-button:hover {
+        background-color: #B39DDB;
+        transform: translateY(-2px);
+    }
+
+    .cta-button.donate {
+        background-color: #CE93D8;
+    }
+
+    .cta-button.donate:hover {
+        background-color: #E1BEE7;
+    }
+</style>
+
+
+
+    <footer>
+        <p>&copy; 2025 Anne's PTCB Guide | Website programmed by Anne Sefen</p>
+    </footer>
+</div>
+</body>
+</html>
