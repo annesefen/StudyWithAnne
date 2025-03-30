@@ -63,14 +63,27 @@ const quizQuestions = [
   {
     question: "What is the generic name for Norvasc?",
     answers: ["Lisinopril", "Metformin", "Amlodipine", "Atorvastatin"],
-    correct: "Amlodipine"
+    correct: "Amlodipine",
+    explanations: {
+      Amlodipine: "Correct! Amlodipine is the generic name for Norvasc, which is used to treat high blood pressure.",
+      Lisinopril: "Lisinopril is for high blood pressure too, but it's the generic for Zestril, not Norvasc.",
+      Metformin: "Metformin is used for diabetes, not blood pressure.",
+      Atorvastatin: "Atorvastatin treats high cholesterol, not blood pressure."
+    }
   },
   {
     question: "Which drug is used to treat hypothyroidism?",
     answers: ["Levothyroxine", "Amlodipine", "Metformin", "Simvastatin"],
-    correct: "Levothyroxine"
+    correct: "Levothyroxine",
+    explanations: {
+      Levothyroxine: "Correct! Levothyroxine replaces thyroid hormone in people with hypothyroidism.",
+      Amlodipine: "Amlodipine is for blood pressure, not thyroid conditions.",
+      Metformin: "Metformin treats diabetes, not thyroid issues.",
+      Simvastatin: "Simvastatin is used to lower cholesterol, not to treat thyroid problems."
+    }
   }
 ];
+
 
 function initQuiz() {
   const quizBox = document.getElementById("quiz-box");
@@ -87,24 +100,42 @@ function initQuiz() {
     btn.textContent = ans;
     btn.classList.add("quiz-option");
 
-    btn.onclick = () => {
-      if (ans === q.correct) {
-        btn.style.background = "#4CAF50";
-        correctSound.currentTime = 0;
-        correctSound.play();
-      } else {
-        btn.style.background = "#f44336";
-        btn.classList.add("shake");
-        wrongSound.currentTime = 0;
-        wrongSound.play();
-        setTimeout(() => btn.classList.remove("shake"), 400);
-      }
-    };
+btn.onclick = () => {
+    const popup = document.getElementById("quiz-feedback");
+  const popupTitle = document.getElementById("popup-title");
+  const popupMsg = document.getElementById("popup-message");
+
+  if (ans === q.correct) {
+    btn.style.background = "#4CAF50";
+    correctSound.currentTime = 0;
+    correctSound.play();
+
+    popupTitle.textContent = "Correct!";
+    popupMsg.textContent = q.explanations[ans];
+  } else {
+    btn.style.background = "#f44336";
+    btn.classList.add("shake");
+    wrongSound.currentTime = 0;
+    wrongSound.play();
+    setTimeout(() => btn.classList.remove("shake"), 400);
+
+    popupTitle.textContent = "Not Quite!";
+    popupMsg.textContent = q.explanations[ans];
+  }
+
+  popup.classList.remove("hidden");
+};
+
 
     quizBox.appendChild(btn);
   });
 }
 
+// Close popup functionality
+function closePopup() {
+  const popup = document.getElementById("quiz-feedback");
+  popup.classList.add("hidden");
+}
 
 // ?? Tips Carousel
 const tips = [
@@ -151,3 +182,14 @@ function initDarkModeToggle() {
     document.body.classList.toggle("dark");
   });
 }
+// Coming Soon Button Click Handler
+document.getElementById("coming-soon-btn").addEventListener("click", function() {
+  const textDiv = document.getElementById("coming-soon-text");
+  if (textDiv.style.display === "none" || textDiv.style.display === "") {
+    textDiv.style.display = "block";
+    this.textContent = "Hide Details";
+  } else {
+    textDiv.style.display = "none";
+    this.textContent = "Coming Soon! Read What's Next!";
+  }
+});

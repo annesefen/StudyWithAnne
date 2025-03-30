@@ -30,6 +30,14 @@
         </ul>
       </nav>
 		    <button id="dark-toggle" aria-label="Switch to dark mode" title="Toggle dark mode">🌙</button>
+<div class="coming-soon-container">
+  <button id="coming-soon-btn" class="coming-soon-btn">Coming Soon! Read What's Next!</button>
+	<!-- /*DELETE ONCE ITS MORE COMPLETE*/ -->
+
+  <div id="coming-soon-text" style="display:none; margin-top:20px;">
+    Get ready for a comprehensive pharmacy technician learning experience! Coming soon to Anne’s Ultimate PTCB Guide, you'll find detailed study guides covering essential topics like pharmacology, medication safety, pharmacy law, calculations, and more—each guide carefully crafted with charts, highlight boxes, common mistakes, and practice questions to test your knowledge. Dive into interactive practice tests that provide instant feedback, explanations, and the opportunity to retry challenging questions. Enhance your learning with visually appealing and easy-to-follow video tutorials available in our Video Vault, offering step-by-step guidance on difficult concepts. Don't miss our handy cheat sheets and quick-reference tables perfect for efficient study sessions. Whether you're just beginning your preparation or reviewing key topics, Anne's Ultimate PTCB Guide will soon offer everything you need in a welcoming, interactive, and visually engaging format. Stay tuned for the ultimate resource hub designed specifically for pharmacy technician success!
+  </div>
+</div>
 
     </div>
   </header>
@@ -115,6 +123,7 @@
 	  
     <!-- 🧠 Quiz of the Day -->
     <section id="quiz-flashcard" class="split-section">
+		
   <!-- 🎯 Quiz of the Day -->
   <div id="quiz" class="quiz-of-the-day">
     <h3>Quiz of the Day</h3>
@@ -138,47 +147,42 @@
     </div>
   </div>
 </section>
+	  
+<!-- ✅ Quiz Feedback Popup -->
+<div id="quiz-feedback" class="popup hidden">
+  <div class="popup-content">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <h4 id="popup-title"></h4>
+    <p id="popup-message"></p>
+  </div>
+</div>
 
 
     <!-- 💡 Tips Carousel -->
-    <section id="tips-carousel" class="tips-carousel">
-      <h3>Quick Tips</h3>
-      <div id="carousel">Loading tips...</div>
-    </section>
+   <section id="tips-timeline" class="split-section">
+  <!-- Quick Tips -->
+  <div id="tips-carousel" class="tips-carousel">
+    <h3>Quick Tips</h3>
+    <p id="carousel">Loading tips...</p>
+  </div>
 
-    <!-- ⏱ Study Timeline -->
-    <section id="timeline" class="study-timeline">
-      <h3>Your Study Roadmap</h3>
-      <ol class="timeline-steps">
-        <li>📘 Step 1: Review Before You Get Started</li>
-        <li>📺 Step 2: Watch Videos in the Vault</li>
-        <li>📝 Step 3: Practice with Flashcards</li>
-        <li>📚 Step 4: Study with Detailed Guides</li>
-        <li>✅ Step 5: Test Yourself with Practice Exams</li>
-        <li>💡 Step 6: Use Tips for Strategy &amp; Focus</li>
-      </ol>
-    </section>
+  <!-- Glowing Divider Line -->
+  <div class="glow-divider"></div>
 
-    <!-- 🎥 Welcome Video -->
-    <section id="welcome-video" class="welcome-video">
-      <h3>Welcome from Anne</h3>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/yPoE79AzeYQ" title="Welcome Video" allowfullscreen></iframe>
-        <p>Hi! I’m Anne — here’s how this site can help you pass.</p>
-      </div>
-    </section>
+  <!-- Study Roadmap -->
+  <div id="timeline" class="study-timeline">
+    <h3>Study Roadmap</h3>
+    <ol class="timeline-steps">
+      <li>📘 Step 1: Review Before You Get Started</li>
+      <li>📺 Step 2: Watch Videos in the Vault</li>
+      <li>📝 Step 3: Practice with Flashcards</li>
+      <li>📚 Step 4: Study with Detailed Guides</li>
+      <li>✅ Step 5: Test Yourself with Practice Exams</li>
+      <li>💡 Step 6: Use Tips for Strategy &amp; Focus</li>
+    </ol>
+  </div>
+</section>
 
-    <!-- 👩‍⚕️ About Anne -->
-    <section id="about" class="about-anne">
-      <h3>About Anne</h3>
-      <p>Hi, I’m Anne! I’m passionate about healthcare, service, and making learning accessible to everyone.</p>
-      <ul>
-        <li>Certified pharmacy technician &amp; volunteer at a free health clinic</li>
-        <li>EMT with the fire department and ER technician</li>
-        <li>Interned at NASA and the FDA in public health roles</li>
-        <li>Mission: Free, equitable resources for all aspiring pharmacy techs</li>
-      </ul>
-    </section>
 
     <!-- 💬 Testimonials -->
     <section class="testimonials">
