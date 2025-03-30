@@ -140,7 +140,7 @@ function initSmoothScroll() {
 // ?? Dark Mode Toggle
 function initDarkModeToggle() {
   const toggleBtn = document.getElementById("dark-toggle");
-  if (!toggleBtn) return; // Only run if button exists
+  if (!toggleBtn) return;
 
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
