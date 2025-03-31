@@ -16,6 +16,265 @@ document.addEventListener('DOMContentLoaded', () => {
     // Flashcard Data - add tags like ['#biology', '#ch1']
     const flashcardData = {
 		
+		'classes' : [
+					 {
+    "question": "Analgesic",
+    "answer": "<strong>Indication:</strong> Pain relief<br><strong>Mechanism:</strong> Varies by type; includes inhibition of prostaglandin synthesis or binding to opioid receptors to alter pain perception.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Acetaminophen, Codeine, Morphine, Oxycodone",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antacid",
+    "answer": "<strong>Indication:</strong> Heartburn, acid reflux<br><strong>Mechanism:</strong> Neutralizes stomach acid to reduce acidity in the stomach.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Magnesium hydroxide, Aluminum hydroxide",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antianginal",
+    "answer": "<strong>Indication:</strong> Chest pain due to reduced oxygen supply<br><strong>Mechanism:</strong> Dilates blood vessels and reduces cardiac workload to improve oxygen supply to the heart.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Nitroglycerin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Anticonvulsant / Antiepileptic",
+    "answer": "<strong>Indication:</strong> Epilepsy, seizures<br><strong>Mechanism:</strong> Stabilizes neuronal membranes and inhibits abnormal electrical activity in the brain.<br><strong>Common Suffix:</strong> -toin, -pine (varies)<br><strong>Examples:</strong> Valproate, Carbamazepine, Ethosuximide",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "SSRI (Selective Serotonin Reuptake Inhibitor)",
+    "answer": "<strong>Indication:</strong> Depression, anxiety disorders<br><strong>Mechanism:</strong> Increases serotonin levels in the brain by inhibiting its reuptake into presynaptic cells.<br><strong>Common Suffix:</strong> -oxetine, -pram<br><strong>Examples:</strong> Fluoxetine, Paroxetine, Sertraline, Citalopram, Escitalopram, Fluvoxamine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antipsychotic",
+    "answer": "<strong>Indication:</strong> Schizophrenia, bipolar disorder<br><strong>Mechanism:</strong> Blocks dopamine receptors to regulate mood and perception.<br><strong>Common Suffix:</strong> -apine, -idone<br><strong>Examples:</strong> Lithium, Clozapine, Risperidone, Olanzapine, Aripiprazole",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Anticoagulant",
+    "answer": "<strong>Indication:</strong> Prevent formation of blood clots<br><strong>Mechanism:</strong> Inhibits clotting factors in the coagulation cascade.<br><strong>Common Suffix:</strong> -arin<br><strong>Examples:</strong> Warfarin, Heparin, Enoxaparin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antihistamine",
+    "answer": "<strong>Indication:</strong> Allergies<br><strong>Mechanism:</strong> Blocks histamine receptors to prevent allergy symptoms.<br><strong>Common Suffix:</strong> -ine<br><strong>Examples:</strong> Cetirizine, Diphenhydramine, Fexofenadine, Chlorpheniramine, Loratadine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antihypertensive",
+    "answer": "<strong>Indication:</strong> Hypertension (high blood pressure)<br><strong>Mechanism:</strong> Various, depending on class (e.g., beta blockers, calcium channel blockers, ACE inhibitors, diuretics, alpha blockers).<br><strong>Common Suffix:</strong> -olol (beta blockers), -pril (ACE inhibitors), -dipine (calcium channel blockers)<br><strong>Examples:</strong> Metoprolol, Verapamil, Ramipril, Hydrochlorothiazide, Terazosin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antibiotic",
+    "answer": "<strong>Indication:</strong> Bacterial infections<br><strong>Mechanism:</strong> Kills or inhibits the growth of bacteria by various mechanisms depending on the class (e.g., cell wall synthesis inhibition, protein synthesis inhibition).<br><strong>Common Suffix:</strong> -cillin, -cycline, -mycin, -floxacin<br><strong>Examples:</strong> Amoxicillin, Ceftriaxone, Clarithromycin, Tetracycline, Amikacin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antineoplastic",
+    "answer": "<strong>Indication:</strong> Cancer<br><strong>Mechanism:</strong> Interferes with DNA replication and cell division in rapidly growing cells.<br><strong>Common Suffix:</strong> -platin, -rubicin (varies)<br><strong>Examples:</strong> Cyclophosphamide, Etoposide, Doxorubicin, Cisplatin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "NSAID (Non-steroidal anti-inflammatory drug)",
+    "answer": "<strong>Indication:</strong> Inflammation, pain<br><strong>Mechanism:</strong> Inhibits cyclooxygenase (COX) enzymes to reduce prostaglandin synthesis.<br><strong>Common Suffix:</strong> -profen, -cam<br><strong>Examples:</strong> Ibuprofen, Aspirin, Naproxen, Celecoxib, Meloxicam",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antitussive",
+    "answer": "<strong>Indication:</strong> Cough suppression<br><strong>Mechanism:</strong> Suppresses cough reflex in the brain (medulla).<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Dextromethorphan",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antiviral",
+    "answer": "<strong>Indication:</strong> Viral infections<br><strong>Mechanism:</strong> Inhibits viral replication by targeting specific stages of the viral life cycle.<br><strong>Common Suffix:</strong> -vir<br><strong>Examples:</strong> Acyclovir, Oseltamivir",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+			
+  {
+    "question": "Bronchodilator",
+    "answer": "<strong>Indication:</strong> Asthma, COPD<br><strong>Mechanism:</strong> Relaxes bronchial smooth muscle to open airways.<br><strong>Common Suffix:</strong> -terol<br><strong>Examples:</strong> Albuterol, Salmeterol",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Decongestant",
+    "answer": "<strong>Indication:</strong> Nasal congestion<br><strong>Mechanism:</strong> Constricts nasal blood vessels via alpha-adrenergic receptor activation.<br><strong>Common Suffix:</strong> -ephrine, -zoline<br><strong>Examples:</strong> Pseudoephedrine, Phenylephrine, Xylometazoline",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Diuretic",
+    "answer": "<strong>Indication:</strong> Hypertension, edema<br><strong>Mechanism:</strong> Increases urine output by promoting excretion of water and electrolytes.<br><strong>Common Suffix:</strong> -ide, -one<br><strong>Examples:</strong> Furosemide, Hydrochlorothiazide, Amiloride",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Hormone Replacement",
+    "answer": "<strong>Indication:</strong> Hormone deficiency<br><strong>Mechanism:</strong> Replaces deficient endogenous hormones.<br><strong>Common Suffix:</strong> -one, -troxine<br><strong>Examples:</strong> Conjugated estrogens, Levothyroxine, Medroxyprogesterone",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Hypnotic",
+    "answer": "<strong>Indication:</strong> Insomnia<br><strong>Mechanism:</strong> Enhances GABA activity to induce sedation and sleep.<br><strong>Common Suffix:</strong> -pidem, -plon<br><strong>Examples:</strong> Zolpidem, Zaleplon, Zopiclone",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Sedative",
+    "answer": "<strong>Indication:</strong> Irritability, anxiety<br><strong>Mechanism:</strong> Depresses CNS activity to calm or induce sleep.<br><strong>Common Suffix:</strong> -azepam, -zolam<br><strong>Examples:</strong> Diazepam, Lorazepam",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Anxiolytic",
+    "answer": "<strong>Indication:</strong> Anxiety<br><strong>Mechanism:</strong> Modulates GABA or serotonin pathways to reduce anxiety.<br><strong>Common Suffix:</strong> -pam, -lam<br><strong>Examples:</strong> Diazepam, Sertraline, Alprazolam",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Proton-Pump Inhibitor (PPI)",
+    "answer": "<strong>Indication:</strong> Acid reflux, GERD<br><strong>Mechanism:</strong> Irreversibly inhibits the H+/K+ ATPase pump in the stomach lining.<br><strong>Common Suffix:</strong> -prazole<br><strong>Examples:</strong> Omeprazole, Pantoprazole, Rabeprazole",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antiarrhythmic",
+    "answer": "<strong>Indication:</strong> Arrhythmias<br><strong>Mechanism:</strong> Modifies ion flow in cardiac tissues to restore normal heart rhythm.<br><strong>Common Suffix:</strong> -arone, -idine<br><strong>Examples:</strong> Amiodarone, Lidocaine, Verapamil, Diltiazem",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Biguanide",
+    "answer": "<strong>Indication:</strong> Type 2 diabetes<br><strong>Mechanism:</strong> Decreases hepatic glucose production and increases insulin sensitivity.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Metformin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+				
+			
+  {
+    "question": "Taxane",
+    "answer": "<strong>Indication:</strong> Cancer (chemotherapy)<br><strong>Mechanism:</strong> Stabilizes microtubules to inhibit cell division.<br><strong>Common Suffix:</strong> -taxel<br><strong>Examples:</strong> Paclitaxel, Docetaxel",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Nootropic",
+    "answer": "<strong>Indication:</strong> Cognitive enhancement, ADHD<br><strong>Mechanism:</strong> Enhances neurotransmitter activity (dopamine, norepinephrine).<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Caffeine, Amphetamine, Methylphenidate",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Eugeroic",
+    "answer": "<strong>Indication:</strong> Excessive sleepiness, narcolepsy<br><strong>Mechanism:</strong> Promotes wakefulness by affecting dopamine reuptake.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Modafinil",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "MAO Inhibitor",
+    "answer": "<strong>Indication:</strong> Depression<br><strong>Mechanism:</strong> Inhibits monoamine oxidase enzyme, increasing neurotransmitter levels.<br><strong>Common Suffix:</strong> -giline, -zid<br><strong>Examples:</strong> Isocarboxazid, Selegiline, Tranylcypromine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Statin (HMG-CoA Reductase Inhibitor)",
+    "answer": "<strong>Indication:</strong> Hyperlipidemia, high cholesterol<br><strong>Mechanism:</strong> Inhibits HMG-CoA reductase to reduce cholesterol synthesis.<br><strong>Common Suffix:</strong> -statin<br><strong>Examples:</strong> Atorvastatin, Simvastatin, Pravastatin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "PDE5 Inhibitor",
+    "answer": "<strong>Indication:</strong> Erectile dysfunction<br><strong>Mechanism:</strong> Enhances nitric oxide effect by inhibiting phosphodiesterase type 5 (PDE5).<br><strong>Common Suffix:</strong> -afil<br><strong>Examples:</strong> Sildenafil, Tadalafil",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Expectorant",
+    "answer": "<strong>Indication:</strong> Productive cough, mucus clearance<br><strong>Mechanism:</strong> Increases respiratory tract fluid to loosen mucus.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Guaifenesin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antidote",
+    "answer": "<strong>Indication:</strong> Reversal of drug toxicity<br><strong>Mechanism:</strong> Neutralizes or counteracts toxic agents.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> N-acetylcysteine, Activated charcoal",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Opioid",
+    "answer": "<strong>Indication:</strong> Moderate to severe pain<br><strong>Mechanism:</strong> Binds to opioid receptors in the CNS to block pain signals.<br><strong>Common Suffix:</strong> -codone, -morphone<br><strong>Examples:</strong> Codeine, Morphine, Oxycodone, Tramadol",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Laxative",
+    "answer": "<strong>Indication:</strong> Constipation<br><strong>Mechanism:</strong> Stimulates bowel movement or softens stool, depending on type.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Lactulose, Senna, Bisacodyl",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  }
+,
+		
+  {
+    "question": "H2 Antagonist",
+    "answer": "<strong>Indication:</strong> Excessive stomach acid, GERD, ulcers<br><strong>Mechanism:</strong> Blocks histamine H2 receptors in gastric parietal cells, reducing acid secretion.<br><strong>Common Suffix:</strong> -tidine<br><strong>Examples:</strong> Ranitidine, Famotidine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Dopaminergic Drug",
+    "answer": "<strong>Indication:</strong> Parkinson’s disease<br><strong>Mechanism:</strong> Stimulates dopamine receptors or increases dopamine availability.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Levodopa, Ropinirole, Pramipexole",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Corticosteroid",
+    "answer": "<strong>Indication:</strong> Inflammation, autoimmune conditions, asthma, skin disorders<br><strong>Mechanism:</strong> Suppresses inflammation and immune response by mimicking cortisol.<br><strong>Common Suffix:</strong> -sone, -olone<br><strong>Examples:</strong> Prednisolone, Dexamethasone, Hydrocortisone, Beclometasone",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Bisphosphonate",
+    "answer": "<strong>Indication:</strong> Osteoporosis, bone disorders<br><strong>Mechanism:</strong> Inhibits bone resorption by osteoclasts.<br><strong>Common Suffix:</strong> -dronate<br><strong>Examples:</strong> Alendronic acid, Zoledronic acid, Pamidronate",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Benzodiazepine",
+    "answer": "<strong>Indication:</strong> Anxiety, seizures, insomnia, muscle spasms<br><strong>Mechanism:</strong> Enhances GABA activity in the CNS.<br><strong>Common Suffix:</strong> -pam, -lam<br><strong>Examples:</strong> Diazepam, Midazolam, Nitrazepam",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antimuscarinic",
+    "answer": "<strong>Indication:</strong> Overactive bladder, urinary incontinence<br><strong>Mechanism:</strong> Blocks muscarinic receptors in bladder smooth muscle to reduce urgency and frequency.<br><strong>Common Suffix:</strong> -fenacin, -terodine<br><strong>Examples:</strong> Oxybutynin, Solifenacin, Tolterodine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antifungal Drug",
+    "answer": "<strong>Indication:</strong> Fungal infections<br><strong>Mechanism:</strong> Disrupts fungal cell membrane or inhibits fungal enzymes.<br><strong>Common Suffix:</strong> -azole<br><strong>Examples:</strong> Clotrimazole, Fluconazole, Ketoconazole",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antiemetic",
+    "answer": "<strong>Indication:</strong> Nausea, vomiting<br><strong>Mechanism:</strong> Varies; may block dopamine, serotonin, or histamine receptors in CNS.<br><strong>Common Suffix:</strong> -setron, -azine<br><strong>Examples:</strong> Cyclizine, Promethazine, Prochlorperazine, Ondansetron",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "ACE Inhibitor",
+    "answer": "<strong>Indication:</strong> Hypertension, heart failure<br><strong>Mechanism:</strong> Inhibits angiotensin-converting enzyme (ACE), reducing blood pressure.<br><strong>Common Suffix:</strong> -pril<br><strong>Examples:</strong> Ramipril, Perindopril, Lisinopril",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Xanthine Oxidase Inhibitor",
+    "answer": "<strong>Indication:</strong> Gout<br><strong>Mechanism:</strong> Inhibits xanthine oxidase enzyme, decreasing uric acid production.<br><strong>Common Suffix:</strong> -xostat<br><strong>Examples:</strong> Allopurinol, Febuxostat",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+			
+  {
+    "question": "Fluoroquinolone",
+    "answer": "<strong>Indication:</strong> Bacterial infections<br><strong>Mechanism:</strong> Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication.<br><strong>Common Suffix:</strong> -floxacin<br><strong>Examples:</strong> Ciprofloxacin, Moxifloxacin, Levofloxacin",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Antiretroviral Drug",
+    "answer": "<strong>Indication:</strong> HIV infection<br><strong>Mechanism:</strong> Inhibits various stages of HIV replication depending on drug class (e.g., reverse transcriptase, protease, integrase).<br><strong>Common Suffix:</strong> -vir (general)<br><strong>Examples:</strong> Tenofovir, Lamivudine, Efavirenz, Dolutegravir",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Phosphate Binder",
+    "answer": "<strong>Indication:</strong> High blood phosphate in chronic kidney disease<br><strong>Mechanism:</strong> Binds phosphate in the gut to reduce absorption.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Sevelamer",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Fibrate",
+    "answer": "<strong>Indication:</strong> Hyperlipidemia, high triglycerides<br><strong>Mechanism:</strong> Activates PPAR-alpha to increase lipid metabolism.<br><strong>Common Suffix:</strong> -fibrate<br><strong>Examples:</strong> Fenofibrate, Gemfibrozil",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "Immunosuppressant",
+    "answer": "<strong>Indication:</strong> Autoimmune disease, organ transplant<br><strong>Mechanism:</strong> Suppresses immune system activity to prevent rejection or reduce inflammation.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Azathioprine, Cyclosporine",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  },
+  {
+    "question": "DMARD (Disease-Modifying Anti-Rheumatic Drug)",
+    "answer": "<strong>Indication:</strong> Rheumatoid arthritis, Crohn’s disease<br><strong>Mechanism:</strong> Modulates immune response and inflammation to slow disease progression.<br><strong>Common Suffix:</strong> None<br><strong>Examples:</strong> Methotrexate, Leflunomide, Rituximab, Infliximab",
+    "tags": ["#all", "#medications", "#drugclasses", "#ptcb"]
+  }
+			
+		], 
 		'top-200' : [
 		  
 		{
@@ -1192,99 +1451,109 @@ document.addEventListener('DOMContentLoaded', () => {
 			]
 
 	}
-	
-    // Modal Elements
-    const modal = document.getElementById('flashcard-modal');
-    const modalClose = modal.querySelector('.close-btn');
-    const flashcardElement = modal.querySelector('.flashcard');
-    const flashcardFront = modal.querySelector('.front p');
-    const flashcardBack = modal.querySelector('.back p');
-    const prevCardBtn = document.getElementById('prev-card');
-    const nextCardBtn = document.getElementById('next-card');
-    const shuffleBtn = document.getElementById('shuffle-deck');
+// Modal Elements
+const modal = document.getElementById('flashcard-modal');
+const modalClose = modal.querySelector('.close-btn');
+const flashcardElement = modal.querySelector('.flashcard');
+const flashcardFront = modal.querySelector('.front p');
+const flashcardBack = modal.querySelector('.back p');
+const prevCardBtn = document.getElementById('prev-card');
+const nextCardBtn = document.getElementById('next-card');
+const shuffleBtn = document.getElementById('shuffle-deck');
+const gotItBtn = document.getElementById('got-it-btn');
+const cardNumberDisplay = document.getElementById('card-number-display');
 
-	const gotItBtn = document.getElementById('got-it-btn');
 let completedCards = JSON.parse(localStorage.getItem("completedCards")) || [];
 
-    let currentDeck = [];
-    let currentCardIndex = 0;
-    let isFlipped = false;
+let currentDeck = [];
+let currentCardIndex = 0;
+let isFlipped = false;
 
-    // Load Flashcard
+// Load Flashcard
 function loadCard() {
     if (!currentDeck.length) return;
-
-    // Skip over any cards marked as completed
-    let attempts = 0;
-    while (completedCards.includes(currentDeck[currentCardIndex].question) && attempts < currentDeck.length) {
-        currentCardIndex = (currentCardIndex + 1) % currentDeck.length;
-        attempts++;
-    }
 
     const card = currentDeck[currentCardIndex];
     flashcardFront.textContent = card.question;
     flashcardBack.innerHTML = card.answer;
     isFlipped = false;
     flashcardElement.classList.remove('flipped');
+
+    // Update the flashcard number badge
+    cardNumberDisplay.textContent = `Card ${currentCardIndex + 1} of ${currentDeck.length}`;
+
 }
 
-
-    // Open Deck
-    document.querySelectorAll('.view-deck-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const deckName = button.getAttribute('data-deck');
-            currentDeck = flashcardData[deckName] || [];
-            currentCardIndex = 0;
-            loadCard();
-            modal.classList.remove('hidden');
-        });
-    });
-
-    // Modal Controls
-    modalClose.addEventListener('click', () => modal.classList.add('hidden'));
-
-    flashcardElement.addEventListener('click', () => {
-        isFlipped = !isFlipped;
-        flashcardElement.classList.toggle('flipped', isFlipped);
-    });
-
-    prevCardBtn.addEventListener('click', () => {
-        if (!currentDeck.length) return;
-        currentCardIndex = (currentCardIndex - 1 + currentDeck.length) % currentDeck.length;
-        loadCard();
-    });
-
-    nextCardBtn.addEventListener('click', () => {
-        if (!currentDeck.length) return;
-        currentCardIndex = (currentCardIndex + 1) % currentDeck.length;
-        loadCard();
-    });
-
-    shuffleBtn.addEventListener('click', () => {
-        if (!currentDeck.length) return;
-        currentDeck = [...currentDeck].sort(() => Math.random() - 0.5);
+// Open Deck
+document.querySelectorAll('.view-deck-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const deckName = button.getAttribute('data-deck');
+        currentDeck = flashcardData[deckName] || [];
         currentCardIndex = 0;
         loadCard();
+        modal.classList.remove('hidden');
     });
-	    // âœ… Got It Button logic
-    gotItBtn.addEventListener('click', () => {
-        const card = currentDeck[currentCardIndex];
-        const id = card.question;
+});
 
-        if (!completedCards.includes(id)) {
-            completedCards.push(id);
-            localStorage.setItem("completedCards", JSON.stringify(completedCards));
-        }
+// Modal Controls
+modalClose.addEventListener('click', () => modal.classList.add('hidden'));
 
-        // Move to the next card
-        currentCardIndex = (currentCardIndex + 1) % currentDeck.length;
-        loadCard();
-    });
-    // ðŸ”„ Reset function
-    window.resetProgress = function () {
-        localStorage.removeItem("completedCards");
-        location.reload();
-    };
+flashcardElement.addEventListener('click', () => {
+    isFlipped = !isFlipped;
+    flashcardElement.classList.toggle('flipped', isFlipped);
+});
+
+prevCardBtn.addEventListener('click', () => {
+    if (!currentDeck.length) return;
+    currentCardIndex = (currentCardIndex - 1 + currentDeck.length) % currentDeck.length;
+    loadCard();
+});
+
+nextCardBtn.addEventListener('click', () => {
+    if (!currentDeck.length) return;
+    currentCardIndex = (currentCardIndex + 1) % currentDeck.length;
+    loadCard();
+});
+
+shuffleBtn.addEventListener('click', () => {
+    if (!currentDeck.length) return;
+    currentDeck = [...currentDeck].sort(() => Math.random() - 0.5);
+    currentCardIndex = 0;
+    loadCard();
+});
+
+// ? Got It Button logic
+gotItBtn.addEventListener('click', () => {
+    const card = currentDeck[currentCardIndex];
+    const id = card.question;
+
+    if (!completedCards.includes(id)) {
+        completedCards.push(id);
+        localStorage.setItem("completedCards", JSON.stringify(completedCards));
+    }
+
+    // Remove the card from the deck
+    currentDeck.splice(currentCardIndex, 1);
+
+    if (currentDeck.length === 0) {
+        alert("You've finished all cards!");
+        modal.classList.add('hidden');
+        return;
+    }
+
+    if (currentCardIndex >= currentDeck.length) {
+        currentCardIndex = 0;
+    }
+
+    loadCard();
+});
+
+// ?? Reset function
+window.resetProgress = function () {
+    localStorage.removeItem("completedCards");
+    location.reload();
+};
+
 
 	
 });
