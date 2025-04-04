@@ -649,8 +649,554 @@ document.addEventListener('DOMContentLoaded', () => {
     "question": "What is the role of GTP in translation?",
     "answer": "GTP (Guanosine triphosphate) provides energy for several steps during translation. It is used by elongation factors to drive the binding of tRNA to the ribosome, the translocation of the ribosome along the mRNA, and the release of the completed polypeptide. GTP is hydrolyzed to GDP during these processes, releasing the energy required for translation to proceed efficiently.",
     "tags": ["#all", "#biology", "#centraldogma", "#translation", "#GTP", "#APBio", "#lecture1"]
+  }, 
+  {
+    "question": "What is the definition of free energy (G)?",
+    "answer": "Free energy (G) is the amount of energy available in a system to do work. It represents the energy that can be used to drive cellular processes.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What does ?G represent in a chemical reaction?",
+    "answer": "?G represents the difference in free energy between the reactants and the products of a reaction. If ?G is negative, the reaction releases energy (exergonic). If ?G is positive, the reaction requires energy (endergonic).",
+    "tags": ["#all", "#biology", "#thermodynamics", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is an anabolic reaction?",
+    "answer": "An anabolic reaction is a type of chemical reaction that builds up molecules, requires energy (endergonic), and typically involves condensation reactions with a positive ?G value.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is a catabolic reaction?",
+    "answer": "A catabolic reaction is a type of chemical reaction that breaks down molecules, releases energy (exergonic), and typically involves hydrolysis reactions with a negative ?G value.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How do enzymes function in metabolic reactions?",
+    "answer": "Enzymes are catalysts that lower the activation energy (energy barrier) of a chemical reaction, thereby increasing the reaction rate without being consumed in the process.",
+    "tags": ["#all", "#biology", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is reaction coupling in cellular metabolism?",
+    "answer": "Reaction coupling is the process by which an exergonic reaction (releases energy) drives an endergonic reaction (requires energy). ATP hydrolysis is commonly used to drive endergonic reactions.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#ATP", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is the role of ATP in cellular reactions?",
+    "answer": "ATP (adenosine triphosphate) is used by cells to provide energy for cellular processes. The high-energy bonds in ATP are broken during hydrolysis, releasing energy that can be used to drive reactions in the cell.",
+    "tags": ["#all", "#biology", "#ATP", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How does ATP consumption relate to energy cycles in cells?",
+    "answer": "An active cell consumes millions of ATP molecules per second, and each ATP molecule undergoes about 10,000 cycles of synthesis and hydrolysis every day, constantly being recycled to meet energy demands.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is the relationship between condensation reactions and ATP?",
+    "answer": "Condensation reactions, which occur during the synthesis of polysaccharides, nucleic acids, and proteins, require energy. ATP provides the energy needed for these anabolic reactions through reaction coupling.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Why does an ATP molecule typically get consumed within a second of its formation?",
+    "answer": "ATP is consumed quickly because it is a primary energy source for cellular processes. The energy released from ATP hydrolysis is used to drive biochemical reactions, including those that involve building and breaking down molecules.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#APBio", "#lecture3"]
+  }, 
+  {
+    "question": "What is an enzyme? What is the function of an enzyme?",
+    "answer": "An enzyme is a protein that acts as a catalyst to speed up biochemical reactions by lowering the activation energy. Enzymes facilitate reactions without being consumed or altered in the process, allowing cells to perform essential processes more efficiently.",
+    "tags": ["#all", "#biology", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Why does a cell need energy? What are some cellular processes that require energy?",
+    "answer": "Cells need energy to carry out essential functions such as protein synthesis, active transport (e.g., pumping ions across membranes), DNA replication, and cell division. Energy is also required for maintaining homeostasis, muscle contraction, and cellular movement.",
+    "tags": ["#all", "#biology", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What are some sources of energy in the cell? What chemical properties of these energy resources allow them to be used as energy?",
+    "answer": "Cells primarily use ATP as an energy source. Other sources include glucose (for cellular respiration), fatty acids (for long-term energy storage), and nucleotides (for genetic energy). These molecules have high-energy bonds, which, when broken, release energy that can be used for cellular processes.",
+    "tags": ["#all", "#biology", "#energy", "#ATP", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Diagram an exergonic reaction. What is an important property of an exergonic reaction?",
+    "answer": "An exergonic reaction is one where the free energy (?G) is negative, meaning that the reaction releases energy to the surroundings. A key property of exergonic reactions is that they occur spontaneously, such as the hydrolysis of ATP.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#energy", "#exergonic", "#APBio", "#lecture3"]
+  }, 
+  {
+    "question": "Explain the role of metabolism in a cell. What types of reactions are involved, and how do anabolic and catabolic reactions interact with each other?",
+    "answer": "Metabolism refers to the entire network of chemical reactions that occur within a cell, enabling it to maintain life. These reactions can be classified as anabolic (building molecules, requiring energy) and catabolic (breaking down molecules, releasing energy). Anabolic reactions often require energy provided by catabolic reactions, creating a cycle where catabolic reactions release energy that is used to fuel anabolic reactions, ensuring the cell’s energy balance is maintained.",
+    "tags": ["#all", "#biology", "#metabolism", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Why are enzymes significant within cells? How do they influence the rate of chemical reactions and the activation energy?",
+    "answer": "Enzymes are crucial for catalyzing biochemical reactions in cells by lowering the activation energy required for reactions to occur. This makes reactions happen faster and more efficiently. Enzymes achieve this by stabilizing the transition state of reactants, allowing reactions to proceed at a lower energy cost. Enzymes also enable cells to control and regulate metabolic pathways in a highly specific manner.",
+    "tags": ["#all", "#biology", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Explain the importance of ATP in cellular energy processes. How is ATP synthesized and used in the cell?",
+    "answer": "ATP (adenosine triphosphate) is the primary energy carrier in cells. It stores energy in its high-energy phosphate bonds, which can be broken to release energy for cellular processes. ATP is synthesized through cellular respiration and other energy-producing reactions. When ATP is hydrolyzed into ADP (adenosine diphosphate) and inorganic phosphate (Pi), energy is released, which is then used to power endergonic (energy-requiring) reactions like protein synthesis, muscle contraction, and active transport.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What are anabolic reactions, and how do they contribute to the synthesis of important biological molecules? Provide examples of anabolic processes.",
+    "answer": "Anabolic reactions are biosynthetic reactions that build larger, more complex molecules from smaller units, requiring energy input. These reactions typically involve condensation reactions, where water is removed to form bonds between molecules. Examples of anabolic processes include the synthesis of proteins from amino acids (protein synthesis), the formation of DNA from nucleotides (DNA replication), and the synthesis of polysaccharides from monosaccharides (glycogen or starch synthesis).",
+    "tags": ["#all", "#biology", "#anabolic", "#synthesis", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What are catabolic reactions, and how do they release energy? Explain their role in cellular metabolism.",
+    "answer": "Catabolic reactions are metabolic pathways that break down large molecules into smaller ones, releasing energy in the process. These reactions are exergonic, meaning they release energy, often in the form of ATP. Catabolic reactions are essential for providing energy for cellular processes. Examples include the breakdown of glucose in glycolysis and cellular respiration, where glucose is broken down into pyruvate, releasing energy used to generate ATP.",
+    "tags": ["#all", "#biology", "#catabolic", "#breakdown", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is the significance of reaction coupling in cellular metabolism? How does ATP hydrolysis drive endergonic reactions?",
+    "answer": "Reaction coupling is the process where an exergonic reaction (one that releases energy) is paired with an endergonic reaction (one that requires energy). ATP hydrolysis is often used to drive endergonic reactions in the cell. The energy released from ATP hydrolysis (breaking the high-energy phosphate bonds) is used to power processes like the synthesis of macromolecules, muscle contraction, or active transport, thus coupling the energy-releasing process with energy-requiring processes.",
+    "tags": ["#all", "#biology", "#reactioncoupling", "#ATP", "#energy", "#APBio", "#lecture3"]
+  }, 
+  {
+    "question": "What role do enzymes play in the efficiency of cellular reactions? How do they specifically lower activation energy and increase the rate of reactions?",
+    "answer": "Enzymes act as biological catalysts, speeding up reactions by lowering the activation energy required for the reaction to occur. They do this by stabilizing the transition state of the reactants, thus reducing the energy needed to break bonds. This allows reactions to proceed faster and more efficiently, which is essential for maintaining life processes in cells.",
+    "tags": ["#all", "#biology", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How does ATP hydrolysis help power cellular processes? Provide examples of processes that use the energy released from ATP hydrolysis.",
+    "answer": "ATP hydrolysis releases energy when the high-energy phosphate bonds are broken, converting ATP into ADP and inorganic phosphate (Pi). This energy is used to drive various cellular processes, such as active transport across membranes (e.g., sodium-potassium pump), muscle contraction, and the synthesis of macromolecules like proteins and nucleic acids. These energy-requiring processes are coupled with ATP hydrolysis to ensure they occur efficiently.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#hydrolysis", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Why is ATP considered the main energy carrier in cells? How does its structure relate to its function?",
+    "answer": "ATP is considered the main energy carrier because it stores energy in its high-energy phosphate bonds. The structure of ATP consists of an adenine base, ribose sugar, and three phosphate groups. The bond between the second and third phosphate groups contains high potential energy, which, when broken through hydrolysis, releases energy for cellular activities. This makes ATP a versatile molecule that can efficiently transfer energy where needed.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What are the key differences between anabolic and catabolic reactions? How do they work together in cellular metabolism?",
+    "answer": "Anabolic reactions build larger molecules from smaller units, requiring energy input (endergonic), while catabolic reactions break down complex molecules into simpler ones, releasing energy (exergonic). These two types of reactions work together in cellular metabolism, with catabolic reactions providing the energy required for anabolic processes. For example, the breakdown of glucose during cellular respiration releases energy, which is used to synthesize ATP that powers the building of proteins and other cellular structures.",
+    "tags": ["#all", "#biology", "#metabolism", "#anabolic", "#catabolic", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Explain the process of reaction coupling. How does ATP hydrolysis drive endergonic reactions?",
+    "answer": "Reaction coupling involves pairing an exergonic reaction (which releases energy) with an endergonic reaction (which requires energy). ATP hydrolysis, an exergonic reaction, releases energy that is used to drive endergonic reactions. For example, the energy from ATP hydrolysis powers processes like protein synthesis, where energy is needed to form peptide bonds between amino acids.",
+    "tags": ["#all", "#biology", "#reactioncoupling", "#ATP", "#energy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is the importance of free energy (?G) in cellular reactions? How does the concept of free energy relate to the efficiency of metabolic pathways?",
+    "answer": "Free energy (?G) represents the amount of energy available to do work in a system. A negative ?G indicates an exergonic reaction, which releases energy, while a positive ?G indicates an endergonic reaction, which requires energy input. In metabolic pathways, the efficiency of energy use depends on the ?G of the reactions involved. Cells optimize these pathways to release energy from catabolic reactions and use it to power anabolic reactions, ensuring efficient energy use and balance.",
+    "tags": ["#all", "#biology", "#thermodynamics", "#metabolism", "#freeenergy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How do enzymes enable cellular processes to occur at a faster rate? What is the role of the enzyme’s active site in this process?",
+    "answer": "Enzymes speed up cellular processes by lowering the activation energy required for reactions. The enzyme’s active site binds to the substrate(s), forming an enzyme-substrate complex. This binding stabilizes the transition state and lowers the energy needed for the reaction to proceed. By reducing the activation energy, enzymes increase the reaction rate without being consumed in the process.",
+    "tags": ["#all", "#biology", "#enzymes", "#activationenergy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How do cells regulate the flow of energy through anabolic and catabolic pathways to maintain homeostasis?",
+    "answer": "Cells regulate energy flow by carefully balancing anabolic and catabolic pathways. Catabolic reactions break down molecules like glucose to release energy, which is stored in ATP. Anabolic reactions, which build molecules such as proteins and nucleic acids, require energy. The cell coordinates these pathways by using enzymes to control reaction rates, ensuring that energy is available when needed and that metabolic processes are efficiently coupled. Feedback inhibition and activation mechanisms also help regulate these pathways.",
+    "tags": ["#all", "#biology", "#metabolism", "#homeostasis", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Explain how ATP’s role in cellular processes extends beyond energy transfer. What are some additional functions of ATP in cells?",
+    "answer": "Beyond being an energy carrier, ATP also plays a role in regulating cellular activities. It is involved in signaling pathways, such as protein kinase activation, where ATP transfers phosphate groups to proteins (phosphorylation). ATP is also a substrate for synthesis reactions, like those in DNA and RNA, and is involved in maintaining cellular structures, like the synthesis of the cytoskeleton. Additionally, ATP is used in motor proteins during cellular movement (e.g., muscle contraction).",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#cellularprocesses", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is the relationship between ATP and cellular respiration? How does ATP production vary under aerobic and anaerobic conditions?",
+    "answer": "ATP is the main product of cellular respiration, a process that breaks down glucose to release energy. In aerobic respiration, oxygen is used to generate a large amount of ATP (around 36-38 ATP per glucose molecule) through oxidative phosphorylation. In anaerobic conditions (such as in muscle cells during intense exercise), cells rely on glycolysis to produce ATP, resulting in only 2 ATP per glucose molecule, as no oxygen is used to fully oxidize glucose.",
+    "tags": ["#all", "#biology", "#ATP", "#cellularrespiration", "#aerobic", "#anaerobic", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Why are enzymes highly specific to the reactions they catalyze? How does the structure of an enzyme relate to its function?",
+    "answer": "Enzymes are highly specific because their active sites have unique shapes that only fit particular substrates. The enzyme’s structure, especially the shape and charge of the active site, determines which molecules can bind to it. This specificity ensures that enzymes catalyze only the correct reactions. The enzyme’s active site undergoes a slight change in shape when the substrate binds, which facilitates the formation of the transition state and lowers the activation energy of the reaction.",
+    "tags": ["#all", "#biology", "#enzymes", "#specificity", "#structurefunction", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How do environmental factors (such as temperature and pH) affect enzyme activity?",
+    "answer": "Environmental factors like temperature and pH can significantly influence enzyme activity. Temperature affects enzyme activity by changing the kinetic energy of molecules, with enzymes generally functioning optimally within a specific temperature range. If the temperature is too high, enzymes may denature and lose their function. pH affects enzyme activity by altering the charge of the enzyme and substrate, which can impact their binding. Enzymes have an optimal pH range, and deviations can decrease enzyme efficiency or cause denaturation.",
+    "tags": ["#all", "#biology", "#enzymes", "#environmentalfactors", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "What is feedback inhibition, and how does it help regulate metabolic pathways?",
+    "answer": "Feedback inhibition is a regulatory mechanism where the end product of a metabolic pathway inhibits an earlier step in the pathway. This prevents the overproduction of a product and helps maintain homeostasis. For example, in the synthesis of isoleucine, the end product inhibits the first enzyme in the pathway, thus preventing the cell from wasting resources by producing more isoleucine than needed.",
+    "tags": ["#all", "#biology", "#metabolism", "#feedbackinhibition", "#enzymes", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How does ATP function in active transport, and why is this process energy-consuming?",
+    "answer": "ATP is required for active transport because it provides the energy needed to move molecules against their concentration gradient, which is essential for maintaining cellular functions like ion balance. In active transport, ATP is hydrolyzed, and the energy released is used by membrane transport proteins (like pumps) to transport ions or other molecules across membranes. This process is energy-consuming because it requires work to move substances from low to high concentration, which is energetically unfavorable.",
+    "tags": ["#all", "#biology", "#ATP", "#activetransport", "#energy", "#APBio", "#lecture3"]
+  }, 
+  {
+    "question": "How do cells use ATP to maintain a resting membrane potential across the plasma membrane? Why is this process critical for cell function?",
+    "answer": "ATP is used to power the sodium-potassium pump, which actively transports sodium ions (Na+) out of the cell and potassium ions (K+) into the cell against their concentration gradients. This process maintains the resting membrane potential, which is essential for nerve transmission, muscle contraction, and other cellular functions. Without this gradient, cells would be unable to generate action potentials or carry out processes like nutrient uptake.",
+    "tags": ["#all", "#biology", "#ATP", "#activetransport", "#cellfunction", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Consider a scenario where a cell is in an environment with limited glucose. How might this affect cellular metabolism, and how could ATP be generated from alternative sources?",
+    "answer": "In an environment with limited glucose, cells may switch to alternative energy sources like fatty acids or amino acids. During fatty acid oxidation, cells can generate ATP via ß-oxidation, producing acetyl-CoA, which enters the citric acid cycle. Additionally, amino acids can be deaminated and their carbon skeletons used in the citric acid cycle. This metabolic flexibility allows cells to continue ATP production even when glucose is scarce.",
+    "tags": ["#all", "#biology", "#metabolism", "#ATP", "#alternativeenergy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "During exercise, muscles require more energy. How does ATP production increase, and what role do catabolic reactions play in this process?",
+    "answer": "During exercise, ATP production increases through both aerobic and anaerobic pathways. In aerobic conditions, the citric acid cycle and oxidative phosphorylation produce large amounts of ATP. Under anaerobic conditions, glycolysis provides quick ATP, though less efficiently. Catabolic reactions like glycolysis and fatty acid oxidation break down stored glycogen and lipids to generate ATP quickly, meeting the energy demands of muscle cells during exercise.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#exercise", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "In a laboratory experiment, you inhibit the activity of ATP synthase. What would be the immediate consequence for the cell, and how would this impact metabolic processes?",
+    "answer": "Inhibiting ATP synthase would prevent the cell from synthesizing ATP via oxidative phosphorylation, which is the primary method of ATP production in eukaryotic cells. As a result, the cell would be forced to rely on less efficient methods like glycolysis to generate ATP, leading to a significant energy deficit. This would impact various energy-dependent processes, such as protein synthesis, active transport, and cell division.",
+    "tags": ["#all", "#biology", "#ATP", "#ATPproduction", "#cellfunction", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Imagine a bacterial culture in a nutrient-limited environment where glucose is scarce. What adaptations might the bacteria undergo to optimize ATP production?",
+    "answer": "In a nutrient-limited environment, bacteria may switch from glucose to alternative energy sources like fatty acids or proteins. They might increase the expression of enzymes involved in the breakdown of these alternative substrates, such as those involved in ß-oxidation of fatty acids or the deamination of amino acids. Additionally, some bacteria may activate anaerobic pathways, such as fermentation, to generate ATP without relying on oxygen.",
+    "tags": ["#all", "#biology", "#ATP", "#bacteria", "#metabolism", "#alternativeenergy", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How does temperature influence enzyme activity in the human body, especially during fever? How might this affect cellular metabolism?",
+    "answer": "Temperature affects enzyme activity by influencing the kinetic energy of molecules. At higher temperatures (like during a fever), enzymes may become more active up to a certain point, increasing the rate of reactions. However, if the temperature rises too much, enzymes may denature, losing their functional shape and ceasing to catalyze reactions. During fever, the body may speed up metabolic reactions to fight infection, but excessively high temperatures can harm enzyme function and disrupt normal cellular metabolism.",
+    "tags": ["#all", "#biology", "#enzymes", "#temperature", "#metabolism", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "In a genetically modified plant, you insert a gene that overproduces a specific enzyme involved in an anabolic pathway. How might this affect the plant’s metabolic processes and energy balance?",
+    "answer": "Overproducing an enzyme involved in an anabolic pathway would likely increase the rate at which the plant synthesizes specific molecules (e.g., proteins, starch). While this may lead to enhanced growth or accumulation of desired compounds, it would also increase the demand for energy, requiring more ATP to drive the reaction. The plant would need to balance energy production through catabolic reactions to meet the increased demand, potentially altering its overall energy balance and resource allocation.",
+    "tags": ["#all", "#biology", "#genetics", "#enzymes", "#metabolism", "#APBio", "#lecture3"]
+  }, 
+  {
+    "question": "In a scenario where an athlete is consuming large amounts of protein to build muscle mass, how do anabolic reactions in muscle cells use ATP, and how do these reactions contribute to muscle growth?",
+    "answer": "Anabolic reactions in muscle cells require ATP to build proteins from amino acids during muscle synthesis. These reactions involve condensation, where ATP provides the energy needed to form peptide bonds. The ATP is utilized to power processes like the formation of ribosomes for protein synthesis and the transport of amino acids into muscle cells. The more ATP available, the more efficiently muscles can grow, as protein synthesis is an energy-intensive process.",
+    "tags": ["#all", "#biology", "#ATP", "#musclegrowth", "#anabolic", "#protein", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "If a scientist is studying a plant's response to drought, how might energy production through cellular respiration and photosynthesis be affected under these conditions?",
+    "answer": "During drought conditions, plants face water stress, which can reduce their ability to carry out photosynthesis effectively, as photosynthesis relies on water. Without sufficient photosynthesis, the plant will have reduced glucose production, which means less ATP generated through cellular respiration. To adapt, the plant may switch to conserving energy by reducing metabolic activity or using stored reserves. Additionally, some plants may activate mechanisms like stomatal closure to limit water loss, further reducing ATP demand.",
+    "tags": ["#all", "#biology", "#photosynthesis", "#cellularrespiration", "#energy", "#drought", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "During a bacterial infection, the human immune system speeds up metabolic processes to fight off the pathogen. How does this increase in metabolism affect ATP production and energy usage in immune cells?",
+    "answer": "In response to infection, immune cells like macrophages and lymphocytes ramp up their metabolic activity, including protein synthesis for antibodies, immune cell proliferation, and phagocytosis of pathogens. These processes require ATP, which is generated through both glycolysis (anaerobic) and oxidative phosphorylation (aerobic). The immune system's increased energy demand leads to higher ATP consumption, and the cells may utilize stored glucose, fatty acids, and other molecules to meet the energy needs, adjusting the metabolic balance accordingly.",
+    "tags": ["#all", "#biology", "#immune", "#ATP", "#energy", "#infection", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "Imagine a cell in a lab environment with no oxygen supply. How does the lack of oxygen affect the cell's ATP production and what alternative methods does the cell use to generate ATP?",
+    "answer": "In the absence of oxygen, cells switch from aerobic respiration to anaerobic processes. Glycolysis is the primary pathway for ATP production, yielding 2 ATP molecules per glucose molecule. However, without oxygen, the electron transport chain cannot operate, and NADH cannot be oxidized. To regenerate NAD+ for glycolysis to continue, cells often rely on fermentation, producing lactate in animals or ethanol in yeast, which allows ATP production to continue despite the lack of oxygen. This process, though less efficient, ensures that cells can still produce some ATP in anaerobic conditions.",
+    "tags": ["#all", "#biology", "#cellularrespiration", "#ATP", "#anaerobic", "#fermentation", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How might a mutation that affects the ATP synthase enzyme impact a cell's ability to produce energy, and what physiological consequences could result from such a mutation?",
+    "answer": "A mutation affecting ATP synthase would disrupt the cell’s ability to produce ATP via oxidative phosphorylation, the most efficient method of ATP production. Without functional ATP synthase, the proton gradient established across the mitochondrial membrane would not be used to synthesize ATP, significantly lowering the cell's energy production. As a result, the cell would rely on less efficient ATP production methods like glycolysis. This could lead to fatigue, weakness, and impaired function of energy-intensive tissues like muscles and neurons.",
+    "tags": ["#all", "#biology", "#ATP", "#energy", "#mutation", "#mitochondria", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "How might an increase in enzyme concentration affect the rate of a biochemical reaction in a cell, and under what conditions might this increase be limited?",
+    "answer": "Increasing enzyme concentration can enhance the rate of a biochemical reaction by providing more enzyme molecules to catalyze the reaction. However, the rate increase is limited when all substrate molecules are bound to enzymes, meaning the enzyme concentration exceeds the amount of substrate available (saturation point). Additionally, factors such as temperature, pH, and the presence of inhibitors or activators can affect enzyme activity, potentially limiting the rate of reaction despite higher enzyme concentrations.",
+    "tags": ["#all", "#biology", "#enzymes", "#reactionrate", "#enzymeconcentration", "#APBio", "#lecture3"]
+  },
+  {
+    "question": "In an experiment, you inhibit glycolysis in a eukaryotic cell. What would be the immediate consequence for ATP production, and how would the cell adapt to continue energy production?",
+    "answer": "Inhibiting glycolysis would prevent the cell from generating ATP through the breakdown of glucose. Since glycolysis is the primary pathway for anaerobic ATP production, the cell would rely on other energy sources, such as fatty acids or amino acids, to produce ATP. This would shift the cell’s metabolism toward fatty acid oxidation and oxidative phosphorylation, which require oxygen. If the cell is in an anaerobic environment, it may rely on fermentation to produce ATP, though this method is much less efficient.",
+    "tags": ["#all", "#biology", "#glycolysis", "#ATP", "#energy", "#fermentation", "#APBio", "#lecture3"]
+  }, 
+		
+  {
+    "question": "True or false: Only molecules with chemical groups -H and -OH can be joined in condensation reactions – e.g. A-H + B-OH",
+    "answer": "True. Condensation reactions typically involve the joining of molecules with functional groups such as hydroxyl (-OH) and hydrogen (-H), forming a covalent bond and releasing water.",
+    "tags": ["#all", "#biology", "#condensationreaction", "#functionalgroups", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Which of the following statements is NOT true about glycogen?",
+    "answer": "C. It exists as linear molecules with many branches. Glycogen is a highly branched polysaccharide used for energy storage in animals. The branches allow for rapid release of glucose when needed.",
+    "tags": ["#all", "#biology", "#glycogen", "#polysaccharides", "#energystorage", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Which of the following statements are true about amino acids?",
+    "answer": "A. Amino acids share a common backbone but differ in their R-groups. C. Proteins always have polarity no matter the sequence/composition of the amino acid chain.",
+    "tags": ["#all", "#biology", "#aminoacids", "#proteins", "#polarity", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Match the carbon number in ribose or deoxyribose with its function. (Use carbon numbers from ribose and deoxyribose.)",
+    "answer": "Carbon 1: This carbon is connected to the nitrogenous base.<br> Carbon 2: This carbon determines if you are looking at DNA or RNA (in RNA, the -OH group is present at this position, while in DNA, it is absent).<br> Carbon 3: This carbon links to an incoming nucleotide subunit.<br> Carbon 4: This carbon is part of the sugar ring.<br> Carbon 5: This carbon is connected to one or more phosphate groups. These carbons are involved in the formation of the sugar-phosphate backbone in nucleic acids.",
+    "tags": ["#all", "#biology", "#nucleicacids", "#ribose", "#deoxyribose", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "What is the role of glycosidic bonds in carbohydrates, and how are they formed?",
+    "answer": "Glycosidic bonds are covalent bonds that link monosaccharides (sugar units) to form disaccharides, oligosaccharides, or polysaccharides. These bonds are formed during condensation reactions, where a molecule of water is removed as two sugar molecules are joined. The glycosidic bond is essential for creating the structure of complex carbohydrates like starch, glycogen, and cellulose.",
+    "tags": ["#all", "#biology", "#carbohydrates", "#glycosidicbond", "#synthesis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do hydrophilic and hydrophobic interactions contribute to the structure and function of lipids?",
+    "answer": "Lipids have both hydrophilic (water-attracting) and hydrophobic (water-repelling) components. The hydrophilic head interacts with water, while the hydrophobic tails avoid water, leading to the formation of structures like lipid bilayers in cell membranes. These interactions are crucial for membrane integrity and the selective permeability of the cell membrane.",
+    "tags": ["#all", "#biology", "#lipids", "#membranes", "#hydrophilic", "#hydrophobic", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Explain the importance of the peptide bond in protein structure.",
+    "answer": "A peptide bond is a covalent bond formed between the amino group of one amino acid and the carboxyl group of another, with the release of a water molecule (condensation reaction). These bonds link amino acids together in a chain, forming polypeptides. The sequence and arrangement of amino acids in the polypeptide chain determine the protein's final three-dimensional structure and function.",
+    "tags": ["#all", "#biology", "#proteins", "#peptidebond", "#structure", "#synthesis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the significance of polarity in nucleic acids (DNA and RNA)?",
+    "answer": "Polarity in nucleic acids refers to the directionality of the DNA or RNA strands, with distinct 5' and 3' ends. The 5' end is where the phosphate group is attached to the ribose sugar, and the 3' end has the hydroxyl group. This polarity is essential for processes like DNA replication and RNA transcription, where enzymes read and synthesize new strands in a specific direction.",
+    "tags": ["#all", "#biology", "#nucleicacids", "#polarity", "#DNA", "#RNA", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What role do hydrogen bonds play in the structure of DNA?",
+    "answer": "Hydrogen bonds are responsible for holding the two strands of DNA together in a double helix. They form between complementary nitrogenous bases: adenine pairs with thymine (A-T) using two hydrogen bonds, and guanine pairs with cytosine (G-C) using three hydrogen bonds. These bonds ensure the stability of the DNA molecule while allowing it to be unzipped for replication and transcription.",
+    "tags": ["#all", "#biology", "#DNA", "#hydrogenbonds", "#structure", "#nucleicacids", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Why is the structure of ribose different from deoxyribose, and how does this impact the function of RNA and DNA?",
+    "answer": "Ribose, found in RNA, has a hydroxyl group (-OH) attached to the 2' carbon, while deoxyribose, found in DNA, has a hydrogen atom (-H) at the 2' carbon. This small difference makes RNA more reactive and less stable than DNA. The presence of the hydroxyl group in RNA allows it to participate in more chemical reactions, while the absence of this group in DNA makes it more stable and suitable for long-term genetic storage.",
+    "tags": ["#all", "#biology", "#ribose", "#deoxyribose", "#RNA", "#DNA", "#structure", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do enzymes facilitate hydrolysis and condensation reactions in biological systems?",
+    "answer": "Enzymes facilitate hydrolysis and condensation reactions by lowering the activation energy needed for these reactions to occur. In condensation reactions, enzymes bring substrates together in the correct orientation to facilitate the removal of a water molecule, forming a covalent bond. In hydrolysis, enzymes help break the covalent bond by adding a water molecule, splitting the polymer into its subunits. These reactions are essential for the synthesis and breakdown of macromolecules in cells.",
+    "tags": ["#all", "#biology", "#enzymes", "#condensation", "#hydrolysis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does the presence of a hydroxyl group (-OH) on a sugar molecule influence its behavior in condensation and hydrolysis reactions?",
+    "answer": "The presence of the hydroxyl group (-OH) on a sugar molecule makes it highly reactive, allowing it to participate in condensation reactions by forming glycosidic bonds with other monosaccharides. In hydrolysis reactions, the hydroxyl group can participate in the addition of water, breaking the glycosidic bond between two sugar molecules. This reactivity is crucial for the synthesis and degradation of polysaccharides.",
+    "tags": ["#all", "#biology", "#hydroxylgroup", "#sugars", "#condensation", "#hydrolysis", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "What happens during a condensation reaction, and why is it important for macromolecule synthesis in the cell?",
+    "answer": "A condensation reaction involves the joining of two molecules, typically monomers, to form a larger molecule (a polymer) while releasing a water molecule. This reaction is essential for synthesizing macromolecules such as proteins, carbohydrates, lipids, and nucleic acids. In protein synthesis, for example, condensation reactions form peptide bonds between amino acids to build polypeptides. In nucleic acid synthesis, it creates phosphodiester bonds between nucleotides to form DNA or RNA. Condensation reactions are used in both anabolic processes, like building cell structures, and energy-storing processes, like starch formation in plants.",
+    "tags": ["#all", "#biology", "#condensationreaction", "#macromolecules", "#synthesis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does hydrolysis differ from condensation, and what role does it play in metabolism?",
+    "answer": "Hydrolysis is the opposite of condensation; it involves the addition of a water molecule to break a covalent bond, splitting a polymer into smaller molecules (monomers or dimers). For example, when glycogen is broken down into glucose units, a hydrolysis reaction occurs. This reaction is crucial for digestion, as enzymes catalyze the breakdown of food molecules like starches and proteins into absorbable subunits. Hydrolysis reactions are also used in the recycling of cellular components, such as proteins and nucleic acids, ensuring that the cell maintains a supply of basic building blocks for synthesis and repair.",
+    "tags": ["#all", "#biology", "#hydrolysis", "#digestion", "#metabolism", "#macromolecules", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Explain the difference between glycogen’s linear and branched structure. How does this structural feature affect its function in energy storage?",
+    "answer": "Glycogen is a polysaccharide made up of glucose monomers linked by glycosidic bonds. Unlike starch, glycogen has a highly branched structure, which allows for rapid breakdown of glucose when energy is needed quickly. The branching increases the surface area for enzymes like glycogen phosphorylase to act, facilitating faster release of glucose molecules during periods of high energy demand. This structural difference makes glycogen an efficient form of energy storage in animals, especially in liver and muscle cells, where quick mobilization of glucose is necessary during activities like exercise.",
+    "tags": ["#all", "#biology", "#glycogen", "#polysaccharides", "#energy", "#storage", "#structure", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Why are peptide bonds critical for protein function, and how does the sequence of amino acids influence the final protein structure?",
+    "answer": "Peptide bonds are covalent bonds that link amino acids in proteins, forming a polypeptide chain. The sequence of amino acids in this chain determines the protein’s primary structure, which influences its overall shape and function. The sequence dictates how the polypeptide will fold into its secondary, tertiary, and quaternary structures. These folded shapes are essential for the protein's specific function, such as catalyzing reactions (enzymes), signaling (receptors), or structural support (collagen). A change in the amino acid sequence, even by a single amino acid, can disrupt the protein's function, leading to diseases like sickle cell anemia.",
+    "tags": ["#all", "#biology", "#proteins", "#peptidebond", "#aminoacids", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What role do the 5' and 3' ends play in the polarity of nucleic acids, and how does this affect processes like DNA replication?",
+    "answer": "The polarity of nucleic acids is determined by the orientation of the sugar-phosphate backbone. The 5' end has a phosphate group attached to the fifth carbon of the sugar molecule, and the 3' end has a hydroxyl group attached to the third carbon. This polarity is crucial during DNA replication and transcription because enzymes like DNA polymerase add new nucleotides to the 3' end of the growing strand. This means replication occurs in the 5' to 3' direction, which is important for the accuracy and regulation of genetic material copying.",
+    "tags": ["#all", "#biology", "#DNA", "#polarity", "#replication", "#nucleicacids", "#structure", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the role of hydrogen bonds in the structure of DNA and how do they contribute to its function?",
+    "answer": "Hydrogen bonds play a crucial role in stabilizing the double helix structure of DNA by forming between complementary nitrogenous bases: adenine (A) with thymine (T), and guanine (G) with cytosine (C). These bonds are weak enough to allow the DNA strands to separate during replication and transcription but strong enough to maintain the overall integrity of the DNA molecule. The specificity of base pairing ensures that genetic information is accurately copied and transmitted during cell division. The ability of hydrogen bonds to hold the strands together while allowing for controlled unzipping is key for DNA's function in genetic information storage and transmission.",
+    "tags": ["#all", "#biology", "#DNA", "#hydrogenbonds", "#structure", "#replication", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do purine and pyrimidine bases differ in their structure, and what is the significance of this difference in nucleic acid function?",
+    "answer": "Purine bases (adenine and guanine) have a double-ring structure, while pyrimidine bases (cytosine, thymine, and uracil) have a single-ring structure. This difference is important for the structure of nucleic acids because purines always pair with pyrimidines in complementary base pairing (A with T, G with C) to form the rungs of the DNA double helix. This complementary base pairing is critical for accurate DNA replication and transcription, ensuring the genetic code is preserved and correctly transmitted.",
+    "tags": ["#all", "#biology", "#DNA", "#purines", "#pyrimidines", "#basepairing", "#structure", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the significance of the 2' hydroxyl group in RNA compared to DNA, and how does this difference affect their stability and function?",
+    "answer": "The 2' hydroxyl group in RNA makes it more reactive and less stable compared to DNA, which lacks this hydroxyl group (having only a hydrogen at the 2' position in deoxyribose). This makes RNA more prone to hydrolysis, leading to its relatively short lifespan in cells. The additional -OH group in RNA allows for greater flexibility in its structure, which is essential for its role in protein synthesis, as it can easily form complex secondary structures (e.g., hairpins) necessary for function in processes like translation. In contrast, DNA's stability is key for its role as long-term genetic storage.",
+    "tags": ["#all", "#biology", "#RNA", "#DNA", "#structure", "#stability", "#function", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "In the context of biological systems, why is it important for condensation and hydrolysis reactions to be carefully regulated by enzymes?",
+    "answer": "Condensation and hydrolysis reactions are critical for macromolecule synthesis and breakdown in cells. Condensation reactions are responsible for building macromolecules like proteins, polysaccharides, and nucleic acids, while hydrolysis reactions break these macromolecules down into their subunits for recycling or energy release. Enzymes regulate these reactions by lowering the activation energy, ensuring that they occur at appropriate rates. Without enzyme regulation, these reactions would either proceed too slowly or uncontrollably, disrupting cellular homeostasis.",
+    "tags": ["#all", "#biology", "#enzymes", "#condensation", "#hydrolysis", "#macromolecules", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do the properties of the covalent bonds in carbohydrates, lipids, proteins, and nucleic acids influence their functions in cells?",
+    "answer": "The covalent bonds in macromolecules significantly impact their structure and function. In carbohydrates, glycosidic bonds link monosaccharides to form polysaccharides that provide energy storage and structural support. In lipids, ester bonds between fatty acids and glycerol enable the formation of membranes and energy storage. In proteins, peptide bonds between amino acids define the sequence that determines the protein's shape and function, such as enzyme catalysis. In nucleic acids, phosphodiester bonds between nucleotides provide the stability necessary for genetic information storage and transmission.",
+    "tags": ["#all", "#biology", "#macromolecules", "#covalentbonds", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does the polarity of a molecule affect its solubility in water and its interactions with other molecules? Provide an example using one of the macromolecules.",
+    "answer": "Polarity refers to the distribution of electrical charge across a molecule, with one end being slightly negative and the other slightly positive. This polarity allows molecules to interact with water molecules, which are also polar. For example, in proteins, polar (hydrophilic) amino acids tend to be on the outside of the protein, interacting with the aqueous environment, while non-polar (hydrophobic) amino acids tend to be buried inside the protein structure. This polarity affects how proteins fold and interact with other molecules, like enzymes binding to substrates or antibodies recognizing antigens.",
+    "tags": ["#all", "#biology", "#polarity", "#hydrophilic", "#hydrophobic", "#proteins", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Why is the 5' to 3' polarity important in DNA replication and transcription? What consequences would arise if this polarity were disrupted?",
+    "answer": "The 5' to 3' polarity in DNA ensures that enzymes like DNA polymerase and RNA polymerase add nucleotides in a specific direction during replication and transcription. DNA polymerase can only add new nucleotides to the 3' end of a strand, creating the new strand in the 5' to 3' direction. If this polarity were disrupted, it could lead to errors in the replication of genetic material or in the synthesis of RNA, resulting in mutations or nonfunctional proteins. The specificity of this directionality is crucial for maintaining the integrity of genetic information.",
+    "tags": ["#all", "#biology", "#DNA", "#RNA", "#polarity", "#replication", "#transcription", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Describe the functional significance of purines and pyrimidines in DNA and RNA. How does base pairing help preserve genetic information?",
+    "answer": "Purines (adenine and guanine) and pyrimidines (cytosine, thymine, and uracil) are nitrogenous bases that form the rungs of the DNA or RNA ladder. In DNA, adenine pairs with thymine, and guanine pairs with cytosine, while in RNA, uracil replaces thymine. The complementary base pairing between purines and pyrimidines ensures that the genetic information is accurately preserved during DNA replication and RNA transcription. This base pairing also helps maintain the stability of the DNA double helix structure and ensures that genetic codes are correctly translated into proteins.",
+    "tags": ["#all", "#biology", "#nucleicacids", "#basepairing", "#purines", "#pyrimidines", "#DNA", "#RNA", "#geneticinformation", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does the branching structure of glycogen relate to its function in energy storage and mobilization in animals?",
+    "answer": "The highly branched structure of glycogen allows for rapid mobilization of glucose during energy demand. The branches provide multiple sites for enzymes like glycogen phosphorylase to break down glucose from the polymer into usable monomers. This enables animals to quickly access stored energy during physical activity or stress. The branched structure also ensures that glycogen can be stored compactly without forming large, inefficient aggregates, which is especially important for energy storage in muscles and the liver.",
+    "tags": ["#all", "#biology", "#glycogen", "#energy", "#storage", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do the covalent bonds in macromolecules (like glycosidic, peptide, and phosphodiester bonds) contribute to their function in biological systems?",
+    "answer": "Covalent bonds like glycosidic bonds (in carbohydrates), peptide bonds (in proteins), and phosphodiester bonds (in nucleic acids) provide structural integrity and stability to macromolecules. These bonds are critical for the polymerization of monomers into larger molecules that can carry out essential biological functions. For instance, peptide bonds link amino acids to form proteins that catalyze reactions, glycosidic bonds link glucose molecules to form polysaccharides that store energy, and phosphodiester bonds hold nucleotides together in DNA and RNA to store genetic information.",
+    "tags": ["#all", "#biology", "#macromolecules", "#covalentbonds", "#synthesis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What are the functional roles of carbohydrates in the cell, and how does their structure allow them to carry out these functions?",
+    "answer": "Carbohydrates serve as energy sources (glucose, glycogen) and structural components (cellulose, chitin). Their structure allows them to form complex polysaccharides that store energy, and their repeating units of monosaccharides can be easily broken down via hydrolysis to release energy when needed. Carbohydrates also contribute to cell signaling, recognition, and adhesion, as seen in glycoproteins and glycolipids. The branching of polysaccharides like glycogen allows for rapid mobilization of energy in animals.",
+    "tags": ["#all", "#biology", "#carbohydrates", "#energy", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does the amphipathic nature of lipids (having both hydrophilic and hydrophobic parts) influence their role in forming cellular membranes?",
+    "answer": "The amphipathic nature of lipids allows them to form bilayers in cellular membranes, with hydrophilic (water-attracting) heads facing outward toward the aqueous environment and hydrophobic (water-repelling) tails facing inward. This arrangement creates a semi-permeable barrier that separates the cell from its environment while maintaining structural integrity. The fluidity of lipid bilayers is essential for membrane function, allowing for membrane protein movement, cell signaling, and selective permeability for ions and small molecules.",
+    "tags": ["#all", "#biology", "#lipids", "#membranes", "#amphipathic", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the relationship between a protein's primary, secondary, tertiary, and quaternary structures, and how does this hierarchy of folding determine a protein’s function?",
+    "answer": "A protein’s primary structure is its linear sequence of amino acids, held together by peptide bonds. The secondary structure involves folding into alpha-helices or beta-pleated sheets due to hydrogen bonding between the backbone atoms. The tertiary structure arises from interactions between R-groups, including hydrophobic interactions, hydrogen bonds, ionic bonds, and disulfide bridges, leading to the three-dimensional shape that is functional. The quaternary structure involves the assembly of multiple polypeptide chains into a functional protein complex. The specific folding at each level of structure is critical for the protein's function, whether it is catalyzing a reaction, binding to a substrate, or signaling in a cellular pathway.",
+    "tags": ["#all", "#biology", "#proteins", "#structure", "#folding", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What are the key differences between DNA and RNA in terms of structure and function, and how do these differences influence their roles in the cell?",
+    "answer": "DNA is double-stranded, with a deoxyribose sugar and thymine as one of its nitrogenous bases, while RNA is single-stranded, with ribose as its sugar and uracil replacing thymine. These structural differences make DNA stable and suited for long-term storage of genetic information, while RNA is more reactive and serves as an intermediary in protein synthesis. RNA transcribes genetic information from DNA and translates it into proteins. The instability of RNA allows it to be rapidly synthesized and degraded, providing quick regulation of gene expression.",
+    "tags": ["#all", "#biology", "#DNA", "#RNA", "#structure", "#function", "#genetics", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How does the polarity of nucleic acids (DNA/RNA) influence their interactions with other molecules and their function in the cell?",
+    "answer": "The polarity of nucleic acids refers to the directionality of their sugar-phosphate backbone, with 5' and 3' ends. This polarity ensures that the replication, transcription, and translation processes occur in a specific direction. The complementary base pairing between the nitrogenous bases (A-T/U, G-C) also relies on the polarity, maintaining the stability and accuracy of genetic information. The 5' to 3' polarity of RNA allows it to interact specifically with ribosomes and tRNAs during translation, ensuring the correct sequence of amino acids is incorporated into proteins.",
+    "tags": ["#all", "#biology", "#nucleicacids", "#polarity", "#DNA", "#RNA", "#function", "#geneexpression", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do enzymes catalyze reactions involving the breakdown of macromolecules, and why are they crucial for metabolism?",
+    "answer": "Enzymes catalyze the breakdown of macromolecules through hydrolysis reactions, where water molecules are added to break covalent bonds between monomers in polymers. For example, amylase breaks down starch (a polysaccharide) into glucose monomers. Enzymes lower the activation energy required for these reactions to occur, making them happen faster and more efficiently at physiological temperatures. Without enzymes, these reactions would occur too slowly to sustain life. Enzymes are essential for metabolism because they regulate the breakdown of macromolecules for energy production and the synthesis of new macromolecules for growth and repair.",
+    "tags": ["#all", "#biology", "#enzymes", "#macromolecules", "#metabolism", "#hydrolysis", "#catalysis", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What are some key functions of lipids in the cell, and how do their structures support these functions?",
+    "answer": "Lipids serve several key functions in the cell, including energy storage, insulation, and forming structural components of cell membranes. Their hydrophobic nature allows them to form stable membranes by self-assembling into bilayers, with hydrophilic heads facing outward and hydrophobic tails facing inward. This structure is vital for the formation of the lipid bilayer of cell membranes, which separates the cell's interior from the external environment. Additionally, lipids like phospholipids and cholesterol contribute to membrane fluidity, which is essential for membrane function and protein mobility.",
+    "tags": ["#all", "#biology", "#lipids", "#membranes", "#energy", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Outline the four families of macromolecules, their subunits, intermediate molecules, and polymers.",
+    "answer": "<strong>Carbohydrates:</strong> Subunit: Monosaccharides, Intermediate: Disaccharides/Oligosaccharides, Polymer: Polysaccharides (e.g., starch, glycogen)<br><strong>Lipids:</strong> Subunit: Fatty acids and glycerol, Intermediate: Triglycerides, Polymer: Phospholipid bilayers (cell membranes)<br><strong>Proteins:</strong> Subunit: Amino acids, Intermediate: Polypeptides, Polymer: Functional proteins (e.g., enzymes, receptors)<br><strong>Nucleic Acids:</strong> Subunit: Nucleotides, Intermediate: Dinucleotides, Polymer: DNA/RNA.",
+    "tags": ["#all", "#biology", "#macromolecules", "#subunits", "#polymers", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Compare and contrast the four macromolecules discussed with reference to general structure, polarity, and covalent bonds that link the subunits.",
+    "answer": "Carbohydrates: Polarity varies based on monomers; glycosidic bonds link monosaccharides. Lipids: Amphipathic with hydrophilic heads and hydrophobic tails; ester bonds link fatty acids and glycerol. Proteins: Polar backbone with diverse R-groups; peptide bonds link amino acids. Nucleic Acids: Polar backbone with 5' and 3' ends; phosphodiester bonds link nucleotides. Carbohydrates are polar, lipids are non-polar (except phospholipids), proteins have varying polarity based on R-groups, and nucleic acids are highly polar due to their phosphate backbone.",
+    "tags": ["#all", "#biology", "#macromolecules", "#structure", "#polarity", "#covalentbonds", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Differentiate between condensation and hydrolysis reactions and explain when each is used in the cell.",
+    "answer": "Condensation reactions involve the joining of two molecules to form a larger molecule, with the release of a water molecule. They are used in the synthesis of macromolecules such as proteins (peptide bonds), nucleic acids (phosphodiester bonds), and carbohydrates (glycosidic bonds). Hydrolysis reactions are the reverse, where water is added to break a covalent bond, splitting a polymer into smaller units. Hydrolysis is used during digestion, when polymers like starch and proteins are broken down into their monomers for absorption.",
+    "tags": ["#all", "#biology", "#condensationreaction", "#hydrolysis", "#macromolecules", "#synthesis", "#digestion", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "How does the function of proteins differ from that of carbohydrates, and how does their structure support these functions?",
+    "answer": "Proteins perform a wide variety of functions, including catalyzing biochemical reactions (enzymes), providing structural support (e.g., collagen), and regulating cellular processes (e.g., hormones). Their function depends on their specific three-dimensional shape, which is determined by their amino acid sequence. In contrast, carbohydrates primarily provide energy (e.g., glucose), store energy (e.g., glycogen), and serve as structural components (e.g., cellulose). Carbohydrates are linear or branched chains of monosaccharides, allowing them to store energy efficiently and form structures that support cells.",
+    "tags": ["#all", "#biology", "#proteins", "#carbohydrates", "#structure", "#function", "#energy", "#macromolecules", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Why is the amphipathic nature of phospholipids important for the structure and function of cell membranes?",
+    "answer": "Phospholipids are amphipathic, meaning they have both hydrophilic (water-attracting) heads and hydrophobic (water-repelling) tails. This allows them to form bilayers in water, with the hydrophilic heads facing outward toward the aqueous environment and the hydrophobic tails facing inward, away from water. This structure is the basis of cell membranes, providing a semi-permeable barrier that regulates what enters and leaves the cell while allowing the flexibility required for cellular functions like signaling and protein movement.",
+    "tags": ["#all", "#biology", "#lipids", "#phospholipids", "#membranes", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the role of nitrogenous bases in nucleic acids, and how do base pairing and hydrogen bonds contribute to the structure of DNA?",
+    "answer": "The nitrogenous bases (A, T, G, C in DNA) are the building blocks of nucleic acids. In DNA, adenine (A) pairs with thymine (T), and guanine (G) pairs with cytosine (C), forming the rungs of the double helix ladder. The complementary base pairing ensures that the genetic information encoded in DNA can be accurately replicated and transcribed. Hydrogen bonds between the complementary bases hold the two DNA strands together, but are weak enough to allow the strands to separate during replication and transcription.",
+    "tags": ["#all", "#biology", "#nucleicacids", "#basepairing", "#DNA", "#structure", "#geneticinformation", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "How do glycosidic bonds formed in condensation reactions contribute to the diversity of carbohydrate functions in cells?",
+    "answer": "Glycosidic bonds are covalent bonds that link monosaccharides (simple sugars) to form disaccharides, oligosaccharides, and polysaccharides. These bonds can vary in type (e.g., alpha or beta linkage), affecting the structure and function of the carbohydrate. For example, in starch, alpha-glycosidic bonds create a helical structure that is ideal for energy storage, whereas in cellulose, beta-glycosidic bonds form long, rigid chains that provide structural support to plant cells. The variability in glycosidic bond formation allows carbohydrates to serve diverse roles in cells, from energy storage (glycogen in animals) to providing mechanical strength (cellulose in plants).",
+    "tags": ["#all", "#biology", "#carbohydrates", "#glycosidicbonds", "#macromolecules", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What is the role of the amphipathic nature of phospholipids in maintaining membrane integrity and how does this support cell functions such as signaling?",
+    "answer": "Phospholipids are amphipathic molecules, meaning they contain both hydrophilic (water-loving) and hydrophobic (water-hating) parts. The hydrophilic heads interact with the aqueous environment, while the hydrophobic tails repel water, leading to the formation of a bilayer in cell membranes. This arrangement forms the **fluid mosaic model** of the membrane, which provides flexibility and selectivity in terms of what enters and exits the cell. The ability of the phospholipid bilayer to allow certain molecules to pass while blocking others is crucial for cell signaling, as embedded proteins can act as receptors to trigger intracellular pathways when they bind with ligands. The fluidity of the membrane also allows the movement of proteins and lipids, enabling the cell to respond quickly to changes in the environment.",
+    "tags": ["#all", "#biology", "#lipids", "#phospholipids", "#membranes", "#cellfunction", "#signaling", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Explain how the sequence of amino acids in a protein determines its final three-dimensional structure and why this is crucial for protein function.",
+    "answer": "The sequence of amino acids in a protein, known as the primary structure, dictates how the protein will fold into its secondary, tertiary, and quaternary structures. The secondary structure arises from hydrogen bonding between the backbone atoms, forming alpha-helices or beta-pleated sheets. The tertiary structure is the final three-dimensional shape, formed by interactions between the side chains (R-groups) of the amino acids, including hydrophobic interactions, hydrogen bonds, ionic bonds, and disulfide bridges. The quaternary structure refers to the assembly of multiple polypeptide chains into a functional protein complex. The correct folding of a protein is essential for its function, as a misfolded protein can lead to dysfunction or diseases like Alzheimer's or cystic fibrosis. For instance, enzymes must have a precise shape to bind their substrates and catalyze reactions.",
+    "tags": ["#all", "#biology", "#proteins", "#folding", "#structure", "#function", "#misfolding", "#diseases", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "How do the structural differences between DNA and RNA contribute to their distinct functions in the cell?",
+    "answer": "DNA and RNA differ structurally in several key ways that are critical to their respective functions. DNA is double-stranded and has deoxyribose sugar, which makes it more stable and suited for long-term storage of genetic information. Its double-helix structure is stable enough to preserve genetic information over time, and the complementary base pairing ensures accurate replication. RNA, on the other hand, is single-stranded and has ribose as the sugar, making it more reactive and less stable. RNA’s instability is beneficial for its role in protein synthesis; it is quickly synthesized and degraded, allowing the cell to rapidly respond to changes in gene expression. Additionally, RNA can fold into various shapes, allowing it to perform regulatory roles and catalyze reactions, as seen in ribozymes.",
+    "tags": ["#all", "#biology", "#DNA", "#RNA", "#structure", "#function", "#geneticinformation", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "What are the specific roles of RNA in protein synthesis, and how do structural differences between mRNA, tRNA, and rRNA facilitate their functions?",
+    "answer": "RNA plays multiple roles in protein synthesis. Messenger RNA (mRNA) serves as the template that carries genetic information from the DNA in the nucleus to the ribosome for translation. Transfer RNA (tRNA) is responsible for bringing the correct amino acids to the ribosome during translation, with its anticodon matching the codon on the mRNA. Ribosomal RNA (rRNA) is a structural component of the ribosome itself and catalyzes the formation of peptide bonds between amino acids. The structural differences between these RNA types reflect their functions: mRNA is linear and carries the coding sequence, tRNA has a cloverleaf structure for its anticodon loop and amino acid attachment site, and rRNA forms complex structures that facilitate protein assembly. These structural adaptations ensure the efficiency and accuracy of protein synthesis.",
+    "tags": ["#all", "#biology", "#RNA", "#mRNA", "#tRNA", "#rRNA", "#proteinsynthesis", "#structure", "#function", "#APBio", "#lecture2"]
+  },
+  {
+    "question": "Explain how condensation reactions contribute to the formation of macromolecules, and why they are essential for cellular processes such as energy storage and genetic information transmission.",
+    "answer": "Condensation reactions are essential for forming macromolecules by linking monomers together, releasing a water molecule in the process. In proteins, condensation reactions form peptide bonds between amino acids, creating polypeptides. In carbohydrates, they form glycosidic bonds between monosaccharides to create polysaccharides like starch or cellulose. In nucleic acids, condensation reactions form phosphodiester bonds between nucleotides to create DNA and RNA. These reactions are critical for energy storage (e.g., glycogen) and for storing genetic information (in DNA). They also play a role in cell signaling and maintaining cellular structure. Without condensation reactions, cells would be unable to synthesize the complex molecules required for life processes.",
+    "tags": ["#all", "#biology", "#condensationreaction", "#macromolecules", "#synthesis", "#energy", "#geneticinformation", "#cellularprocesses", "#APBio", "#lecture2"]
+  }, 
+  {
+    "question": "Part A: Discuss the structural properties and functions of proteins, carbohydrates, and lipids in biological systems. Provide specific examples of how each macromolecule supports cellular functions and contributes to the overall functioning of organisms.",
+    "answer": "Proteins are made up of amino acid subunits linked by peptide bonds. Their function is determined by their three-dimensional structure, which is critical for functions like catalysis (e.g., lactase), transport (e.g., hemoglobin), and structural roles (e.g., collagen). Carbohydrates are made of monosaccharides linked by glycosidic bonds. They provide energy (e.g., glucose) and store energy (e.g., glycogen). Lipids, composed of fatty acids and glycerol, form cell membranes and store energy (e.g., triglycerides). Phospholipids contribute to membrane integrity and fluidity, while lipids like cholesterol are precursors to hormones.",
+    "tags": ["#all", "#biology", "#macromolecules", "#proteins", "#carbohydrates", "#lipids", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "Part B: Describe the process of protein folding and explain how errors in this process can lead to diseases. Provide an example of a disease caused by protein misfolding, and discuss the molecular basis of its pathogenesis.",
+    "answer": "Protein folding is the process where a polypeptide chain folds into a specific three-dimensional shape, driven by interactions between amino acids in the chain. Misfolding can cause diseases like Alzheimer's, where **amyloid-beta** proteins misfold and form plaques that disrupt brain function. The misfolded **amyloid precursor protein (APP)** aggregates, leading to cell death. Misfolding of proteins like **cystic fibrosis transmembrane conductance regulator (CFTR)** in cystic fibrosis also causes diseases by impairing function due to the accumulation of misfolded proteins in cells.",
+    "tags": ["#all", "#biology", "#proteinFolding", "#diseases", "#misfolding", "#Alzheimers", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "How do glycosidic bonds formed in condensation reactions contribute to the diversity of carbohydrate functions in cells?",
+    "answer": "Glycosidic bonds form between monosaccharides in condensation reactions, linking them into disaccharides, oligosaccharides, or polysaccharides. These bonds allow carbohydrates like **glycogen** (energy storage in animals) and **cellulose** (structural support in plants) to form diverse structures that serve different biological functions. The type of glycosidic bond (alpha or beta) determines the carbohydrate's properties, such as digestibility and structure.",
+    "tags": ["#all", "#biology", "#carbohydrates", "#glycosidicBonds", "#condensation", "#macromolecules", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "What is the amphipathic nature of phospholipids and how does it help in membrane formation?",
+    "answer": "Phospholipids are amphipathic, meaning they have a hydrophilic head and hydrophobic tail. This allows them to form a lipid bilayer where the hydrophilic heads face the aqueous environment, and the hydrophobic tails face inward. This arrangement forms the basic structure of cell membranes, providing a semi-permeable barrier that regulates the flow of materials into and out of the cell. This structure is essential for cellular function and integrity.",
+    "tags": ["#all", "#biology", "#lipids", "#phospholipids", "#membranes", "#cellfunction", "#signaling", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "Explain how the structure of DNA contributes to its ability to store and replicate genetic information.",
+    "answer": "DNA has a double-helix structure formed by two complementary strands held together by hydrogen bonds between nitrogenous bases (A-T, G-C). This structure allows for the accurate storage and transmission of genetic information. During replication, the two strands separate, and each acts as a template for the synthesis of a new complementary strand, ensuring the precise copying of genetic material.",
+    "tags": ["#all", "#biology", "#DNA", "#structure", "#geneticInformation", "#replication", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "How do the structural differences between DNA and RNA influence their respective functions in the cell?",
+    "answer": "DNA is double-stranded and has deoxyribose sugar, making it more stable for long-term genetic information storage. RNA is single-stranded, has ribose as the sugar, and contains uracil instead of thymine. This structural difference makes RNA more reactive and suitable for its transient role in protein synthesis. RNA can quickly be synthesized and degraded, allowing cells to respond rapidly to changes in gene expression.",
+    "tags": ["#all", "#biology", "#DNA", "#RNA", "#structure", "#function", "#geneticinformation", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "What is the role of RNA in protein synthesis and how does the structure of mRNA, tRNA, and rRNA facilitate their functions?",
+    "answer": "mRNA carries the genetic code from DNA to the ribosome for translation. tRNA brings amino acids to the ribosome and matches the mRNA codon with the appropriate amino acid using its anticodon. rRNA forms the core structure of the ribosome and catalyzes peptide bond formation. The structure of each RNA type is specialized: mRNA is linear and carries the genetic code; tRNA has a cloverleaf shape to recognize mRNA codons and carry amino acids; rRNA is a structural component of the ribosome that aids in protein synthesis.",
+    "tags": ["#all", "#biology", "#RNA", "#proteinSynthesis", "#mRNA", "#tRNA", "#rRNA", "#structure", "#function", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "How do condensation reactions contribute to the formation of macromolecules, and why are they essential for cellular processes?",
+    "answer": "Condensation reactions involve the removal of a water molecule to form covalent bonds between monomers, creating macromolecules like proteins, carbohydrates, and nucleic acids. These reactions are essential for cellular processes because they allow cells to build complex molecules needed for structure, function, and energy storage. For example, peptide bonds between amino acids form proteins that carry out essential enzymatic functions, while glycosidic bonds between glucose molecules form glycogen for energy storage.",
+    "tags": ["#all", "#biology", "#condensationReactions", "#macromolecules", "#synthesis", "#cellularProcesses", "#APBio", "#lecture2", "#frq"]
+  }, 
+  {
+    "question": "How do enzymes facilitate condensation and hydrolysis reactions? Provide examples of these reactions in biological processes.",
+    "answer": "Enzymes are biological catalysts that lower the activation energy required for reactions to occur. In condensation reactions, enzymes help link monomers (like amino acids in proteins or nucleotides in nucleic acids) by facilitating the removal of a water molecule, forming a covalent bond. For example, **peptidyl transferase** catalyzes peptide bond formation during protein synthesis. In hydrolysis reactions, enzymes like **amylase** or **lipase** catalyze the addition of water to break bonds between monomers, breaking down starch or fats for energy production. These reactions are essential for cellular processes like metabolism and macromolecule synthesis.",
+    "tags": ["#all", "#biology", "#enzymes", "#condensation", "#hydrolysis", "#macromolecules", "#synthesis", "#digestion", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "Explain how the structure of phospholipids supports their role in forming cell membranes. How does membrane fluidity contribute to cell function?",
+    "answer": "Phospholipids have an amphipathic structure, with hydrophilic (water-loving) heads and hydrophobic (water-fearing) tails. In an aqueous environment, phospholipids spontaneously form a bilayer, with the hydrophilic heads facing the exterior and the hydrophobic tails facing inward. This bilayer forms the fundamental structure of the cell membrane, providing a barrier to the movement of ions and molecules. The fluidity of the membrane, due to the lateral movement of lipid molecules, is crucial for cell function, enabling membrane proteins to move and interact, facilitating cell signaling, nutrient transport, and membrane repair.",
+    "tags": ["#all", "#biology", "#lipids", "#phospholipids", "#membranes", "#fluidity", "#cellfunction", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "What is the significance of the alpha and beta glycosidic bonds in carbohydrates? How do these bonds affect the structure and function of polysaccharides like starch and cellulose?",
+    "answer": "Alpha and beta glycosidic bonds are the two main types of covalent bonds that link monosaccharides in carbohydrates. In alpha-glycosidic bonds (found in **starch** and **glycogen**), the bond forms at a 110-degree angle, allowing the polysaccharide to coil into helical structures, making it suitable for energy storage. In contrast, beta-glycosidic bonds (found in **cellulose**) form straight chains that stack to form rigid, insoluble structures, which provide structural support in plants. The difference in the type of glycosidic bond affects the digestibility and function of the polysaccharide: starch is easily hydrolyzed by enzymes, while cellulose is resistant to most digestive enzymes.",
+    "tags": ["#all", "#biology", "#carbohydrates", "#glycosidicbonds", "#starch", "#cellulose", "#structure", "#function", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "Explain the relationship between the structure of amino acids and the function of proteins. How does the R-group influence the protein’s activity?",
+    "answer": "Amino acids are the building blocks of proteins. The structure of an amino acid includes a central carbon, an amino group, a carboxyl group, and an R-group (side chain), which varies between different amino acids. The R-group determines the amino acid's chemical properties (e.g., hydrophobic, hydrophilic, acidic, basic) and plays a critical role in the protein’s folding and function. The interactions between R-groups (e.g., hydrophobic interactions, hydrogen bonding, ionic bonds, and disulfide bridges) drive the formation of the protein’s three-dimensional structure. This structure is crucial for the protein’s function, such as enzyme catalysis, substrate binding, and molecular recognition.",
+    "tags": ["#all", "#biology", "#aminoacids", "#proteins", "#Rgroup", "#function", "#structure", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "How do the properties of nucleotides allow DNA to function as a stable and reliable genetic material? Discuss how base pairing contributes to DNA replication.",
+    "answer": "Nucleotides consist of a nitrogenous base (A, T, G, or C), a five-carbon sugar (deoxyribose in DNA), and a phosphate group. In DNA, base pairing occurs between adenine (A) and thymine (T), and between guanine (G) and cytosine (C), held together by hydrogen bonds. This complementary base pairing allows DNA to maintain a stable double-helix structure, ensuring the accurate storage and transmission of genetic information. During DNA replication, the two strands of DNA separate, and each strand serves as a template for the synthesis of a new complementary strand, using base pairing to ensure the correct sequence of nucleotides is incorporated.",
+    "tags": ["#all", "#biology", "#DNA", "#nucleotides", "#basepairing", "#replication", "#geneticinformation", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "What are the functional differences between DNA and RNA in the central dogma of molecular biology, and how do their structures reflect these roles?",
+    "answer": "DNA and RNA are both nucleic acids, but they serve different roles in the central dogma of molecular biology. DNA stores genetic information in a stable, double-stranded form, which is used as a template for RNA synthesis during transcription. RNA is single-stranded and serves as an intermediary, carrying the genetic code from DNA to the ribosome for protein synthesis in translation. The structural differences between DNA (double-stranded, deoxyribose sugar) and RNA (single-stranded, ribose sugar) reflect their functional differences: DNA’s stability allows it to serve as a long-term genetic repository, while RNA’s reactivity allows it to quickly perform its role in protein synthesis.",
+    "tags": ["#all", "#biology", "#DNA", "#RNA", "#centraldogma", "#structure", "#function", "#APBio", "#lecture2", "#frq"]
+  },
+  {
+    "question": "What is the importance of protein misfolding in diseases such as Alzheimer's, and how does this misfolding affect cellular functions?",
+    "answer": "Protein misfolding occurs when proteins do not adopt their correct three-dimensional structure, which can lead to the accumulation of misfolded proteins and the formation of toxic aggregates. In **Alzheimer’s disease**, misfolded **amyloid-beta** proteins aggregate to form plaques in the brain, leading to neuronal dysfunction, inflammation, and ultimately neurodegeneration. The misfolded proteins disrupt normal cell processes, impairing synaptic function and leading to cognitive decline. Other diseases, such as **cystic fibrosis** and **Parkinson’s disease**, are also associated with misfolded proteins, showing how critical proper protein folding is for cellular function and health.",
+    "tags": ["#all", "#biology", "#proteinMisfolding", "#Alzheimers", "#diseases", "#function", "#APBio", "#lecture2", "#frq"]
   }
-				]
+		]
 				, 
 		'classes' : [
 					 {
