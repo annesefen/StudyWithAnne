@@ -442,7 +442,7 @@ footer {
   /* Flashcard adjustments */
   .flashcard {
     height: auto;
-    min-height: 180px;
+    min-height: 170px;
     padding: 15px;
   }
 
@@ -451,8 +451,8 @@ footer {
   }
 
   .flashcard img {
-    max-width: 60%;
-    max-height: 120px;
+    max-width: 58%;
+    max-height: 110px;
   }
 
   .card-controls {
