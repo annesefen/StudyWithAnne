@@ -1,20 +1,342 @@
-// Cleaned version of flashcards-scripts.js for biology decks
+// flashcards-test.js - Isolated test version of your flashcard system
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Search Decks
-    const searchBar = document.getElementById('deck-search');
-    const decks = document.querySelectorAll('.deck');
+  const searchBar = document.getElementById('deck-search');
+  const decks = document.querySelectorAll('.deck');
 
-    searchBar.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase();
-        decks.forEach(deck => {
-            const deckName = deck.getAttribute('data-name').toLowerCase();
-            deck.style.display = deckName.includes(query) ? 'block' : 'none';
-        });
+  searchBar.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    decks.forEach(deck => {
+      const deckName = deck.getAttribute('data-name').toLowerCase();
+      deck.style.display = deckName.includes(query) ? 'block' : 'none';
     });
+  });
 
     // Flashcard Data - add tags like ['#biology', '#ch1']
-    const flashcardData = {		'biology' : [{"question": "Prokaryotic Organelles", "answer": "<strong>Capsule:</strong> Layer of carbohydrates that surrounds the cell wall of some bacteria and helps them attach to surfaces.<br><strong>Cell wall:</strong> Consists of peptidoglycans that give the cell structure and protection.<br><strong>Cell membrane:</strong> Also known as the plasma membrane, which encloses the cytoplasm and separates the cell from the environment.<br><strong>Cytoplasm:</strong> Region enclosed by the cell membrane.<br><strong>Nucleoid:</strong> Region that contains DNA.<br><strong>Plasmids:</strong> Independently reproducing DNA.<br><strong>Ribosome:</strong> Performs protein synthesis.<br><strong>Flagella:</strong> Thin, tail-like structures that aid movement.<br><strong>Pili:</strong> Short, rod-shaped structures involved in attachment to surfaces and DNA transfer.<br><strong>Fimbriae:</strong> Thin, hair-like structures used for attachment.<br><strong>Vesicles:</strong> Sacs released by the membrane that perform a variety of functions.<br><strong>Vacuoles:</strong> Storage sacs found in some bacterial cells.<br> <br><img src='Images_Flash/Prokaryotic-Cell-Diagram-768x709.jpg' alt='Nucleoid Diagram'>" }] , 
+    const flashcardData = {		'biology': [
+			  {
+				"question": "Prokaryotic Organelles",
+				"answer": "<strong>Capsule:</strong> Layer of carbohydrates that surrounds the cell wall of some bacteria and helps them attach to surfaces.<br><strong>Cell wall:</strong> Consists of peptidoglycans that give the cell structure and protection.<br><strong>Cell membrane:</strong> Also known as the plasma membrane, which encloses the cytoplasm and separates the cell from the environment.<br><strong>Cytoplasm:</strong> Region enclosed by the cell membrane.<br><strong>Nucleoid:</strong> Region that contains DNA.<br><strong>Plasmids:</strong> Independently reproducing DNA.<br><strong>Ribosome:</strong> Performs protein synthesis.<br><strong>Flagella:</strong> Thin, tail-like structures that aid movement.<br><strong>Pili:</strong> Short, rod-shaped structures involved in attachment to surfaces and DNA transfer.<br><strong>Fimbriae:</strong> Thin, hair-like structures used for attachment.<br><strong>Vesicles:</strong> Sacs released by the membrane that perform a variety of functions.<br><strong>Vacuoles:</strong> Storage sacs found in some bacterial cells.<br><br><img src='Images_Flash/Prokaryotic-Cell-Diagram-768x709.jpg' alt='Prokaryotic Cell Diagram'>",
+				"tags": ["#all", "#biology", "#lecture1"]
+			  }, 
+		{
+		  "question": "Eukaryotic Cell Structure",
+		  "answer": "<strong>Nucleus:</strong> Control center of the cell that contains DNA.<br><strong>Nucleolis:</strong>Produces and assembles ribosomal RNA (rRNA) and combines it with proteins to form ribosome subunits. <br><strong>Cell membrane:</strong> Outer boundary that controls what enters and leaves the cell.<br><strong>Cytoplasm:</strong> Jelly-like fluid that holds organelles.<br><strong>Mitochondria:</strong> Produces energy (ATP) through cellular respiration.<br><strong>Ribosome:</strong> Makes proteins; can be free-floating or attached to rough ER.<br><strong>Rough ER:</strong> Makes and processes proteins; has ribosomes on its surface.<br><strong>Smooth ER:</strong> Makes lipids and detoxifies harmful substances.<br><strong>Golgi apparatus:</strong> Sorts, modifies, and packages proteins and lipids for transport.<br><strong>Lysosome:</strong> Contains enzymes that break down waste and cell debris.<br><strong>Vacuole:</strong> Stores water, nutrients, and waste; large in plant cells.<br><strong>Cytoskeleton:</strong> Provides structure and helps with movement.<br><strong>Centrioles:</strong> Help with cell division in animal cells.<br><strong>Chloroplast:</strong> (Plants only) Uses sunlight to make food through photosynthesis.<br><strong>Cell wall:</strong> (Plants only) Rigid outer layer that gives structure and support.<br> <img src = 'Images_Flash/Eukaryotic-Cell-Diagram-768x610.jpg' alt = 'Eukaryotic Cell Diagram'>",
+		  "tags": ["#all", "#biology", "#lecture1"]
+		}, 
+				  {
+					"question": "What is the primary structural difference between prokaryotic and eukaryotic cells?",
+					"answer": "Prokaryotic cells lack a membrane-bound nucleus and organelles. Eukaryotic cells have both.",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "Which cell types contain circular DNA and which contain linear DNA?",
+					"answer": "Prokaryotes typically have circular DNA; eukaryotes have linear chromosomes wrapped around histone proteins.",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "Where does transcription and translation occur in prokaryotes?",
+					"answer": "Both occur in the cytoplasm and are often coupled (happen simultaneously).",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "Which organelles are membrane-bound and found only in eukaryotes?",
+					"answer": "Examples include nucleus, mitochondria, chloroplasts, Golgi apparatus, ER, lysosomes, and peroxisomes.",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "What structures are involved in movement in both prokaryotic and eukaryotic cells?",
+					"answer": "Both may have flagella, but prokaryotic flagella are made of flagellin, while eukaryotic flagella are made of microtubules (9+2 arrangement).",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "Compare ribosomes in prokaryotic vs. eukaryotic cells.",
+					"answer": "Prokaryotic ribosomes are 70S (50S + 30S), eukaryotic ribosomes are 80S (60S + 40S).",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "What kind of organisms are classified as prokaryotic?",
+					"answer": "Bacteria and Archaea.",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "What kind of organisms are made of eukaryotic cells?",
+					"answer": "Protists, fungi, plants, and animals (including humans).",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+				  {
+					"question": "What type of cell division do prokaryotes use?",
+					"answer": "Binary fission.",
+					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+				  },
+  {
+	"question": "What types of reproduction are used by eukaryotic cells?",
+	"answer": "Asexual (mitosis) and sexual (meiosis).",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "Do prokaryotic cells contain histone proteins?",
+	"answer": "No, they usually lack histones (except some archaea). Eukaryotic DNA is wrapped around histones.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "What does the presence of mitochondria indicate about a cell?",
+	"answer": "It is eukaryotic. Prokaryotic cells do not have mitochondria.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "Which type of cell has greater internal complexity and why?",
+	"answer": "Eukaryotic cells, due to the presence of membrane-bound organelles and compartmentalized functions.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "What evidence supports that mitochondria and chloroplasts evolved from prokaryotes?",
+	"answer": "They have their own circular DNA, reproduce independently, and have prokaryote-like ribosomes (endosymbiotic theory).",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "Do both cell types have vesicles and vacuoles?",
+	"answer": "Yes, both have membrane sacs for transport and storage, although they are more developed in eukaryotes.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "How does cell size compare between prokaryotes and eukaryotes?",
+	"answer": "Prokaryotes are smaller (~1–5 µm), eukaryotes are larger (~10–100 µm).",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "Do all eukaryotic cells have cell walls?",
+	"answer": "No. Plant and fungi cells do, but animal cells do not.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "How do prokaryotic and eukaryotic cells differ in chromosome structure?",
+	"answer": "Prokaryotes usually have a single circular chromosome; eukaryotes have multiple linear chromosomes.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  },
+  {
+	"question": "What is the role of the nucleoid in a prokaryotic cell?",
+	"answer": "It contains the cell's genetic material in a non-membrane-bound region.",
+	"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+  }, 
+  {
+    "question": "What does the term 'prokaryote' mean?",
+    "answer": "It means 'before nucleus'; prokaryotic cells lack a membrane-bound nucleus.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the main defining feature of eukaryotic cells?",
+    "answer": "They contain a true nucleus and membrane-bound organelles.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are examples of prokaryotic organisms?",
+    "answer": "Bacteria and Archaea.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are examples of eukaryotic organisms?",
+    "answer": "Protists, fungi, plants, and animals.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the size range of prokaryotic cells?",
+    "answer": "Approximately 1–5 micrometers.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the size range of eukaryotic cells?",
+    "answer": "Approximately 10–100 micrometers.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the shape of DNA in prokaryotes?",
+    "answer": "Usually circular, located in the nucleoid region.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What type of chromosomes do eukaryotes have?",
+    "answer": "Linear chromosomes associated with histone proteins.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Where do transcription and translation occur in prokaryotes?",
+    "answer": "Both happen in the cytoplasm and are often coupled.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Where does RNA synthesis occur in eukaryotes?",
+    "answer": "In the nucleus; translation occurs in the cytoplasm.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What size ribosomes are found in prokaryotes?",
+    "answer": "70S ribosomes (50S + 30S subunits).",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What size ribosomes are found in eukaryotes?",
+    "answer": "80S ribosomes (60S + 40S subunits).",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How do prokaryotic cells divide?",
+    "answer": "Through binary fission.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How do eukaryotic cells divide?",
+    "answer": "Through mitosis and meiosis.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How are prokaryotic and eukaryotic membranes different?",
+    "answer": "Prokaryotes only have a plasma membrane; eukaryotes also have internal membrane-bound organelles.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What types of cellular organization are found in prokaryotes?",
+    "answer": "Mostly unicellular; some form colonies.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What types of organization are found in eukaryotes?",
+    "answer": "Unicellular, colonial, or multicellular.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What structures do prokaryotes use for movement?",
+    "answer": "Flagella made of flagellin.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What structures do eukaryotes use for movement?",
+    "answer": "Flagella (microtubules), cilia, lamellipodia, and filopodia.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Do prokaryotes have mitochondria or chloroplasts?",
+    "answer": "No, they do not have membrane-bound organelles.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Do eukaryotic cells have mitochondria and chloroplasts?",
+    "answer": "Yes; mitochondria are found in nearly all, chloroplasts in plants and algae.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the function of the capsule in some prokaryotes?",
+    "answer": "It helps with surface attachment and protects against desiccation and immune defenses.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the difference between pili and fimbriae in prokaryotic cells?",
+    "answer": "Pili assist in DNA transfer; fimbriae help in attachment to surfaces.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What role do vesicles and vacuoles play in both cell types?",
+    "answer": "They store and transport substances inside the cell.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are plasmids and which cells have them?",
+    "answer": "Plasmids are small, circular DNA found in prokaryotes; they carry extra genes.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Which type of chromosome is haploid and which is diploid?",
+    "answer": "Prokaryotes usually have a single haploid (n) chromosome; eukaryotes often have diploid (2n) chromosomes.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the endosymbiotic theory?",
+    "answer": "It suggests that mitochondria and chloroplasts evolved from prokaryotes engulfed by ancestral eukaryotic cells.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are key similarities between prokaryotic and eukaryotic cells?",
+    "answer": "Both have DNA, ribosomes, cytoplasm, vesicles, vacuoles, and a cell membrane.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How are prokaryotic and eukaryotic cell walls different?",
+    "answer": "Prokaryotic cell walls contain peptidoglycan; eukaryotic plant/fungi cell walls are made of cellulose or chitin and are simpler.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Which type of reproduction is more common in eukaryotes?",
+    "answer": "Sexual reproduction (meiosis).",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Which came first: prokaryotes or eukaryotes?",
+    "answer": "Prokaryotes. They appeared over 3.5 billion years ago and gave rise to eukaryotes.",
+    "tags": ["#biology", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Eukaryotic cells contain membrane-bound organelles that are absent in prokaryotic cells. A. Explain how compartmentalization gives eukaryotic cells a functional advantage over prokaryotic cells. B. Identify one specific eukaryotic organelle and describe its role in compartmentalized function. C. Discuss how the absence of compartmentalization in prokaryotes affects their metabolic efficiency and flexibility.",
+    "answer": "<strong>A:</strong> Compartmentalization allows eukaryotic cells to separate incompatible chemical reactions into different organelles. This spatial separation increases efficiency and allows cells to specialize in complex functions.<br><strong>B:</strong> The mitochondrion is a membrane-bound organelle that carries out aerobic respiration. It produces ATP by creating a proton gradient across its inner membrane, an environment that wouldn't exist without compartmentalization.<br><strong>C:</strong> Without internal membranes, prokaryotes rely on the cytoplasm for all reactions. While this allows for rapid gene expression, it limits the cell's ability to isolate and regulate processes, reducing complexity and efficiency.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Cellular structures reflect both function and evolutionary history. A. Describe one structural feature unique to prokaryotic cells and explain its function. B. Describe one structural feature unique to eukaryotic cells and explain its function. C. Use the endosymbiotic theory to explain how mitochondria and chloroplasts support the evolutionary transition from prokaryotes to eukaryotes.",
+    "answer": "<strong>A:</strong> Prokaryotes have a nucleoid region instead of a nucleus. It contains their circular DNA and allows fast gene expression since transcription and translation are coupled.<br><strong>B:</strong> Eukaryotic cells have a nucleus with a double membrane that protects DNA and separates transcription from translation, enabling more regulation of gene expression.<br><strong>C:</strong> The endosymbiotic theory suggests mitochondria and chloroplasts originated from free-living prokaryotes engulfed by an ancestral cell. These organelles have circular DNA, prokaryotic ribosomes, and divide independently - evidence of their evolutionary past.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Both prokaryotic and eukaryotic cells carry and express genetic material, but their systems differ. A. Compare the organization of DNA in prokaryotic and eukaryotic cells. B. Explain how transcription and translation differ in location and coordination between the two cell types. C. Discuss the evolutionary significance of histone-associated linear chromosomes in eukaryotic cells.",
+    "answer": "<strong>A:</strong> Prokaryotes typically have a single circular chromosome in the cytoplasm. Eukaryotes have multiple linear chromosomes enclosed in the nucleus.<br><strong>B:</strong> In prokaryotes, transcription and translation occur simultaneously in the cytoplasm. In eukaryotes, transcription occurs in the nucleus and translation occurs in the cytoplasm, allowing greater control over gene regulation.<br><strong>C:</strong> The association of eukaryotic DNA with histones helps organize and compact large genomes. It also allows for gene regulation through chromatin remodeling, supporting cellular differentiation and complexity in multicellular organisms.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Prokaryotic and eukaryotic cells reproduce using different mechanisms. A. Describe how binary fission differs from mitosis. B. Explain how the simpler division process in prokaryotes affects their evolutionary adaptability. C. Contrast how sexual reproduction in eukaryotes contributes to genetic diversity, while prokaryotes rely on horizontal gene transfer.",
+    "answer": "<strong>A:</strong> Binary fission is a simpler, asexual process where a prokaryotic cell duplicates its DNA and splits into two identical cells. Mitosis in eukaryotes involves multiple phases and ensures even chromosome distribution.<br><strong>B:</strong> The simplicity of binary fission allows prokaryotes to reproduce rapidly, enabling fast adaptation through high mutation rates and selection.<br><strong>C:</strong> Eukaryotes generate genetic diversity through meiosis and recombination. Prokaryotes rely on horizontal gene transfer (conjugation, transformation, transduction) to introduce genetic variation without sexual reproduction.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Cell type plays a key role in an organism’s overall structure and complexity. A. Compare the organizational potential (unicellular vs. multicellular) of prokaryotic and eukaryotic organisms. B. Explain how compartmentalization supports the development of multicellularity in eukaryotes. C. Provide an example of a multicellular eukaryotic function that could not occur in a prokaryotic cell and justify why.",
+    "answer": "<strong>A:</strong> Prokaryotes are mostly unicellular, sometimes forming colonies. Eukaryotes can be unicellular, but many are multicellular with specialized tissues.<br><strong>B:</strong> Compartmentalization allows eukaryotic cells to specialize and perform distinct functions, which is essential for tissue differentiation and multicellular organization.<br><strong>C:</strong> Nerve impulse transmission requires specialized cells (neurons) with complex ion channels and organelles. Prokaryotes lack the internal structure to support such high-speed, compartmentalized signaling.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  }, 
+  {
+    "question": "Compare and contrast the structure and chemical composition of the cell walls in prokaryotic and eukaryotic cells. A. Identify the primary chemical components of bacterial cell walls and plant cell walls. B. Explain how differences in cell wall composition affect the function of these cells. C. Discuss how cell wall composition in archaea differs from both bacteria and eukaryotes.",
+    "answer": "<strong>A:</strong> Bacterial cell walls are made of peptidoglycan. Plant cell walls are made of cellulose. Fungal walls (eukaryotic) are made of chitin.<br><strong>B:</strong> Peptidoglycan provides strength and protection in harsh environments, while cellulose supports rigidity and structure in plant tissue. Fungal chitin offers structural protection.<br><strong>C:</strong> Archaeal cell walls lack peptidoglycan. Instead, they may contain pseudopeptidoglycan or protein-based S-layers, allowing them to survive extreme environments.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Gene expression is essential to all cells. A. Explain how the coupling of transcription and translation in prokaryotes impacts gene expression speed. B. Contrast this with eukaryotic gene expression and its level of regulation. C. Describe one benefit and one drawback of each system.",
+    "answer": "<strong>A:</strong> In prokaryotes, transcription and translation occur simultaneously in the cytoplasm, enabling rapid protein production.<br><strong>B:</strong> In eukaryotes, transcription occurs in the nucleus and translation in the cytoplasm, allowing for regulatory steps such as RNA splicing and capping.<br><strong>C:</strong> Prokaryotic speed supports fast adaptation but limits control. Eukaryotic regulation allows gene fine-tuning but slows expression and response time.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Despite differences, prokaryotic and eukaryotic cells share some features. A. Identify three structures found in both cell types and describe their function. B. Explain how their shared features support the idea of common ancestry. C. Discuss one structural feature that evolved only in eukaryotes and how it enabled cellular complexity.",
+    "answer": "<strong>A:</strong> Both cell types have DNA (stores genetic info), ribosomes (build proteins), and plasma membranes (control transport).<br><strong>B:</strong> Shared structures suggest a common ancestor that had these fundamental cellular components.<br><strong>C:</strong> The nucleus evolved in eukaryotes, enabling separation of transcription and translation, which allows complex gene regulation and supports multicellularity.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Energy generation is essential for cell survival. A. Compare ATP production in prokaryotes and eukaryotes. B. Explain how the lack of mitochondria in prokaryotes influences where respiration occurs. C. Justify how eukaryotic organelles contribute to efficient energy metabolism.",
+    "answer": "<strong>A:</strong> Both produce ATP, but eukaryotes use mitochondria for aerobic respiration, while prokaryotes rely on their plasma membrane.<br><strong>B:</strong> In prokaryotes, the electron transport chain is embedded in the inner cell membrane.<br><strong>C:</strong> Mitochondria create an internal environment ideal for efficient ATP production, enhancing energy yield per glucose molecule.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Prokaryotes and eukaryotes differ in complexity and evolutionary history. A. State one reason prokaryotes are considered more ancient than eukaryotes. B. Explain how structural simplicity benefits prokaryotes. C. Discuss how complexity allows eukaryotic cells to perform specialized functions.",
+    "answer": "<strong>A:</strong> Prokaryotes appear in the fossil record ~3.5 billion years ago, before eukaryotes.<br><strong>B:</strong> Their simplicity allows rapid reproduction, adaptability, and survival in varied environments.<br><strong>C:</strong> Eukaryotic complexity enables compartmentalization, which allows for specialization such as photosynthesis in chloroplasts or protein modification in the Golgi apparatus.",
+    "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+  "question": "Prokaryotic and eukaryotic cells are found in different types of organisms. A. Identify the two major domains that contain prokaryotic cells and give one distinguishing feature of each. B. List the four main kingdoms that contain eukaryotic organisms and provide one representative example for each. C. Explain how structural differences between these cell types support their diversity of life.",
+  "answer": "<strong>A:</strong> The two domains with prokaryotic cells are Bacteria and Archaea. Bacteria have peptidoglycan in their cell walls, while Archaea lack peptidoglycan and often live in extreme environments.<br><strong>B:</strong> The four eukaryotic kingdoms are Protista (e.g., amoeba), Fungi (e.g., yeast), Plantae (e.g., moss), and Animalia (e.g., human).<br><strong>C:</strong> Prokaryotic simplicity allows for rapid reproduction and metabolic flexibility, supporting survival in diverse niches. Eukaryotic complexity allows for specialized cells, enabling multicellular organisms and higher functions like movement, photosynthesis, and digestion.",
+  "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1", "#frq"]
+}, 
+  {
+  "question": "Compare and contrast prokaryotic and eukaryotic cells.",
+  "answer": "<strong>Similarities:</strong> Both have DNA, ribosomes, cytoplasm, a cell (plasma) membrane, vesicles, and vacuoles.<br><br><strong>Differences:</strong><br><strong>Nucleus:</strong> Prokaryotes lack a true nucleus; eukaryotes have a membrane-bound nucleus.<br><strong>DNA:</strong> Prokaryotes have circular DNA; eukaryotes have linear chromosomes with histone proteins.<br><strong>Size:</strong> Prokaryotes (~1–5 µm); eukaryotes (~10–100 µm).<br><strong>Organelles:</strong> Prokaryotes lack membrane-bound organelles; eukaryotes have them (e.g., mitochondria, ER, Golgi).<br><strong>Cell division:</strong> Prokaryotes divide by binary fission; eukaryotes use mitosis and meiosis.<br><strong>Complexity:</strong> Prokaryotes are simpler and usually unicellular; eukaryotes are more complex and often multicellular.<br><strong>Flagella:</strong> Prokaryotic flagella are made of flagellin; eukaryotic ones are made of microtubules.",
+  "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
+}
+
+				]
+				, 
 		'classes' : [
 					 {
     "question": "Analgesic",
@@ -1446,113 +1768,119 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 			
 			
-
 			]
 
-	}
-// Modal Elements
-const modal = document.getElementById('flashcard-modal');
-const modalClose = modal.querySelector('.close-btn');
-const flashcardElement = modal.querySelector('.flashcard');
-const flashcardFront = modal.querySelector('.front p');
-const flashcardBack = modal.querySelector('.back p');
-const prevCardBtn = document.getElementById('prev-card');
-const nextCardBtn = document.getElementById('next-card');
-const shuffleBtn = document.getElementById('shuffle-deck');
-const gotItBtn = document.getElementById('got-it-btn');
-const cardNumberDisplay = document.getElementById('card-number-display');
+	};
+ const modal = document.getElementById('flashcard-modal');
+  const modalClose = modal.querySelector('.close-btn');
+  const flashcardElement = modal.querySelector('.flashcard');
+  const flashcardFront = modal.querySelector('.front p');
+  const flashcardBack = modal.querySelector('.back p');
+  const prevCardBtn = document.getElementById('prev-card');
+  const nextCardBtn = document.getElementById('next-card');
+  const shuffleBtn = document.getElementById('shuffle-deck');
+  const gotItBtn = document.getElementById('got-it-btn');
+  const cardNumberDisplay = document.getElementById('card-number-display');
 
-let completedCards = JSON.parse(localStorage.getItem("completedCards")) || [];
+  let completedCards = JSON.parse(localStorage.getItem("completedCards")) || [];
+  let currentDeck = [];
+  let filteredDeck = [];
+  let currentCardIndex = 0;
+  let currentTagFilter = "#all";
+  let isFlipped = false;
 
-let currentDeck = [];
-let currentCardIndex = 0;
-let isFlipped = false;
+  function loadCard() {
+    if (!filteredDeck.length) return;
 
-// Load Flashcard
-function loadCard() {
-    if (!currentDeck.length) return;
-
-    const card = currentDeck[currentCardIndex];
+    const card = filteredDeck[currentCardIndex];
     flashcardFront.textContent = card.question;
     flashcardBack.innerHTML = card.answer;
     isFlipped = false;
     flashcardElement.classList.remove('flipped');
 
-    // Update the flashcard number badge
-    cardNumberDisplay.textContent = `Card ${currentCardIndex + 1} of ${currentDeck.length}`;
+    cardNumberDisplay.textContent = "Card " + (currentCardIndex + 1) + " of " + filteredDeck.length;
+  }
 
-}
-
-// Open Deck
-document.querySelectorAll('.view-deck-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const deckName = button.getAttribute('data-deck');
-        currentDeck = flashcardData[deckName] || [];
-        currentCardIndex = 0;
-        loadCard();
-        modal.classList.remove('hidden');
-    });
-});
-
-// Modal Controls
-modalClose.addEventListener('click', () => modal.classList.add('hidden'));
-
-flashcardElement.addEventListener('click', () => {
-    isFlipped = !isFlipped;
-    flashcardElement.classList.toggle('flipped', isFlipped);
-});
-
-prevCardBtn.addEventListener('click', () => {
-    if (!currentDeck.length) return;
-    currentCardIndex = (currentCardIndex - 1 + currentDeck.length) % currentDeck.length;
-    loadCard();
-});
-
-nextCardBtn.addEventListener('click', () => {
-    if (!currentDeck.length) return;
-    currentCardIndex = (currentCardIndex + 1) % currentDeck.length;
-    loadCard();
-});
-
-shuffleBtn.addEventListener('click', () => {
-    if (!currentDeck.length) return;
-    currentDeck = [...currentDeck].sort(() => Math.random() - 0.5);
+  function applyTagFilter(tag) {
+    currentTagFilter = tag;
+    filteredDeck = tag === "#all" ? currentDeck : currentDeck.filter(card => card.tags && card.tags.includes(tag));
     currentCardIndex = 0;
     loadCard();
-});
+  }
 
-// ? Got It Button logic
-gotItBtn.addEventListener('click', () => {
-    const card = currentDeck[currentCardIndex];
+  document.querySelectorAll('.view-deck-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const deckName = button.getAttribute('data-deck');
+      currentDeck = flashcardData[deckName] || [];
+      applyTagFilter("#all");
+      modal.classList.remove('hidden');
+
+		document.body.classList.add("modal-open");
+
+    });
+  });
+
+  modalClose.addEventListener('click', () => modal.classList.add('hidden'));
+	
+	document.body.classList.remove("modal-open");
+
+  flashcardElement.addEventListener('click', () => {
+    isFlipped = !isFlipped;
+    flashcardElement.classList.toggle('flipped', isFlipped);
+  });
+
+  prevCardBtn.addEventListener('click', () => {
+    if (!filteredDeck.length) return;
+    currentCardIndex = (currentCardIndex - 1 + filteredDeck.length) % filteredDeck.length;
+    loadCard();
+  });
+
+  nextCardBtn.addEventListener('click', () => {
+    if (!filteredDeck.length) return;
+    currentCardIndex = (currentCardIndex + 1) % filteredDeck.length;
+    loadCard();
+  });
+
+  shuffleBtn.addEventListener('click', () => {
+    if (!filteredDeck.length) return;
+    filteredDeck = [...filteredDeck].sort(() => Math.random() - 0.5);
+    currentCardIndex = 0;
+    loadCard();
+  });
+
+  gotItBtn.addEventListener('click', () => {
+    const card = filteredDeck[currentCardIndex];
     const id = card.question;
 
     if (!completedCards.includes(id)) {
-        completedCards.push(id);
-        localStorage.setItem("completedCards", JSON.stringify(completedCards));
+      completedCards.push(id);
+      localStorage.setItem("completedCards", JSON.stringify(completedCards));
     }
 
-    // Remove the card from the deck
-    currentDeck.splice(currentCardIndex, 1);
+    filteredDeck.splice(currentCardIndex, 1);
 
-    if (currentDeck.length === 0) {
-        alert("You've finished all cards!");
-        modal.classList.add('hidden');
-        return;
+    if (filteredDeck.length === 0) {
+      alert("You've finished all cards!");
+      modal.classList.add('hidden');
+      return;
     }
 
-    if (currentCardIndex >= currentDeck.length) {
-        currentCardIndex = 0;
+    if (currentCardIndex >= filteredDeck.length) {
+      currentCardIndex = 0;
     }
 
     loadCard();
-});
+  });
 
-// ?? Reset function
-window.resetProgress = function () {
+  window.resetProgress = function () {
     localStorage.removeItem("completedCards");
     location.reload();
-};
+  };
 
-
-	
+  document.querySelectorAll(".lecture-filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tag = btn.getAttribute("data-tag");
+      applyTagFilter(tag);
+    });
+  });
 });
