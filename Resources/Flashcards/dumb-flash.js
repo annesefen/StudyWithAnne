@@ -70,10 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
       currentDeck = flashcardData[deckName] || [];
       applyTagFilter("#all");
       modal.classList.remove('hidden');
+      document.body.classList.add("modal-open");
     });
   });
 
-  modalClose.addEventListener('click', () => modal.classList.add('hidden'));
+  modalClose.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    document.body.classList.remove("modal-open");
+  });
 
   flashcardElement.addEventListener('click', () => {
     isFlipped = !isFlipped;
@@ -113,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filteredDeck.length === 0) {
       alert("You've finished all cards!");
       modal.classList.add('hidden');
+      document.body.classList.remove("modal-open");
       return;
     }
 
@@ -134,4 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTagFilter(tag);
     });
   });
+
+  // 🔥 NEW: Dropdown filter support for all screen sizes
+  const tagDropdown = document.getElementById("lecture-filter-dropdown");
+  if (tagDropdown) {
+    tagDropdown.addEventListener("change", () => {
+      const selectedTag = tagDropdown.value;
+      applyTagFilter(selectedTag);
+    });
+  }
 });

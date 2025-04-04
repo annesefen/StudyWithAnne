@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>PTCB</h1>
+            <h1>Flashcards</h1>
         </div>
         <nav class="nav-home">
             <a href="placeholderindex.html">🏠 Home</a>
@@ -46,21 +46,26 @@
         </section>
 
         <!-- Flashcard Modal -->
-        <div id="flashcard-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                
-                <!-- Number badge -->
-                <div class="flashcard-number" id="card-number-display">1</div>
-				 <!-- Lecture Filter -->
+			<div id="flashcard-modal" class="modal hidden">
+			  <div class="modal-content">
+				<span class="close-btn">&times;</span>
 
-				<div id="lecture-filter" style="margin: 10px 0;">
-				  <button class="lecture-filter-btn" data-tag="#all">All</button>
-				  <button class="lecture-filter-btn" data-tag="#lecture1">Lecture 1</button>
-				  <button class="lecture-filter-btn" data-tag="#lecture2">Lecture 2</button>
-			      <button class="lecture-filter-btn" data-tag="#frq">FRQ</button>
-				  <!-- Add more buttons as needed -->
+				<!-- Number badge -->
+				<div class="flashcard-number" id="card-number-display">1</div>
+
+				<!-- Lecture Filter -->
+				<div id="lecture-filter-container">
+				  <label for="lecture-filter-dropdown" class="filter-label">Filter by Tag:</label>
+				  <select id="lecture-filter-dropdown">
+					<option value="#all">Show All</option>
+					<option value="#lecture1">Lecture 1</option>
+					<option value="#centraldogma">Dogma</option>
+					<option value="#lecture2">Lecture 2</option>
+					<option value="#frq">FRQ</option>
+					<!-- Add more options as needed -->
+				  </select>
 				</div>
+
 
 
                 <!-- Flashcard -->

@@ -50,11 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
 				  },
 				  {
-					"question": "Compare ribosomes in prokaryotic vs. eukaryotic cells.",
-					"answer": "Prokaryotic ribosomes are 70S (50S + 30S), eukaryotic ribosomes are 80S (60S + 40S).",
-					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
-				  },
-				  {
 					"question": "What kind of organisms are classified as prokaryotic?",
 					"answer": "Bacteria and Archaea.",
 					"tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
@@ -333,8 +328,328 @@ document.addEventListener('DOMContentLoaded', () => {
   "question": "Compare and contrast prokaryotic and eukaryotic cells.",
   "answer": "<strong>Similarities:</strong> Both have DNA, ribosomes, cytoplasm, a cell (plasma) membrane, vesicles, and vacuoles.<br><br><strong>Differences:</strong><br><strong>Nucleus:</strong> Prokaryotes lack a true nucleus; eukaryotes have a membrane-bound nucleus.<br><strong>DNA:</strong> Prokaryotes have circular DNA; eukaryotes have linear chromosomes with histone proteins.<br><strong>Size:</strong> Prokaryotes (~1–5 µm); eukaryotes (~10–100 µm).<br><strong>Organelles:</strong> Prokaryotes lack membrane-bound organelles; eukaryotes have them (e.g., mitochondria, ER, Golgi).<br><strong>Cell division:</strong> Prokaryotes divide by binary fission; eukaryotes use mitosis and meiosis.<br><strong>Complexity:</strong> Prokaryotes are simpler and usually unicellular; eukaryotes are more complex and often multicellular.<br><strong>Flagella:</strong> Prokaryotic flagella are made of flagellin; eukaryotic ones are made of microtubules.",
   "tags": ["#all", "#biology", "#cells", "#APBio", "#lecture1"]
-}
-
+}, 
+  /*Central Dogma */
+  {
+    "question": "What is the Central Dogma of molecular biology?",
+    "answer": "The Central Dogma describes the flow of genetic information in a cell: <strong>DNA > RNA > Protein</strong>. It explains how genetic information is stored, expressed, and used to build cellular structures. <img src='Images_Flash/flowchart.png' alt = 'Central Dogma'>",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during transcription in the Central Dogma?",
+    "answer": "During transcription, <strong>RNA polymerase</strong> reads the DNA template strand and synthesizes a complementary <strong>mRNA</strong> molecule. This occurs in the <strong>nucleus</strong> in eukaryotes and in the cytoplasm in prokaryotes.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during RNA processing (in eukaryotic cells)?",
+    "answer": "Before translation, eukaryotic mRNA is modified by adding a <strong>5' cap</strong>, a <strong>3' poly-A tail</strong>, and removing <strong>introns</strong> through splicing. This creates a mature mRNA strand for translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during translation in the Central Dogma?",
+    "answer": "In translation, ribosomes read the <strong>mRNA codons</strong> and match them with complementary <strong>tRNA anticodons</strong> that bring in specific amino acids, forming a <strong>polypeptide chain</strong> (protein).",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What does 'self-replicating system' mean in biology?",
+    "answer": "A self-replicating system can make all the components needed to reproduce itself. In cells, this includes DNA, RNA, proteins, and the machinery to synthesize them.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How does the Central Dogma support a self-replicating system?",
+    "answer": "The Central Dogma allows DNA to encode proteins like <strong>DNA polymerase</strong> (replicates DNA), <strong>RNA polymerase</strong> (transcribes RNA), and <strong>ribosomal proteins</strong> (make more proteins), enabling the cell to build all parts of itself.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Why is DNA replication not part of the Central Dogma itself?",
+    "answer": "DNA replication is not part of the Central Dogma because it is not part of the information flow <em>from</em> DNA to protein. It is a <strong>preservation step</strong> to copy DNA before cell division.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What enzymes are involved in each step of the Central Dogma?",
+    "answer": "<strong>Replication:</strong> DNA polymerase<br><strong>Transcription:</strong> RNA polymerase<br><strong>Translation:</strong> Ribosome (rRNA + protein), assisted by tRNA and aminoacyl-tRNA synthetase.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How do mutations affect the flow of information in the Central Dogma?",
+    "answer": "Mutations in DNA can lead to changes in the mRNA sequence and alter the amino acid sequence of the protein, potentially affecting structure and function.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Summarize the Central Dogma and its importance in life.",
+    "answer": "The Central Dogma describes how genetic information is expressed: <strong>DNA ? RNA ? Protein</strong>. It enables cells to create the proteins that build and control life functions, and forms the basis of all biological inheritance and function.",
+    "tags": ["#all", "#biology", "#centraldogma", "#APBio", "#lecture1"]
+  }, 
+  {
+    "question": "What enzyme catalyzes transcription from DNA to RNA?",
+    "answer": "RNA polymerase catalyzes transcription. It binds to the promoter region of DNA and synthesizes RNA in the 5' to 3' direction.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Which strand of DNA is used as the template for transcription?",
+    "answer": "The <strong>template strand</strong> (also called the antisense or noncoding strand) is read by RNA polymerase in the 3' to 5' direction to synthesize RNA in the 5' to 3' direction.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the coding strand in transcription?",
+    "answer": "The coding strand (also called the sense strand) is the DNA strand not used for transcription. It has the same sequence as the RNA (except T is replaced by U).",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What sequence signals the start of transcription?",
+    "answer": "The <strong>promoter</strong> region, often including a TATA box in eukaryotes, signals RNA polymerase to bind and start transcription.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during the initiation phase of transcription?",
+    "answer": "RNA polymerase binds to the promoter with help from transcription factors, unwinds the DNA, and begins synthesizing the RNA strand at the +1 nucleotide.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during elongation in transcription?",
+    "answer": "RNA polymerase moves along the DNA template strand (3' to 5') and synthesizes a complementary RNA strand (5' to 3') by adding RNA nucleotides.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during termination of transcription?",
+    "answer": "In prokaryotes, termination occurs when RNA polymerase reaches a terminator sequence. In eukaryotes, it involves a polyadenylation signal and later cleavage of the RNA transcript.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the role of transcription factors in eukaryotic transcription?",
+    "answer": "Transcription factors are proteins that bind to DNA sequences near the promoter to help RNA polymerase bind and initiate transcription.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What direction does RNA polymerase synthesize mRNA?",
+    "answer": "RNA polymerase synthesizes mRNA in the <strong>5' to 3'</strong> direction, adding nucleotides to the 3' end of the growing RNA strand.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What base pairs are used during transcription?",
+    "answer": "A pairs with U (instead of T), T pairs with A, C pairs with G, and G pairs with C when building RNA from DNA.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the function of the TATA box?",
+    "answer": "The TATA box is a DNA sequence in the promoter region that helps position RNA polymerase and transcription factors for accurate transcription initiation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the difference between a prokaryotic and eukaryotic promoter?",
+    "answer": "Prokaryotic promoters include -10 and -35 regions; eukaryotic promoters often include a TATA box and require multiple transcription factors for initiation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How does RNA polymerase know where to stop transcribing?",
+    "answer": "Termination sequences in the DNA (such as a GC-rich hairpin in prokaryotes or polyadenylation signal in eukaryotes) signal the end of transcription.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  }, 
+  {
+    "question": "What is RNA processing?",
+    "answer": "RNA processing is the modification of pre-mRNA in eukaryotes before it becomes mature mRNA. It includes 5' capping, 3' poly-A tail addition, and splicing.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is added to the 5' end of the pre-mRNA and why?",
+    "answer": "A modified guanine nucleotide called a <strong>5' cap</strong> is added. It protects mRNA from degradation and helps ribosomes bind during translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is added to the 3' end of the pre-mRNA and what is its function?",
+    "answer": "A <strong>poly-A tail</strong> of about 100–250 adenine nucleotides is added. It protects the mRNA from degradation and helps with nuclear export and translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are introns and exons?",
+    "answer": "<strong>Introns</strong> are non-coding sequences that are removed during splicing. <strong>Exons</strong> are coding regions that remain and are joined to form the mature mRNA.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What enzyme complex performs splicing?",
+    "answer": "The <strong>spliceosome</strong>, a complex of proteins and small nuclear RNAs (snRNAs), removes introns and joins exons together.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Why is splicing important in eukaryotic cells?",
+    "answer": "Splicing creates mature mRNA and allows for <strong>alternative splicing</strong>, enabling one gene to code for multiple proteins by rearranging exons.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is alternative splicing?",
+    "answer": "Alternative splicing is the process where different combinations of exons are joined together, allowing a single gene to produce multiple protein variants.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Does RNA processing occur in prokaryotes?",
+    "answer": "No. Prokaryotic mRNA does not undergo capping, tailing, or splicing. Transcription and translation are coupled in the cytoplasm.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#APBio", "#lecture1"]
+  }, 
+  {
+    "question": "What is DNA replication and why is it essential for cells?",
+    "answer": "DNA replication is the process by which a cell copies its entire genome before cell division, ensuring that each daughter cell receives an identical set of genetic instructions. It is essential for maintaining genetic continuity and enabling growth and repair.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Which enzyme initiates the unwinding of the DNA double helix, and what is its function?",
+    "answer": "Helicase initiates DNA replication by unwinding the double helix and breaking the hydrogen bonds between the complementary bases, thereby creating a replication fork where the two DNA strands separate.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "What role does primase play during DNA replication?",
+    "answer": "Primase synthesizes a short RNA primer complementary to the DNA template. This primer provides a free 3' hydroxyl group that is necessary for DNA polymerase to begin adding new nucleotides.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Describe the function of DNA polymerase during replication.",
+    "answer": "DNA polymerase adds nucleotides to the growing DNA strand in the 5' to 3' direction using the RNA primer as a starting point. It also proofreads the newly synthesized strand using its 3' to 5' exonuclease activity to correct errors.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "What is the difference between the leading and lagging strands during DNA replication?",
+    "answer": "The leading strand is synthesized continuously in the 5' to 3' direction as the replication fork opens, while the lagging strand is synthesized discontinuously in short segments called Okazaki fragments, because it is oriented in the 3' to 5' direction relative to the fork.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "How are Okazaki fragments processed and joined together?",
+    "answer": "Okazaki fragments are first extended by DNA polymerase and then the RNA primers are removed and replaced with DNA. DNA ligase finally joins the fragments by forming phosphodiester bonds, resulting in a continuous strand.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "What does 'semi-conservative replication' mean?",
+    "answer": "Semi-conservative replication means that each new DNA molecule consists of one original (parental) strand and one newly synthesized strand, thereby preserving half of the original DNA in each daughter molecule.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "Explain the significance of the replication fork.",
+    "answer": "The replication fork is the region where the DNA double helix is unwound into two single strands. It is the active area where DNA replication occurs, allowing simultaneous synthesis of the leading and lagging strands.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "How does DNA polymerase ensure the accuracy of DNA replication?",
+    "answer": "DNA polymerase has a proofreading function (3' to 5' exonuclease activity) that checks and removes incorrectly paired nucleotides, significantly reducing the error rate during DNA synthesis.",
+    "tags": ["#all", "#biology", "#replication", "#APBio", "#lecture1", "#frq"]
+  },
+  {
+    "question": "What is translation in molecular biology?",
+    "answer": "Translation is the process by which the sequence of a messenger RNA (mRNA) is decoded by a ribosome to build a polypeptide (protein), using transfer RNA (tRNA) to bring in specific amino acids.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "Where does translation occur in eukaryotic cells?",
+    "answer": "Translation occurs in the cytoplasm, either on free ribosomes or on ribosomes attached to the rough endoplasmic reticulum.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are the three binding sites on the ribosome used during translation?",
+    "answer": "<strong>A site (Aminoacyl):</strong> holds the incoming tRNA carrying an amino acid.<br><strong>P site (Peptidyl):</strong> holds the tRNA carrying the growing polypeptide chain.<br><strong>E site (Exit):</strong> holds the empty tRNA before it leaves the ribosome.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#ribosome", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What does tRNA do during translation?",
+    "answer": "Each tRNA molecule carries a specific amino acid and has an anticodon that base-pairs with the corresponding codon on the mRNA, ensuring correct amino acid placement.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#tRNA", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is a codon, and how is it used in translation?",
+    "answer": "A codon is a sequence of three mRNA nucleotides that codes for a specific amino acid. The codon is read by the ribosome, and the corresponding tRNA anticodon binds to it during translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#codon", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the start codon and what does it code for?",
+    "answer": "The start codon is <strong>AUG</strong>, which codes for the amino acid <strong>methionine</strong>. It signals the beginning of translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#codon", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are the stop codons and what do they do?",
+    "answer": "The stop codons are <strong>UAA</strong>, <strong>UAG</strong>, and <strong>UGA</strong>. They do not code for amino acids; instead, they signal the ribosome to stop translation and release the finished polypeptide.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#codon", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How is the correct amino acid added during translation?",
+    "answer": "The correct amino acid is delivered by a tRNA with a complementary anticodon. The ribosome ensures correct pairing between the mRNA codon and tRNA anticodon.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#tRNA", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What role does GTP play in translation?",
+    "answer": "GTP provides energy for steps in translation, including ribosome assembly, tRNA binding, translocation along the mRNA, and termination.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#energy", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How does the ribosome move along the mRNA during translation?",
+    "answer": "After peptide bond formation, the ribosome shifts (translocates) along the mRNA 3 nucleotides (one codon) at a time in the 5' to 3' direction, using GTP energy.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#ribosome", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How does the codon chart work in translation?",
+    "answer": "The codon chart is used to translate each 3-base mRNA codon into the corresponding amino acid. For example, UUU codes for phenylalanine, and AUG codes for methionine.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#codonchart", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during translation initiation?",
+    "answer": "The small ribosomal subunit binds to the mRNA near the 5' cap (eukaryotes) or Shine-Dalgarno sequence (prokaryotes). The initiator tRNA binds to the start codon (AUG), then the large ribosomal subunit joins to form the initiation complex.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#initiation", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during elongation in translation?",
+    "answer": "During elongation, the ribosome moves codon by codon, matching tRNAs with mRNA and forming peptide bonds between amino acids to extend the polypeptide chain.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#elongation", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during translation termination?",
+    "answer": "When a stop codon is reached, release factors bind to the ribosome, prompting it to release the completed polypeptide and disassemble the translation machinery.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#termination", "#APBio", "#lecture1"]
+  }, 
+		{
+  "question": "Draw out the Central Dogma. What is happening at each step? What do we mean by self-replicating? How does the system of the Central Dogma allow this?",
+  "answer": "<strong>Central Dogma Steps:</strong><br><strong>1. DNA Replication:</strong> DNA replicates before cell division, ensuring each new cell has an identical set of genetic material. The process is self-replicating because DNA encodes the enzymes needed to copy itself.<br><strong>2. Transcription (DNA ? RNA):</strong> RNA polymerase synthesizes mRNA from the DNA template strand. The mRNA carries genetic information from the DNA to the ribosome.<br><strong>3. RNA Processing (Eukaryotes):</strong> In eukaryotes, mRNA is capped at the 5' end, a poly-A tail is added to the 3' end, and introns are spliced out to form mature mRNA.<br><strong>4. Translation (RNA ? Protein):</strong> Ribosomes translate the mRNA into a protein by reading codons and linking amino acids brought by tRNA.<br><br><strong>Self-Replicating:</strong> DNA is self-replicating because it contains the information to create copies of itself, ensuring genetic continuity. The system works because DNA codes for the proteins (like DNA polymerase) required for replication, making the process autonomous.<br><strong>How Central Dogma Supports Self-Replication:</strong> The Central Dogma ensures that the necessary proteins and enzymes needed for replication (such as DNA polymerase) are synthesized, allowing DNA to copy itself and pass on genetic information to new cells.",
+  "tags": ["#all", "#biology", "#centraldogma", "#self-replication", "#APBio", "#lecture1"]
+}, 
+  {
+    "question": "What is DNA replication, and why is it considered self-replicating?",
+    "answer": "DNA replication is the process by which a cell makes an identical copy of its DNA before cell division. It’s considered self-replicating because DNA contains the information required to produce the enzymes (like DNA polymerase) necessary for replication. The system relies on its own encoded instructions to copy itself. The machinery involved in replication is also encoded by the DNA itself, making the process autonomous and continuous.",
+    "tags": ["#all", "#biology", "#centraldogma", "#replication", "#self-replication", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens during the process of transcription in the Central Dogma?",
+    "answer": "Transcription is the process by which an RNA molecule is synthesized from a DNA template. RNA polymerase binds to the promoter region of the DNA, separating the DNA strands and synthesizing an mRNA strand complementary to the DNA template. The mRNA carries the genetic code from the DNA to the ribosome for protein synthesis. Transcription occurs in the nucleus in eukaryotic cells and the cytoplasm in prokaryotic cells. The resulting mRNA is a copy of the gene that can be translated into a protein.",
+    "tags": ["#all", "#biology", "#centraldogma", "#transcription", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What are the steps involved in RNA processing, and why is it necessary in eukaryotic cells?",
+    "answer": "RNA processing includes three main steps: 1) Adding a <strong>5' cap</strong> to the mRNA to protect it from degradation and assist in ribosome binding for translation. 2) Adding a <strong>3' poly-A tail</strong> to stabilize the mRNA and aid in its export from the nucleus. 3) <strong>Splicing</strong>, where introns (non-coding regions) are removed, and exons (coding regions) are joined together to form mature mRNA. This processing is crucial in eukaryotic cells to ensure the mRNA is functional, stable, and ready for translation into protein. Prokaryotic cells do not perform this level of RNA processing as transcription and translation occur simultaneously in the cytoplasm.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#eukaryotes", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the role of ribosomes in translation, and how do they function?",
+    "answer": "Ribosomes are the molecular machines responsible for translating mRNA into protein. They consist of rRNA and protein subunits. The ribosome has three binding sites for tRNA: the <strong>A site</strong> (for aminoacyl-tRNA), the <strong>P site</strong> (where the polypeptide chain grows), and the <strong>E site</strong> (where empty tRNA exits). Translation begins when the ribosome binds to the mRNA and reads the codons, matching each mRNA codon with the corresponding tRNA anticodon. This process adds amino acids to the growing polypeptide chain, following the instructions encoded in the mRNA sequence.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#ribosome", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How is the genetic information in DNA decoded during translation?",
+    "answer": "In translation, the genetic information in the mRNA is decoded into a sequence of amino acids. The mRNA contains codons, which are sequences of three nucleotides that specify a particular amino acid. The ribosome reads the mRNA codons, and tRNA molecules with complementary anticodons bring the corresponding amino acids to the ribosome. Each tRNA has a specific amino acid attached, and as the ribosome moves along the mRNA, it links the amino acids together to form a polypeptide chain. This process is powered by GTP molecules, which provide energy for binding and translocation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#codons", "#tRNA", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What happens when a stop codon is reached during translation?",
+    "answer": "When the ribosome encounters a stop codon (UAA, UAG, or UGA) on the mRNA, translation is terminated. Release factors bind to the ribosome, causing the ribosome to dissociate and release the newly synthesized polypeptide chain. The polypeptide then folds into its functional three-dimensional structure, ready to perform its role in the cell. The ribosome and tRNA molecules are also released and can participate in another round of translation.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#stopcodon", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "How do mutations in DNA affect the process of translation?",
+    "answer": "Mutations in DNA can lead to changes in the mRNA sequence, which in turn may alter the amino acid sequence of the resulting protein. A <strong>missense mutation</strong> changes one amino acid in the protein, potentially affecting its function. A <strong>nonsense mutation</strong> creates a premature stop codon, truncating the protein and likely rendering it nonfunctional. A <strong>silent mutation</strong> does not change the amino acid sequence, as it often occurs in the third base of a codon and does not affect protein function. Mutations can also affect the efficiency of translation or lead to the production of faulty proteins.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#mutation", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the significance of the poly-A tail and 5' cap in mRNA processing?",
+    "answer": "The <strong>poly-A tail</strong> added to the 3' end of eukaryotic mRNA protects the mRNA from degradation and aids in its export from the nucleus to the cytoplasm for translation. The <strong>5' cap</strong> added to the 5' end of mRNA serves to protect the mRNA from exonucleases, aids in ribosome recognition during translation, and facilitates the binding of the mRNA to the ribosome.",
+    "tags": ["#all", "#biology", "#centraldogma", "#RNAprocessing", "#eukaryotes", "#APBio", "#lecture1"]
+  },
+  {
+    "question": "What is the role of GTP in translation?",
+    "answer": "GTP (Guanosine triphosphate) provides energy for several steps during translation. It is used by elongation factors to drive the binding of tRNA to the ribosome, the translocation of the ribosome along the mRNA, and the release of the completed polypeptide. GTP is hydrolyzed to GDP during these processes, releasing the energy required for translation to proceed efficiently.",
+    "tags": ["#all", "#biology", "#centraldogma", "#translation", "#GTP", "#APBio", "#lecture1"]
+  }
 				]
 				, 
 		'classes' : [
@@ -1771,6 +2086,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			]
 
 	};
+	
+	
  const modal = document.getElementById('flashcard-modal');
   const modalClose = modal.querySelector('.close-btn');
   const flashcardElement = modal.querySelector('.flashcard');
@@ -1814,15 +2131,14 @@ document.addEventListener('DOMContentLoaded', () => {
       currentDeck = flashcardData[deckName] || [];
       applyTagFilter("#all");
       modal.classList.remove('hidden');
-
-		document.body.classList.add("modal-open");
-
+      document.body.classList.add("modal-open");
     });
   });
 
-  modalClose.addEventListener('click', () => modal.classList.add('hidden'));
-	
-	document.body.classList.remove("modal-open");
+  modalClose.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    document.body.classList.remove("modal-open");
+  });
 
   flashcardElement.addEventListener('click', () => {
     isFlipped = !isFlipped;
@@ -1862,6 +2178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filteredDeck.length === 0) {
       alert("You've finished all cards!");
       modal.classList.add('hidden');
+      document.body.classList.remove("modal-open");
       return;
     }
 
@@ -1883,4 +2200,13 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTagFilter(tag);
     });
   });
+
+  //  NEW: Dropdown filter support for all screen sizes
+  const tagDropdown = document.getElementById("lecture-filter-dropdown");
+  if (tagDropdown) {
+    tagDropdown.addEventListener("change", () => {
+      const selectedTag = tagDropdown.value;
+      applyTagFilter(selectedTag);
+    });
+  }
 });
