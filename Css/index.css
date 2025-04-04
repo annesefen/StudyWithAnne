@@ -1161,12 +1161,35 @@ body.dark .timeline-steps li {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* Hidden text initially */
+#coming-soon-text {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #6a1b9a;
+  animation: fadeIn 0.4s ease;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background-color: #f7ecff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
+
+/* Show on click */
+#coming-soon-text.active {
+  display: block;
+}
+
 
 /* Optional animation */
 @keyframes fadeIn {
   0% { opacity: 0; transform: scale(0.95); }
   100% { opacity: 1; transform: scale(1); }
 }
+
 
 /* === MEDIA QUERIES === */
 @media (max-width: 768px) {
@@ -1243,6 +1266,10 @@ body.dark .timeline-steps li {
     font-size: 0.85rem;
     margin-top: 10px;
     padding: 0 0.5rem;
+	max-width: 90%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+
   }
 }
 
