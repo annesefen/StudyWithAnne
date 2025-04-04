@@ -134,6 +134,16 @@ main {
     background: #944ec2;
 }
 
+.flashcard img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 12px auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: contain;
+    max-height: 180px;
+}
 /* Modal Styles */
 .modal {
     position: fixed;
@@ -147,6 +157,7 @@ main {
     align-items: center;
     z-index: 1000;
 }
+
 
 .modal.hidden {
     display: none;
@@ -191,8 +202,8 @@ main {
 
 .flashcard .card-content {
     display: none;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .flashcard .front {

@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Flashcard Data - add tags like ['#biology', '#ch1']
-    const flashcardData = {
-		
+    const flashcardData = {		'biology' : [{"question": "Prokaryotic Organelles", "answer": "<strong>Capsule:</strong> Layer of carbohydrates that surrounds the cell wall of some bacteria and helps them attach to surfaces.<br><strong>Cell wall:</strong> Consists of peptidoglycans that give the cell structure and protection.<br><strong>Cell membrane:</strong> Also known as the plasma membrane, which encloses the cytoplasm and separates the cell from the environment.<br><strong>Cytoplasm:</strong> Region enclosed by the cell membrane.<br><strong>Nucleoid:</strong> Region that contains DNA.<br><strong>Plasmids:</strong> Independently reproducing DNA.<br><strong>Ribosome:</strong> Performs protein synthesis.<br><strong>Flagella:</strong> Thin, tail-like structures that aid movement.<br><strong>Pili:</strong> Short, rod-shaped structures involved in attachment to surfaces and DNA transfer.<br><strong>Fimbriae:</strong> Thin, hair-like structures used for attachment.<br><strong>Vesicles:</strong> Sacs released by the membrane that perform a variety of functions.<br><strong>Vacuoles:</strong> Storage sacs found in some bacterial cells.<br> <br><img src='Images_Flash/Prokaryotic-Cell-Diagram-768x709.jpg' alt='Nucleoid Diagram'>" }] , 
 		'classes' : [
 					 {
     "question": "Analgesic",
