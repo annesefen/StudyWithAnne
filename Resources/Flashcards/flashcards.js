@@ -2634,7 +2634,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 	
 	
- const modal = document.getElementById('flashcard-modal');
+  const modal = document.getElementById('flashcard-modal');
   const modalClose = modal.querySelector('.close-btn');
   const flashcardElement = modal.querySelector('.flashcard');
   const flashcardFront = modal.querySelector('.front p');
