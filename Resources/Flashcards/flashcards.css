@@ -373,14 +373,19 @@ footer {
 
   /* Deck List adjustments */
   .deck-list {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
     padding: 0;
+    width: 100%;
   }
 
   .deck {
     padding: 15px;
-    max-width: 100%;
+    max-width: 90%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .deck h3 {
@@ -394,14 +399,24 @@ footer {
 
   /* Modal Adjustments */
   .modal-content {
-    padding: 20px;
+    padding: 20px 10px 15px 10px;
     width: 95%;
+    position: relative;
+    overflow: visible;
   }
 
   .close-btn {
-    top: 10px;
-    right: 15px;
-    font-size: 1.3rem;
+    top: 8px;
+    right: 10px;
+    font-size: 1.8rem;
+    z-index: 1001;
+    background: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 
   /* Flashcard adjustments */
@@ -428,8 +443,9 @@ footer {
     font-size: 0.9rem;
     padding: 8px 0;
   }
-/* Number */
-	.flashcard-number {
+
+  /* Number badge */
+  .flashcard-number {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -441,8 +457,7 @@ footer {
     font-weight: bold;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     z-index: 10;
-}
-
+  }
 
   /* Footer */
   footer {
