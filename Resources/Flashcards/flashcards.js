@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		  
 		{"question": "Tertiary Structure?", "answer":"<strong>R group defines the overall 3D folding shape of a single polypeptide chain</strong><br> <strong>Bond types(5):</strong> Ionic, Disulfide, Hydrogen, Hydrophobic(inside), Hydrophilic(outside)<br><strong>Function:</strong> Determines protein's specific function and binding abilities<br> <strong>Example:</strong> Enzymes have active sites formed at this level<br> Misfolds can cause neurologic diseases such as alzheimers and parkinsons<br>"}, 
 		{"question": "Quarternary Structure?", "answer": "<strong>Definition:</strong> Arrangement of 2+ polypeptide chains (subunits)<br> Same bonds as Tertiary <br> Required for function of some proteins (hemoglobin)", "tags": ["#proteins"]},
+		{ "question": "Rank the intermolecular forces from weakest to strongest (bio context)","answer": "<strong>1. London Dispersion Forces (LDF)/ Van der waals:</strong> Weakest. Temporary electron shifts.<br><em>Example:</em> Lipid tail clustering in membranes.<br><br><strong>2. Dipole-Dipole Interactions:</strong> Polar molecules with permanent dipoles.<br><em>Example:</em> Polar amino acid side chains.<br><br>\<strong>3. Hydrogen Bonding:</strong> Strong dipole interaction with H + N/O/F.<br><em>Example:</em> DNA base pairing, protein folding.<br><br>\<strong>4. Ionic Bonds:</strong> Strongest. Full charge attractions.<br><em>Example:</em> Salt bridges in proteins.", "tags": ["#all", "#biology", "#intermolecularForces"]},
 		
 		{"question": "Denaturation?", "answer": "Loss of structure and function due to heat, pH changes, or chemicals", "tags": ["#proteins"]},
 		{"question": "Chaperone proteins?", "answer": "Help other proteins fold properly", "tags": ["#proteins"]},
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{"question": "Catabolic Reactions", "answer": "<strong>Hydrolysis reactions</strong> that release energy by breaking down complex molecules into simpler ones.", "tags": ["#terminology", "#biochemistry", "#metabolism"]},
 		{"question": "Free Energy", "answer": "The energy in a system that can be used to do work.<br>Released in <strong>exergonic</strong> reactions and consumed in <strong>endergonic</strong> reactions.", "tags": ["#terminology", "#biochemistry", "#energy"]},
 		{"question": "Enzymes", "answer": "Catalysts that lower activation energy<br>so that reactions occur more easily and with less energy input.", "tags": ["#terminology", "#enzymes", "#biochemistry"]},
-		{"question": "Activation Energy", "answer": "The energy needed to start a reaction.<br><strong>Calculated by:</strong> transition state energy – reactant energy.", "tags": ["#terminology", "#biochemistry"]},
+		{"question": "Activation Energy", "answer": "The energy needed to start a reaction.<br><strong>Calculated by:</strong> transition state energy - reactant energy.", "tags": ["#terminology", "#biochemistry"]},
 		{"question": "Endergonic Reactions", "answer": "Reactions that <strong>require energy input</strong><br>Must be coupled with an exergonic reaction to occur.", "tags": ["#terminology", "#biochemistry", "#energy"]},
 		{"question": "Exergonic Reactions", "answer": "Reactions that <strong>release energy</strong> (often in the form of ATP or heat).", "tags": ["#terminology", "#biochemistry", "#energy"]},
 
