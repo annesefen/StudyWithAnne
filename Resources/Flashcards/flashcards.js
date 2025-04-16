@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		{"question": "Primary structure?", "answer": "<strong>Primary Structure</strong><br>Determines protein folds, shape, and function. <br> One change in amino acid will completely change protein function (e.g, sickle cell anemia)<br> Sequence of Amino Acids (N -> C terminus) <br> Stabilized via covalent peptide bonds", "tags": ["#proteins"]},
 		
 		 {"question": "Secondary Structure?", 
-		  "answer": "<strong> Interactions in the peptide backbone promote folding into repeated pattern</strong><br><strong>Stabilized:</strong> Hydrogen bonds in the peptide backbone<br> <strong>Examples:</strong>Alpha Helicies and Beta pleated sheets<br>Function: provide initial folding and structural support <img src='Images_Flash/a-helix.png' alt='a-helix Diagram'><br> <img src='Images_Flash/b-sheet.png' alt='B-sheet Diagram'>", "tags": ["#proteins"]}, 
+		  "answer": "<strong> Interactions in the peptide backbone promote folding into repeated pattern</strong><br><strong>Stabilized:</strong> Hydrogen bonds in the peptide backbone<br> <strong>Examples:</strong>Alpha Helicies(4 amino acids away, the amino group H bonds to the carboxyl group O) and Beta pleated sheets<br>Function: provide initial folding and structural support <img src='Images_Flash/a-helix.png' alt='a-helix Diagram'><br> <img src='Images_Flash/b-sheet.png' alt='B-sheet Diagram'>", "tags": ["#proteins"]}, 
 		  
 		{"question": "Tertiary Structure?", "answer":"<strong>R group defines the overall 3D folding shape of a single polypeptide chain</strong><br> <strong>Bond types(5):</strong> Ionic, Disulfide, Hydrogen, Hydrophobic(inside), Hydrophilic(outside)<br><strong>Function:</strong> Determines protein's specific function and binding abilities<br> <strong>Example:</strong> Enzymes have active sites formed at this level<br> Misfolds can cause neurologic diseases such as alzheimers and parkinsons<br>"}, 
 		{"question": "Quarternary Structure?", "answer": "<strong>Definition:</strong> Arrangement of 2+ polypeptide chains (subunits)<br> Same bonds as Tertiary <br> Required for function of some proteins (hemoglobin)", "tags": ["#proteins"]},
 		{ "question": "Rank the intermolecular forces from weakest to strongest (bio context)","answer": "<strong>1. London Dispersion Forces (LDF)/ Van der waals:</strong> Weakest. Temporary electron shifts.<br><em>Example:</em> Lipid tail clustering in membranes.<br><br><strong>2. Dipole-Dipole Interactions:</strong> Polar molecules with permanent dipoles.<br><em>Example:</em> Polar amino acid side chains.<br><br>\<strong>3. Hydrogen Bonding:</strong> Strong dipole interaction with H + N/O/F.<br><em>Example:</em> DNA base pairing, protein folding.<br><br>\<strong>4. Ionic Bonds:</strong> Strongest. Full charge attractions.<br><em>Example:</em> Salt bridges in proteins.", "tags": ["#all", "#biology", "#intermolecularForces"]},
+		
+		{"question": "Hydrogen Bonding in Folded Proteins", "answer": "<strong>Backbone to backbone </strong> Hydrogen bonding between atoms of two peptide bonds<br><strong>Backbone to sidechain</strong> Hydrogen bonding between atoms a peptide bond and an amino acid side chain <br><strong>Sidechain to Side Chain</strong> Hydrogen bonds between atoms of two amino acid side chains", "tags": ["#proteins"]},
 		
 		{"question": "Denaturation?", "answer": "Loss of structure and function due to heat, pH changes, or chemicals", "tags": ["#proteins"]},
 		{"question": "Chaperone proteins?", "answer": "Help other proteins fold properly", "tags": ["#proteins"]},
@@ -85,7 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		{"question": "Immunoglobulin", "answer": "A type of antibody that is bivalent<br>(can bind two antigens at once).", "tags": ["#proteins", "#terminology", "#immunology"]},
 		{"question": "Colocalization", "answer": "When two fluorescently labeled proteins are located<br>in the same region of the cell.", "tags": ["#proteins", "#terminology", "#labtechniques"]},
 
-		{"question": "", "answer": "", "tags": ["#proteins"]},
+		{"question": "Special Case Amino Acids", "answer": "Cysteine: Can form disulfide bonds with other cysteines. Important for stabilizing protein strucutre with covalent linkage.<br> Glycine: Very flexible, smallest amino acid. Found in tight turns of a protein.<br> Proline: Forms a ring with the backbone nitrogen. Causes a rigid kink  in the polypeptide chain. Found where tight turns or constraints are needed.", "tags": ["#proteins", "#l4"]},
+		
 		{"question": "", "answer": "", "tags": ["#proteins"]},
 		{"question": "", "answer": "", "tags": ["#proteins"]},
 		{"question": "", "answer": "", "tags": ["#proteins"]}], 
