@@ -13,7 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
     // Flashcard Data - add tags like ['#biology', '#ch1']
-    const flashcardData = {		'exam1': [{"question": "Primary structure?", "answer": "<strong>Primary Structure</strong><br>Determines protein folds, shape, and function. <br> One change in amino acid will completely change protein function<br> Sequence of Amino Acids (N -> C terminus) <br> Stabilized via covalent peptide bonds", "tags": ["#proteins"]}, {"question": "Secondary Structure?", "answer": "<strong> Local folding patterns </strong> (a-helix & B-pleated sheets)<br><strong>Stabilized:</strong> H-bonds between backbone groups (between peptide backbone)<br> <img src='Images_Flash/a-helix.png' alt='a-helix Diagram'><br> <img src='Images_Flash/b-sheet.png' alt='B-sheet Diagram'>", "tags": ["#proteins"]}], 'biology': [
+    const flashcardData = {		'exam1': [
+		{"question": "Primary structure?", "answer": "<strong>Primary Structure</strong><br>Determines protein folds, shape, and function. <br> One change in amino acid will completely change protein function (e.g, sickle cell anemia)<br> Sequence of Amino Acids (N -> C terminus) <br> Stabilized via covalent peptide bonds", "tags": ["#proteins"]},
+		
+		 {"question": "Secondary Structure?", 
+		  "answer": "<strong> Interactions in the peptide backbone promote folding into repeated pattern</strong><br><strong>Stabilized:</strong> Hydrogen bonds in the peptide backbone<br> <strong>Examples:</strong>Alpha Helicies and Beta pleated sheets<br>Function: provide initial folding and structural support <img src='Images_Flash/a-helix.png' alt='a-helix Diagram'><br> <img src='Images_Flash/b-sheet.png' alt='B-sheet Diagram'>", "tags": ["#proteins"]}, 
+		  
+		{"question": "Tertiary Structure?", "answer":"<strong>R group defines the overall 3D folding shape of a single polypeptide chain</strong><br> <strong>Bond types(5):</strong> Ionic, Disulfide, Hydrogen, Hydrophobic(inside), Hydrophilic(outside)<br><strong>Function:</strong> Determines protein's specific function and binding abilities<br> <strong>Example:</strong> Enzymes have active sites formed at this level<br> Misfolds can cause neurologic diseases such as alzheimers and parkinsons<br>"}, 
+		{"question": "Quarternary Structure?", "answer": "<strong>Definition:</strong> Arrangement of 2+ polypeptide chains (subunits)<br> Same bonds as Tertiary <br> Required for function of some proteins (hemoglobin)", "tags": ["#proteins"]},
+		
+		{"question": "Denaturation?", "answer": "Loss of structure and function due to heat, pH changes, or chemicals", "tags": ["#proteins"]},
+		{"question": "Chaperone proteins?", "answer": "Help other proteins fold properly", "tags": ["#proteins"]},
+		{"question": "Hemoglobin structure?", "answer": "Quarternary Structure with 2 a-helixes and 2 b-sheets", "tags": ["#proteins"]},
+		{"question": "Prevention of misfolds?", "answer": "Chaperone proteins: assist protein folding<br>Ubiquitin: Tags misfolds", "tags": ["#proteins"]},
+		{"question": "", "answer": "", "tags": ["#proteins"]},
+		{"question": "", "answer": "", "tags": ["#proteins"]},
+		{"question": "", "answer": "", "tags": ["#proteins"]},
+		{"question": "", "answer": "", "tags": ["#proteins"]},
+		{"question": "", "answer": "", "tags": ["#proteins"]}
+										 
+										 ], 
+				
+						   'biology': [
 			  {
 				"question": "Prokaryotic Organelles",
 				"answer": "<strong>Capsule:</strong> Layer of carbohydrates that surrounds the cell wall of some bacteria and helps them attach to surfaces.<br><strong>Cell wall:</strong> Consists of peptidoglycans that give the cell structure and protection.<br><strong>Cell membrane:</strong> Also known as the plasma membrane, which encloses the cytoplasm and separates the cell from the environment.<br><strong>Cytoplasm:</strong> Region enclosed by the cell membrane.<br><strong>Nucleoid:</strong> Region that contains DNA.<br><strong>Plasmids:</strong> Independently reproducing DNA.<br><strong>Ribosome:</strong> Performs protein synthesis.<br><strong>Flagella:</strong> Thin, tail-like structures that aid movement.<br><strong>Pili:</strong> Short, rod-shaped structures involved in attachment to surfaces and DNA transfer.<br><strong>Fimbriae:</strong> Thin, hair-like structures used for attachment.<br><strong>Vesicles:</strong> Sacs released by the membrane that perform a variety of functions.<br><strong>Vacuoles:</strong> Storage sacs found in some bacterial cells.<br><br><img src='Images_Flash/Prokaryotic-Cell-Diagram-768x709.jpg' alt='Prokaryotic Cell Diagram'>",
