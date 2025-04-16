@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{"question": "Ionic Interaction (Salt Bridge)", "answer": "Attraction between oppositely charged R groups.", "tags": ["#proteins", "#terminology"]},
 		{"question": "Hydrophobic Interaction", "answer": "Nonpolar R groups cluster away from water,<br>often buried in the interior of the protein.", "tags": ["#proteins", "#terminology"]},
 		{"question": "Disulfide Bridge", "answer": "A covalent bond between two cysteine residues;<br>stabilizes tertiary structure.", "tags": ["#proteins", "#terminology"]},
-		{"question": "Antibody", "answer": "A protein composed of light and heavy chains held by disulfide bonds.<br>Recognizes and binds to specific antigens.", "tags": ["#proteins", "#terminology", "#immunology"]},
+		{"question": "Antibody", "answer": "A protein composed of light and heavy chains held by disulfide bonds.<br>Recognizes and binds to specific antigens. <br> <img src='Images_Flash/antibody.png' alt ='Antibody Diagram'>", "tags": ["#proteins", "#terminology", "#immunology"]},
 		{"question": "Protein Domain", "answer": "A modular and independently folding part of a protein<br>that can have a specific function.", "tags": ["#proteins", "#terminology"]},
 		{"question": "Membrane Protein", "answer": "Protein that spans or interacts with the cell membrane,<br>often with hydrophobic side chains exposed to lipid tails.", "tags": ["#proteins", "#terminology", "#cellbiology"]},
 		{"question": "Chaperones", "answer": "Proteins that assist the folding of other proteins and prevent misfolding.", "tags": ["#proteins", "#terminology"]},
@@ -88,11 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		{"question": "", "answer": "", "tags": ["#proteins"]},
 		{"question": "", "answer": "", "tags": ["#proteins"]},
 		{"question": "", "answer": "", "tags": ["#proteins"]},
-		{"question": "", "answer": "", "tags": ["#proteins"]}
-										 
-										 ], 
+		{"question": "", "answer": "", "tags": ["#proteins"]}], 
 				
-						   'biology': [
+		'biology': [
 			  {
 				"question": "Prokaryotic Organelles",
 				"answer": "<strong>Capsule:</strong> Layer of carbohydrates that surrounds the cell wall of some bacteria and helps them attach to surfaces.<br><strong>Cell wall:</strong> Consists of peptidoglycans that give the cell structure and protection.<br><strong>Cell membrane:</strong> Also known as the plasma membrane, which encloses the cytoplasm and separates the cell from the environment.<br><strong>Cytoplasm:</strong> Region enclosed by the cell membrane.<br><strong>Nucleoid:</strong> Region that contains DNA.<br><strong>Plasmids:</strong> Independently reproducing DNA.<br><strong>Ribosome:</strong> Performs protein synthesis.<br><strong>Flagella:</strong> Thin, tail-like structures that aid movement.<br><strong>Pili:</strong> Short, rod-shaped structures involved in attachment to surfaces and DNA transfer.<br><strong>Fimbriae:</strong> Thin, hair-like structures used for attachment.<br><strong>Vesicles:</strong> Sacs released by the membrane that perform a variety of functions.<br><strong>Vacuoles:</strong> Storage sacs found in some bacterial cells.<br><br><img src='Images_Flash/Prokaryotic-Cell-Diagram-768x709.jpg' alt='Prokaryotic Cell Diagram'>",
@@ -1275,8 +1273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "answer": "Protein misfolding occurs when proteins do not adopt their correct three-dimensional structure, which can lead to the accumulation of misfolded proteins and the formation of toxic aggregates. In **Alzheimer’s disease**, misfolded **amyloid-beta** proteins aggregate to form plaques in the brain, leading to neuronal dysfunction, inflammation, and ultimately neurodegeneration. The misfolded proteins disrupt normal cell processes, impairing synaptic function and leading to cognitive decline. Other diseases, such as **cystic fibrosis** and **Parkinson’s disease**, are also associated with misfolded proteins, showing how critical proper protein folding is for cellular function and health.",
     "tags": ["#all", "#biology", "#proteinMisfolding", "#Alzheimers", "#diseases", "#function", "#APBio", "#lecture2", "#frq"]
   }
-		]
-				, 
+		], 
 		'classes' : [
 					 {
     "question": "Analgesic",
