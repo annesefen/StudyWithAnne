@@ -13,9 +13,94 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
     // Flashcard Data - add tags like ['#biology', '#ch1']
-    const flashcardData = {		'exam1': [
+    const flashcardData = {		'earth': [
+  {
+    "question": "What is regulation?",
+    "answer": "Regulation refers to actions by the federal or local government directed at influencing market outcomes."
+  },
+  {
+    "question": "What is a price ceiling?",
+    "answer": "A price “ceiling” is a limit on how _high_ prices can go."
+  },
+  {
+    "question": "What happens when a price ceiling is introduced (e.g. rent control)?",
+    "answer": "We have generated a situation of excess demand. We have a shortage!"
+  },
+  {
+    "question": "Who will oppose rent control and why?",
+    "answer": "Landlords will oppose this — lost income."
+  },
+  {
+    "question": "What is the difference between a binding and non-binding price ceiling?",
+    "answer": "A binding price ceiling is below equilibrium and has an impact. A non-binding one is above equilibrium and has no effect."
+  },
+  {
+    "question": "What justification is often given for rent control?",
+    "answer": "Safe, stable, affordable housing was first recognized as a human right in the 1948 Universal Declaration of Human Rights."
+  },
+  {
+    "question": "What is rent control a form of?",
+    "answer": "Rent control is a form of redistribution from landlords to tenants (money that landlords were previously pocketing now stays in the pockets of tenants)."
+  },
+  {
+    "question": "What is a means test?",
+    "answer": "A means test is a determination of whether an individual or family is eligible for government assistance, based upon whether the individual or family possesses the means to do without that help."
+  },
+  {
+    "question": "What is a price floor?",
+    "answer": "A price floor is a limit on how _low_ prices can go."
+  },
+  {
+    "question": "What happens in the labor market when a price floor (minimum wage) is introduced?",
+    "answer": "LD – LS < 0 ? Unemployment"
+  },
+  {
+    "question": "What is the difference between a binding and non-binding price floor?",
+    "answer": "A binding price floor is above equilibrium and causes a surplus (unemployment). A non-binding one is below equilibrium and has no effect."
+  },
+  {
+    "question": "What is a monopsony in the labor market?",
+    "answer": "A market where there is only 1 firm that can hire people (e.g., coal mine owner in a town where the company is the only source of employment)."
+  },
+  {
+    "question": "What might happen if a minimum wage is introduced in a monopsony?",
+    "answer": "Introducing a minimum wage might result in an increase (or decrease) in the number of people employed."
+  },
+  {
+    "question": "What are the two most important goals for government policy?",
+    "answer": "1. Equitable allocation of resources: Equity\n2. Increasing total output/surplus: Efficiency"
+  },
+  {
+    "question": "What does equity refer to?",
+    "answer": "Equity refers to the quality of being fair and impartial."
+  },
+  {
+    "question": "What are two ways to define fairness?",
+    "answer": "1. “It’s not fair if the results aren’t fair” (Utilitarianism: the greatest happiness for the greatest number)\n2. “It’s not fair if the rules aren’t fair” (the requirement that people in similar situations should be treated similarly)"
+  },
+  {
+    "question": "What happens to quantity transacted when we introduce a binding price intervention?",
+    "answer": "We decrease the quantity transacted."
+  },
+  {
+    "question": "What is the cost of trades that no longer happen due to intervention?",
+    "answer": "These are trades that would have been mutually beneficial for both seller and buyer. We refer to them as deadweight loss."
+  },
+  {
+    "question": "Can economic principles alone resolve equity vs. efficiency conflicts?",
+    "answer": "No. Political philosophy plays an important role in striking a balance between these two goals."
+  },
+  {
+    "question": "What does the Rawlsian approach ask of you?",
+    "answer": "It asks you to put yourself behind a veil of ignorance in an attempt to maximize fairness."
+  },
+  {
+    "question": "What does Nozick argue?",
+    "answer": "A just society is one that resulted from an unfettered free market."
+  }
+]
+  , 'exam1': [
 		{"question": "Primary structure?", "answer": "<strong>Primary Structure</strong><br>Determines protein folds, shape, and function. <br> One change in amino acid will completely change protein function (e.g, sickle cell anemia)<br> Sequence of Amino Acids (N -> C terminus) <br> Stabilized via covalent peptide bonds", "tags": ["#proteins"]},
-		
 		 {"question": "Secondary Structure?", 
 		  "answer": "<strong> Interactions in the peptide backbone promote folding into repeated pattern</strong><br><strong>Stabilized:</strong> Hydrogen bonds in the peptide backbone<br> <strong>Examples:</strong>Alpha Helicies(4 amino acids away, the amino group H bonds to the carboxyl group O) and Beta pleated sheets<br>Function: provide initial folding and structural support <img src='Images_Flash/a-helix.png' alt='a-helix Diagram'><br> <img src='Images_Flash/b-sheet.png' alt='B-sheet Diagram'>", "tags": ["#proteins"]}, 
 		  
