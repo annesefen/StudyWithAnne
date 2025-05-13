@@ -13,7 +13,44 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
     // Flashcard Data - add tags like ['#biology', '#ch1']
-    const flashcardData = {		'earth': [
+    const flashcardData = {		'exam3':[ 
+		{ question: "Gene", answer: "The basic unit of heredity, a section of DNA that carries instructions for proteins.", tags: ["#terminologyexam3"] },
+	  { question: "Transcription", answer: "The process of turning DNA into RNA by matching the RNA complement to the DNA sequence.", tags: ["#terminologyexam3"] },
+	  { question: "Translation", answer: "The process of turning mRNA into protein by matching amino acids to the RNA sequence using codons.", tags: ["#terminologyexam3"] },
+	  { question: "DNA/RNA similarities", answer: "Both are nucleotides made of nitrogenous bases, have polarity, A, C, G bases, and a sugar backbone.", tags: ["#terminologyexam3"] },
+	  { question: "DNA/RNA differences", answer: "DNA has deoxyribose, uses thymine, and is double-stranded; RNA has ribose, uses uracil, and is single-stranded.", tags: ["#terminologyexam3"] },
+	  { question: "RNA Polymerase", answer: "Enzyme that synthesizes RNA from a DNA template.", tags: ["#terminologyexam3"] },
+	  { question: "+1 position", answer: "The spot on DNA where RNA polymerase starts transcribing.", tags: ["#terminologyexam3"] },
+	  { question: "Coding strand", answer: "DNA strand with the same sequence as the mRNA; basis for protein code.", tags: ["#terminologyexam3"] },
+	  { question: "Template strand", answer: "DNA strand read by RNA polymerase to create the mRNA.", tags: ["#terminologyexam3"] },
+	  { question: "Promoter", answer: "DNA sequence upstream of a gene that directs RNA polymerase to the transcription start site.", tags: ["#terminologyexam3"] },
+	  { question: "Bacterial promoter", answer: "Has sequences at -10 and -35 upstream of the transcription start site.", tags: ["#terminologyexam3"] },
+	  { question: "Sigma factor", answer: "Bacterial protein that helps RNA polymerase find the gene start; released after transcription begins.", tags: ["#terminologyexam3"] },
+	  { question: "Terminator sequence", answer: "DNA sequence that causes transcription to end and mRNA to be released.", tags: ["#terminologyexam3"] },
+	  { question: "RNA Polymerase II", answer: "Eukaryotic enzyme that makes mRNA; recruited by general transcription factors.", tags: ["#terminologyexam3"] },
+	  { question: "Eukaryotic promoter", answer: "DNA sequence that helps recruit transcription machinery in eukaryotes.", tags: ["#terminologyexam3"] },
+	  { question: "TATA box", answer: "Specific DNA sequence in the promoter where transcription starts.", tags: ["#terminologyexam3"] },
+	  { question: "TATA binding protein (TBP)", answer: "Binds the TATA box to help assemble transcription machinery.", tags: ["#terminologyexam3"] },
+	  { question: "General transcription factors", answer: "Proteins that help RNA polymerase bind the promoter and start transcription.", tags: ["#terminologyexam3"] },
+	  { question: "Nuclear envelope", answer: "Double membrane that surrounds the nucleus in eukaryotes.", tags: ["#terminologyexam3"] },
+	  { question: "Nuclear pores", answer: "Channels in the nuclear envelope that regulate movement of mRNA and proteins.", tags: ["#terminologyexam3"] },
+	  { question: "Eukaryotic mRNA", answer: "mRNA that has been processed with a 5’ cap and PolyA tail.", tags: ["#terminologyexam3"] },
+	  { question: "Untranslated Region", answer: "mRNA segments that do not code for protein.", tags: ["#terminologyexam3"] },
+	  { question: "Translated Region", answer: "mRNA portion that is turned into protein (coding sequence).", tags: ["#terminologyexam3"] },
+	  { question: "Polyadenylation", answer: "Adding a string of adenines to the 3’ end of mRNA using poly(A) polymerase.", tags: ["#terminologyexam3"] },
+	  { question: "Introns", answer: "Non-coding regions of eukaryotic mRNA not included in the final protein.", tags: ["#terminologyexam3"] },
+	  { question: "Exons", answer: "Expressed DNA sequences included in the final mRNA and protein.", tags: ["#terminologyexam3"] },
+	  { question: "Alternative splicing", answer: "Process that allows a single gene to code for multiple protein isoforms.", tags: ["#terminologyexam3"] },
+	  { question: "Branch-point", answer: "2’-OH of adenine that initiates splicing by attacking the 5’ splice site.", tags: ["#terminologyexam3"] },
+	  { question: "Lariat", answer: "Intron loop formed and released during splicing.", tags: ["#terminologyexam3"] },
+	  { question: "Spliceosome", answer: "Protein-RNA complex that removes introns from pre-mRNA.", tags: ["#terminologyexam3"] },
+	  { question: "Ribozymes", answer: "RNA molecules that perform enzymatic functions, such as in the spliceosome.", tags: ["#terminologyexam3"] },
+	  { question: "5’ cap", answer: "Added to 5’ end of mRNA to protect from degradation and assist in export/translation.", tags: ["#terminologyexam3"] },
+	  { question: "Poly-A-tail", answer: "String of adenines added to 3’ end of pre-mRNA to stabilize and protect it.", tags: ["#terminologyexam3"] },
+	  { question: "RNA capping", answer: "The process of adding a 5’ cap to pre-mRNA.", tags: ["#terminologyexam3"] },
+	  { question: "Protein isoforms", answer: "Proteins with different properties produced from the same gene via splicing.", tags: ["#terminologyexam3"] },
+	  { question: "Titan", answer: "A muscle protein whose function is affected by alternative splicing.", tags: ["#terminologyexam3"] }],
+						   'earth': [
   {
     "question": "What is regulation?",
     "answer": "Regulation refers to actions by the federal or local government directed at influencing market outcomes."
